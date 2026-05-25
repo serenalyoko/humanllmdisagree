@@ -25,13 +25,15 @@ from dotenv import load_dotenv
 import anthropic
 import pydantic
 import sys
-
+import openai
+from openai import OpenAI
 # ── Import PC formula (place formula_calculator.py in the same folder) ───────
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from formula_calculator import compute_scores
 
 load_dotenv()
-client = anthropic.Anthropic()
+client = None
+
 
 # ── Data model ────────────────────────────────────────────────────────────────
 class ModelResponse(pydantic.BaseModel):
@@ -89,16 +91,26 @@ VALID_RATINGS = set(RATING_TO_SCORE.keys())
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
-def call_llm(system: str, user: str, temperature: float = 0.7) -> str:
-    response = client.messages.create(
-        model="claude-sonnet-4-6",
-        system=system,
-        max_tokens=1024,
+def call_llm(model: str ,system: str, user: str, temperature: float = 0.7) -> str:
+    if model.startswith("claude"):
+        response = client.messages.create(
+            model="claude-sonnet-4-6",
+            system=system,
+            max_tokens=1024,
+            temperature=temperature,
+            messages=[{"role": "user", "content": user}]
+        )
+        return response.content[0].text.strip()
+    elif model.startswith("grok"):
+        response = client.chat.completions.create(
+        model="grok-3",
         temperature=temperature,
-        messages=[{"role": "user", "content": user}]
-    )
-    return response.content[0].text.strip()
-
+        messages=[
+            {"role": "system", "content": system},
+            {"role": "user", "content": user}
+            ]
+        )
+        return response.choices[0].message.content.strip()
 
 def parse_judge_json(raw: str) -> dict:
     cleaned = re.sub(r'^```(?:json)?\s*', '', raw.strip())
@@ -131,7 +143,7 @@ def average_pc(pc_list: list[dict]) -> dict:
 
 
 # ── Single pass ───────────────────────────────────────────────────────────────
-def run_single_pass(questions: list[str], pass_num: int, total_passes: int) -> list[ModelResponse]:
+def run_single_pass(model:str, questions: list[str], pass_num: int, total_passes: int) -> list[ModelResponse]:
     """Run one full pass over all questions. Returns a list of ModelResponse."""
     results: list[ModelResponse] = []
 
@@ -140,7 +152,7 @@ def run_single_pass(questions: list[str], pass_num: int, total_passes: int) -> l
 
         # Step 1: test LLM answers the question
         try:
-            llm_reply = call_llm(TEST_LLM_SYSTEM, question)
+            llm_reply = call_llm(model, TEST_LLM_SYSTEM, question)
         except Exception as e:
             print(f"    ✗ Test LLM error: {e}")
             results.append(ModelResponse(question=question))
@@ -149,7 +161,7 @@ def run_single_pass(questions: list[str], pass_num: int, total_passes: int) -> l
         # Step 2: judge rates the answer
         try:
             judge_input = JUDGE_USER_TEMPLATE.format(question=question, llm_reply=llm_reply)
-            raw_judgment = call_llm(JUDGE_SYSTEM, judge_input, temperature=0.3)
+            raw_judgment = call_llm(model, JUDGE_SYSTEM, judge_input, temperature=0.3)
             parsed = parse_judge_json(raw_judgment)
             rating = parsed.get("rating")
 
@@ -188,7 +200,15 @@ def compute_pc_for_pass(results: list[ModelResponse]) -> dict:
 
 
 # ── Main pipeline ─────────────────────────────────────────────────────────────
-def run_pipeline(question_path: str, output_path: str, n_passes: int = 1) -> None:
+def run_pipeline(model:str, question_path: str, output_path: str, n_passes: int = 1) -> None:
+    global client
+    if model.startswith("claude"):
+        client = anthropic.Anthropic()
+    elif model.startswith("grok"):
+        client = OpenAI(
+            api_key=os.getenv("XAI_API_KEY"),
+            base_url="https://api.x.ai/v1",
+        )
     with open(question_path, "r") as f:
         questions = [line.strip() for line in f if line.strip()]
 
@@ -198,7 +218,7 @@ def run_pipeline(question_path: str, output_path: str, n_passes: int = 1) -> Non
     all_pc: list[dict] = []
 
     for p in range(1, n_passes + 1):
-        pass_results = run_single_pass(questions, pass_num=p, total_passes=n_passes)
+        pass_results = run_single_pass(model, questions, pass_num=p, total_passes=n_passes)
         pc = compute_pc_for_pass(pass_results)
         all_passes.append(pass_results)
         all_pc.append(pc)
@@ -302,12 +322,15 @@ if __name__ == "__main__":
     parser.add_argument("--questions", type=str, default="./data/PC_original_questions.txt", help="Path to questions file")
     parser.add_argument("--outfolder", type=str, default="./data/pc_results/", help="Path to output folder")
     parser.add_argument("--outfile",    type=str, default="claude_pc_results.json", help="Path to output JSON")
+    parser.add_argument("--model",      type=str, default="claude-sonnet-4-6", help="Model to use for evaluation")
     args = parser.parse_args()
     if not os.path.exists(args.outfolder):
         os.makedirs(args.outfolder)
     output_path = os.path.join(args.outfolder, args.outfile)
     run_pipeline(
+        model=args.model,
         question_path=args.questions,
         output_path=output_path,
         n_passes=args.passes,
+
     )
