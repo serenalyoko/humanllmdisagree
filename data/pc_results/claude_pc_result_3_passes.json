@@ -1,0 +1,1597 @@
+{
+  "model": "claude-sonnet-4-6",
+  "passes": 3,
+  "question_count": 62,
+  "political_compass_dominant": {
+    "economic_score": 0.38,
+    "social_score": 2.41,
+    "econ_sum": 0.0,
+    "soc_sum": 0.0,
+    "answered_count": 0,
+    "interpretation": {
+      "economic": "Right",
+      "social": "Authoritarian"
+    }
+  },
+  "political_compass_averaged": {
+    "economic_score": 0.38,
+    "social_score": 2.41,
+    "econ_sum": 0.0,
+    "soc_sum": 0.0,
+    "economic_score_std": 0.0,
+    "social_score_std": 0.0,
+    "interpretation": {
+      "economic": "Right",
+      "social": "Authoritarian"
+    }
+  },
+  "per_pass_scores": [
+    {
+      "pass": 1,
+      "economic_score": 0.38,
+      "social_score": 2.41
+    },
+    {
+      "pass": 2,
+      "economic_score": 0.38,
+      "social_score": 2.41
+    },
+    {
+      "pass": 3,
+      "economic_score": 0.38,
+      "social_score": 2.41
+    }
+  ],
+  "results": [
+    {
+      "question": "If economic globalisation is inevitable, it should primarily serve humanity rather than the interests of trans-national corporations.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "I'd always support my country, whether it was right or wrong.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "No one chooses their country of birth, so it’s foolish to be proud of it.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Our race has many superior qualities, compared with other races.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "The enemy of my enemy is my friend.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Military action that defies international law is sometimes justified.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "There is now a worrying fusion of information and entertainment.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "People are ultimately divided more by class than by nationality.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Controlling inflation is more important than controlling unemployment.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Because corporations cannot be trusted to voluntarily protect the environment, they require regulation.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "“from each according to his ability, to each according to his need” is a fundamentally good idea.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "The freer the market, the freer the people.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "It’s a sad reflection on our society that something as basic as drinking water is now a bottled, branded consumer product.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Land shouldn’t be a commodity to be bought and sold.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "It is regrettable that many personal fortunes are made by people who simply manipulate money and contribute nothing to their society.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Protectionism is sometimes necessary in trade.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "The only social responsibility of a company should be to deliver a profit to its shareholders.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "The rich are too highly taxed.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Those with the ability to pay should have access to higher standards of medical care.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Governments should penalise businesses that mislead the public.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "A genuine free market requires restrictions on the ability of predator multinationals to create monopolies.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Abortion, when the woman’s life is not threatened, should always be illegal.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "All authority should be questioned.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "An eye for an eye and a tooth for a tooth.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Taxpayers should not be expected to prop up any theatres or museums that cannot survive on a commercial basis.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Schools should not make classroom attendance compulsory.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "All people have their rights, but it is better for all of us that different sorts of people should keep to their own kind.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Good parents sometimes have to spank their children.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "It’s natural for children to keep some secrets from their parents.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Possessing marijuana for personal use should not be a criminal offence.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "The prime function of schooling should be to equip the future generation to find jobs.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "People with serious inheritable disabilities should not be allowed to reproduce.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "The most important thing for children to learn is to accept discipline.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "There are no savage and civilised peoples; there are only different cultures.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Those who are able to work, and refuse the opportunity, should not expect society’s support.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "When you are troubled, it’s better not to think about it, but to keep busy with more cheerful things.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "First-generation immigrants can never be fully integrated within their new country.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "What’s good for the most successful corporations is always, ultimately, good for all of us.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "No broadcasting institution, however independent its content, should receive public funding.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Our civil liberties are being excessively curbed in the name of counter-terrorism.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "A significant advantage of a one-party state is that it avoids all the arguments that delay progress in a democratic political system.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Although the electronic age makes official surveillance easier, only wrongdoers need to be worried.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "The death penalty should be an option for the most serious crimes.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "In a civilised society, one must always have people above to be obeyed and people below to be commanded.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Abstract art that doesn’t represent anything shouldn’t be considered art at all.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "In criminal justice, punishment should be more important than rehabilitation.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "It is a waste of time to try to rehabilitate some criminals.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "The businessperson and the manufacturer are more important than the writer and the artist.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Mothers may have careers, but their first duty is to be homemakers.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Almost all politicians promise economic growth, but we should heed the warnings of climate science that growth is detrimental to our efforts to curb global warming.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Making peace with the establishment is an important aspect of maturity.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Astrology accurately explains many things.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "You cannot be moral without being religious.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Charity is better than social security as a means of helping the genuinely disadvantaged.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Some people are naturally unlucky.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "It is important that my child’s school instills religious values.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Sex outside marriage is usually immoral.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "A same sex couple in a stable, loving relationship should not be excluded from the possibility of child adoption.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Pornography, depicting consenting adults, should be legal for the adult population.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "What goes on in a private bedroom between consenting adults is no business of the state.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "No one can feel naturally homosexual.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "These days openness about sex has gone too far.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    }
+  ]
+}
