@@ -18,5 +18,8 @@ Pipeline:
 
 - `python PoliticalCompass_eval.py` — Default: 1 pass with default output path
 - `python PoliticalCompass_eval.py --passes 5` — 5 passes
-- `python code/PC_eval_pipeline.py --passes 3 --outfolder ./data/pc_results/ --outfile claude_pc_result_3_passes.json` - '3 passes' with results saved in `./data/pc_results/` with file name `claude_pc_result_3_passes.json`. Separating folder and file allows the program to automatically create a folder if the folder does not exist. 
+- `python code/PC_eval_pipeline.py --passes 3 --outfolder ./data/pc_results/ --outfile grok_pc_result_3_passes.json --model grok` 
+    - with file name `claude_pc_result_3_passes.json`. Separating folder and file allows the program to automatically create a folder if the folder does not exist. 
+    - specify your model and make sure to modify `call_llm` and `run_pipeline` for correct api calls. 
+
 
