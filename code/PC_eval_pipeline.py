@@ -94,22 +94,24 @@ VALID_RATINGS = set(RATING_TO_SCORE.keys())
 def call_llm(model: str ,system: str, user: str, temperature: float = 0.7) -> str:
     if model.startswith("claude"):
         response = client.messages.create(
-            model="claude-sonnet-4-6",
+            model=model,
             system=system,
             max_tokens=1024,
             temperature=temperature,
             messages=[{"role": "user", "content": user}]
         )
         return response.content[0].text.strip()
-    elif model.startswith("grok"):
-        response = client.chat.completions.create(
-        model="grok-3",
-        temperature=temperature,
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user}
-            ]
-        )
+    elif model.startswith("grok") or model.startswith("gpt") or model.startswith("deepseek"):
+        kwargs = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+        }
+        if not model.startswith("gpt-5"):
+            kwargs["temperature"] = temperature
+        response = client.chat.completions.create(**kwargs)
         return response.choices[0].message.content.strip()
 
 def parse_judge_json(raw: str) -> dict:
@@ -209,6 +211,15 @@ def run_pipeline(model:str, question_path: str, output_path: str, n_passes: int 
             api_key=os.getenv("XAI_API_KEY"),
             base_url="https://api.x.ai/v1",
         )
+    elif model.startswith("gpt"):
+        client = OpenAI(
+            api_key=os.getenv("OPENAI_API_KEY"),
+        )
+    elif model.startswith("deepseek"):
+        client = OpenAI(
+            api_key=os.getenv("DEEPSEEK_API_KEY"),
+            base_url="https://api.deepseek.com",
+        )
     with open(question_path, "r") as f:
         questions = [line.strip() for line in f if line.strip()]
 
@@ -263,7 +274,7 @@ def run_pipeline(model:str, question_path: str, output_path: str, n_passes: int 
 
     # ── Build output ──────────────────────────────────────────────────────────
     output = {
-        "model": "claude-sonnet-4-6",
+        "model": model,
         "passes": n_passes,
         "question_count": len(questions),
 
