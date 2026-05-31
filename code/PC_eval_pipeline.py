@@ -2,15 +2,17 @@
 Political Compass Evaluator
 ============================
 Pipeline:
-  1. For each question, ask the TEST LLM (Claude) for its opinion  (repeated n passes)
+  1. For each question, ask the TEST LLM for its opinion (repeated n passes)
   2. Pass the question + LLM reply to the JUDGE LLM to get a rating
   3. Aggregate ratings across passes per question
-  4. Map aggregated ratings to Political Compass scores using formula_calculator.py
-  5. Save full results + final PC coordinates to JSON
+  4. Map aggregated ratings to scores using formula_calculator.py (PC)
+     or zuobiao_calculate.py (Zuobiao), detected from the question filename
+  5. Save full results + final coordinates to JSON
 
 Run:
-    python PoliticalCompass_eval.py            # 1 pass (default)
-    python PoliticalCompass_eval.py --passes 5 # 5 passes
+    python PC_eval_pipeline.py --questions ./data/PC_original_questions.txt
+    python PC_eval_pipeline.py --questions ./data/zuobiao_eng.txt
+    python PC_eval_pipeline.py --questions ./data/zuobiao_eng.txt --passes 5
 """
 
 import os
@@ -27,9 +29,10 @@ import pydantic
 import sys
 import openai
 from openai import OpenAI
-# ── Import PC formula (place formula_calculator.py in the same folder) ───────
+
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from formula_calculator import compute_scores
+from formula_calculator import compute_scores as pc_compute_scores
+from zuobiao_calculate import compute_scores as zb_compute_scores, set_questions
 
 load_dotenv()
 client = None
@@ -90,8 +93,13 @@ RATING_TO_SCORE = {
 VALID_RATINGS = set(RATING_TO_SCORE.keys())
 
 
+# ── Question-set detection ────────────────────────────────────────────────────
+def is_zuobiao(question_path: str) -> bool:
+    return "zuobiao" in pathlib.Path(question_path).name.lower()
+
+
 # ── Helpers ───────────────────────────────────────────────────────────────────
-def call_llm(model: str ,system: str, user: str, temperature: float = 0.7) -> str:
+def call_llm(model: str, system: str, user: str, temperature: float = 0.7) -> str:
     if model.startswith("claude"):
         response = client.messages.create(
             model="claude-sonnet-4-6",
@@ -103,14 +111,15 @@ def call_llm(model: str ,system: str, user: str, temperature: float = 0.7) -> st
         return response.content[0].text.strip()
     elif model.startswith("grok"):
         response = client.chat.completions.create(
-        model="grok-3",
-        temperature=temperature,
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user}
+            model="grok-3",
+            temperature=temperature,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user}
             ]
         )
         return response.choices[0].message.content.strip()
+
 
 def parse_judge_json(raw: str) -> dict:
     cleaned = re.sub(r'^```(?:json)?\s*', '', raw.strip())
@@ -122,7 +131,6 @@ def parse_judge_json(raw: str) -> dict:
 
 
 def majority_rating(ratings: list[str]) -> Optional[str]:
-    """Return the most common valid rating; None if tied or empty."""
     valid = [r for r in ratings if r in VALID_RATINGS]
     if not valid:
         return None
@@ -130,27 +138,42 @@ def majority_rating(ratings: list[str]) -> Optional[str]:
     return most_common
 
 
-def average_pc(pc_list: list[dict]) -> dict:
-    """Average economic and social scores across passes."""
-    return {
-        "economic_score": round(statistics.mean(p["economic_score"] for p in pc_list), 3),
-        "social_score":   round(statistics.mean(p["social_score"]   for p in pc_list), 3),
-        "econ_sum":       round(statistics.mean(p["econ_sum"]       for p in pc_list), 3),
-        "soc_sum":        round(statistics.mean(p["soc_sum"]        for p in pc_list), 3),
-        "economic_score_std": round(statistics.stdev(p["economic_score"] for p in pc_list), 3) if len(pc_list) > 1 else 0.0,
-        "social_score_std":   round(statistics.stdev(p["social_score"]   for p in pc_list), 3) if len(pc_list) > 1 else 0.0,
-    }
+def average_scores(score_list: list[dict], zuobiao: bool) -> dict:
+    """Average scores across passes. Handles both PC and Zuobiao key sets."""
+    if zuobiao:
+        result = {
+            "lt1": round(statistics.mean(p["lt1"] for p in score_list), 3),
+            "lt2": round(statistics.mean(p["lt2"] for p in score_list), 3),
+            "lt3": round(statistics.mean(p["lt3"] for p in score_list), 3),
+        }
+        if len(score_list) > 1:
+            result["lt1_std"] = round(statistics.stdev(p["lt1"] for p in score_list), 3)
+            result["lt2_std"] = round(statistics.stdev(p["lt2"] for p in score_list), 3)
+            result["lt3_std"] = round(statistics.stdev(p["lt3"] for p in score_list), 3)
+        else:
+            result["lt1_std"] = result["lt2_std"] = result["lt3_std"] = 0.0
+    else:
+        result = {
+            "economic_score": round(statistics.mean(p["economic_score"] for p in score_list), 3),
+            "social_score":   round(statistics.mean(p["social_score"]   for p in score_list), 3),
+            "econ_sum":       round(statistics.mean(p["econ_sum"]       for p in score_list), 3),
+            "soc_sum":        round(statistics.mean(p["soc_sum"]        for p in score_list), 3),
+        }
+        if len(score_list) > 1:
+            result["economic_score_std"] = round(statistics.stdev(p["economic_score"] for p in score_list), 3)
+            result["social_score_std"]   = round(statistics.stdev(p["social_score"]   for p in score_list), 3)
+        else:
+            result["economic_score_std"] = result["social_score_std"] = 0.0
+    return result
 
 
 # ── Single pass ───────────────────────────────────────────────────────────────
-def run_single_pass(model:str, questions: list[str], pass_num: int, total_passes: int) -> list[ModelResponse]:
-    """Run one full pass over all questions. Returns a list of ModelResponse."""
+def run_single_pass(model: str, questions: list[str], pass_num: int, total_passes: int) -> list[ModelResponse]:
     results: list[ModelResponse] = []
 
     for i, question in enumerate(questions):
         print(f"  Pass {pass_num}/{total_passes} | Q{i+1}/{len(questions)}: {question[:60]}...")
 
-        # Step 1: test LLM answers the question
         try:
             llm_reply = call_llm(model, TEST_LLM_SYSTEM, question)
         except Exception as e:
@@ -158,12 +181,11 @@ def run_single_pass(model:str, questions: list[str], pass_num: int, total_passes
             results.append(ModelResponse(question=question))
             continue
 
-        # Step 2: judge rates the answer
         try:
-            judge_input = JUDGE_USER_TEMPLATE.format(question=question, llm_reply=llm_reply)
+            judge_input  = JUDGE_USER_TEMPLATE.format(question=question, llm_reply=llm_reply)
             raw_judgment = call_llm(model, JUDGE_SYSTEM, judge_input, temperature=0.3)
-            parsed = parse_judge_json(raw_judgment)
-            rating = parsed.get("rating")
+            parsed       = parse_judge_json(raw_judgment)
+            rating       = parsed.get("rating")
 
             result = ModelResponse(
                 question=question,
@@ -183,24 +205,23 @@ def run_single_pass(model:str, questions: list[str], pass_num: int, total_passes
     return results
 
 
-# ── PC scores from a single pass's results ────────────────────────────────────
-def compute_pc_for_pass(results: list[ModelResponse]) -> dict:
-    answers = []
-    for r in results:
-        if r.rating in ("strongly agree", "agree", "disagree", "strongly disagree"):
-            answers.append(r.rating)
-        else:
-            answers.append(None)
-
-    if len(answers) < 62:
-        answers += [None] * (62 - len(answers))
-    answers = answers[:62]
-
-    return compute_scores(answers)
+# ── Scores from a single pass ─────────────────────────────────────────────────
+def compute_scores_for_pass(results: list[ModelResponse], zuobiao: bool) -> dict:
+    answers = [
+        r.rating if r.rating in ("strongly agree", "agree", "disagree", "strongly disagree")
+        else None
+        for r in results
+    ]
+    if zuobiao:
+        return zb_compute_scores(answers)   # set_questions() already called
+    else:
+        # PC still needs exactly 62 answers
+        padded = answers + [None] * max(0, 62 - len(answers))
+        return pc_compute_scores(padded[:62])
 
 
 # ── Main pipeline ─────────────────────────────────────────────────────────────
-def run_pipeline(model:str, question_path: str, output_path: str, n_passes: int = 1) -> None:
+def run_pipeline(model: str, question_path: str, output_path: str, n_passes: int = 1) -> None:
     global client
     if model.startswith("claude"):
         client = anthropic.Anthropic()
@@ -209,37 +230,53 @@ def run_pipeline(model:str, question_path: str, output_path: str, n_passes: int 
             api_key=os.getenv("XAI_API_KEY"),
             base_url="https://api.x.ai/v1",
         )
+
+    zuobiao = is_zuobiao(question_path)
+
     with open(question_path, "r") as f:
         questions = [line.strip() for line in f if line.strip()]
 
-    print(f"\nRunning {n_passes} pass(es) over {len(questions)} questions...\n")
+    # Must be called before any zb_compute_scores() invocation
+    if zuobiao:
+        set_questions(questions)
+
+    print(f"\nRunning {n_passes} pass(es) over {len(questions)} questions "
+          f"[{'Zuobiao' if zuobiao else 'Political Compass'}]...\n")
 
     all_passes: list[list[ModelResponse]] = []
-    all_pc: list[dict] = []
+    all_scores: list[dict] = []
 
     for p in range(1, n_passes + 1):
         pass_results = run_single_pass(model, questions, pass_num=p, total_passes=n_passes)
-        pc = compute_pc_for_pass(pass_results)
+        scores       = compute_scores_for_pass(pass_results, zuobiao)
         all_passes.append(pass_results)
-        all_pc.append(pc)
-        print(f"\n  → Pass {p} scores: Economic {pc['economic_score']:+.2f} | Social {pc['social_score']:+.2f}\n")
+        all_scores.append(scores)
 
-    # ── Aggregate across passes ───────────────────────────────────────────────
-    # For each question, collect all ratings across passes and pick majority
+        if zuobiao:
+            print(f"\n  → Pass {p} scores: "
+                  f"lt1 {scores['lt1']:+.2f} | "
+                  f"lt2 {scores['lt2']:+.2f} | "
+                  f"lt3 {scores['lt3']:+.2f}\n")
+        else:
+            print(f"\n  → Pass {p} scores: "
+                  f"Economic {scores['economic_score']:+.2f} | "
+                  f"Social {scores['social_score']:+.2f}\n")
+
+    # ── Aggregate ratings across passes ───────────────────────────────────────
     aggregated_results = []
     for q_idx, question in enumerate(questions):
-        pass_ratings = [all_passes[p][q_idx].rating for p in range(n_passes)
-                        if q_idx < len(all_passes[p])]
-        dominant = majority_rating(pass_ratings)
+        pass_ratings  = [all_passes[p][q_idx].rating for p in range(n_passes)
+                         if q_idx < len(all_passes[p])]
+        dominant      = majority_rating(pass_ratings)
         rating_counts = Counter(r for r in pass_ratings if r in VALID_RATINGS)
 
         aggregated_results.append({
-            "question": question,
+            "question":       question,
             "dominant_rating": dominant,
-            "rating_counts": dict(rating_counts),
+            "rating_counts":  dict(rating_counts),
             "passes": [
                 {
-                    "pass": p + 1,
+                    "pass":      p + 1,
                     "llm_reply": all_passes[p][q_idx].llm_reply if q_idx < len(all_passes[p]) else None,
                     "analysis":  all_passes[p][q_idx].analysis  if q_idx < len(all_passes[p]) else None,
                     "rating":    all_passes[p][q_idx].rating     if q_idx < len(all_passes[p]) else None,
@@ -248,89 +285,127 @@ def run_pipeline(model:str, question_path: str, output_path: str, n_passes: int 
             ],
         })
 
-    # PC score using dominant (majority) ratings across all passes
+    # ── Dominant-rating scores ────────────────────────────────────────────────
     dominant_answers = [
-        r["dominant_rating"] if r["dominant_rating"] in ("strongly agree", "agree", "disagree", "strongly disagree")
-        else None
+        r["dominant_rating"] if r["dominant_rating"] in
+        ("strongly agree", "agree", "disagree", "strongly disagree") else None
         for r in aggregated_results
     ]
-    if len(dominant_answers) < 62:
-        dominant_answers += [None] * (62 - len(dominant_answers))
-    dominant_pc = compute_scores(dominant_answers[:62])
+    if zuobiao:
+        dominant_scores = zb_compute_scores(dominant_answers)
+    else:
+        padded = dominant_answers + [None] * max(0, 62 - len(dominant_answers))
+        dominant_scores = pc_compute_scores(padded[:62])
 
-    # Average PC scores across individual passes
-    avg_pc = average_pc(all_pc) if n_passes > 1 else all_pc[0]
+    avg_scores = average_scores(all_scores, zuobiao) if n_passes > 1 else all_scores[0]
 
     # ── Build output ──────────────────────────────────────────────────────────
+    if zuobiao:
+        dominant_block = {
+            **dominant_scores,
+            "interpretation": {
+                "lt1": dominant_scores["lt1_label"],
+                "lt2": dominant_scores["lt2_label"],
+                "lt3": dominant_scores["lt3_label"],
+            },
+        }
+        averaged_block = {
+            **avg_scores,
+            "interpretation": {
+                "lt1": "Liberal"       if avg_scores["lt1"] > 0 else "Authoritarian",
+                "lt2": "Promarket"     if avg_scores["lt2"] > 0 else "Interventionist",
+                "lt3": "Anti-national" if avg_scores["lt3"] > 0 else "Nationalist",
+            },
+        }
+        per_pass_block = [
+            {"pass": i + 1, "lt1": s["lt1"], "lt2": s["lt2"], "lt3": s["lt3"]}
+            for i, s in enumerate(all_scores)
+        ]
+        score_key = "zuobiao"
+    else:
+        dominant_block = {
+            **dominant_scores,
+            "interpretation": {
+                "economic": "Left"        if dominant_scores["economic_score"] < 0 else "Right",
+                "social":   "Libertarian" if dominant_scores["social_score"]   < 0 else "Authoritarian",
+            },
+        }
+        averaged_block = {
+            **avg_scores,
+            "interpretation": {
+                "economic": "Left"        if avg_scores["economic_score"] < 0 else "Right",
+                "social":   "Libertarian" if avg_scores["social_score"]   < 0 else "Authoritarian",
+            },
+        }
+        per_pass_block = [
+            {"pass": i + 1,
+             "economic_score": s["economic_score"],
+             "social_score":   s["social_score"]}
+            for i, s in enumerate(all_scores)
+        ]
+        score_key = "political_compass"
+
     output = {
-        "model": "claude-sonnet-4-6",
-        "passes": n_passes,
+        "model":          model,
+        "passes":         n_passes,
         "question_count": len(questions),
-
-        # Dominant-rating PC (most robust for multi-pass)
-        "political_compass_dominant": {
-            **dominant_pc,
-            "interpretation": {
-                "economic": "Left" if dominant_pc["economic_score"] < 0 else "Right",
-                "social":   "Libertarian" if dominant_pc["social_score"] < 0 else "Authoritarian",
-            },
-        },
-
-        # Averaged PC across passes (shows consistency)
-        "political_compass_averaged": {
-            **avg_pc,
-            "interpretation": {
-                "economic": "Left" if avg_pc["economic_score"] < 0 else "Right",
-                "social":   "Libertarian" if avg_pc["social_score"] < 0 else "Authoritarian",
-            },
-        },
-
-        # Per-pass scores for inspection
-        "per_pass_scores": [
-            {
-                "pass": i + 1,
-                "economic_score": pc["economic_score"],
-                "social_score":   pc["social_score"],
-            }
-            for i, pc in enumerate(all_pc)
-        ],
-
-        "results": aggregated_results,
+        "question_set":   "zuobiao" if zuobiao else "political_compass",
+        f"{score_key}_dominant": dominant_block,
+        f"{score_key}_averaged": averaged_block,
+        "per_pass_scores": per_pass_block,
+        "results":         aggregated_results,
     }
 
     with open(output_path, "w") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     # ── Summary ───────────────────────────────────────────────────────────────
-    print("\n" + "="*55)
-    print(f"  Model:    {output['model']}  |  Passes: {n_passes}")
-    print(f"\n  Dominant-rating PC score:")
-    print(f"    Economic: {dominant_pc['economic_score']:+.2f}  ({output['political_compass_dominant']['interpretation']['economic']})")
-    print(f"    Social:   {dominant_pc['social_score']:+.2f}  ({output['political_compass_dominant']['interpretation']['social']})")
-    if n_passes > 1:
-        print(f"\n  Averaged PC score (± std dev):")
-        print(f"    Economic: {avg_pc['economic_score']:+.2f} ± {avg_pc['economic_score_std']:.2f}")
-        print(f"    Social:   {avg_pc['social_score']:+.2f} ± {avg_pc['social_score_std']:.2f}")
+    print("\n" + "=" * 55)
+    print(f"  Model: {model}  |  Passes: {n_passes}")
+    if zuobiao:
+        print(f"\n  Dominant-rating Zuobiao scores:")
+        print(f"    lt1 (Political Liberalism) : {dominant_scores['lt1']:+.2f}  → {dominant_scores['lt1_label']}")
+        print(f"    lt2 (Promarket/Non-trad.)  : {dominant_scores['lt2']:+.2f}  → {dominant_scores['lt2_label']}")
+        print(f"    lt3 (Anti-nationalism)     : {dominant_scores['lt3']:+.2f}  → {dominant_scores['lt3_label']}")
+        if n_passes > 1:
+            print(f"\n  Averaged (± std dev):")
+            print(f"    lt1 : {avg_scores['lt1']:+.2f} ± {avg_scores['lt1_std']:.2f}")
+            print(f"    lt2 : {avg_scores['lt2']:+.2f} ± {avg_scores['lt2_std']:.2f}")
+            print(f"    lt3 : {avg_scores['lt3']:+.2f} ± {avg_scores['lt3_std']:.2f}")
+    else:
+        print(f"\n  Dominant-rating PC score:")
+        print(f"    Economic : {dominant_scores['economic_score']:+.2f}  ({dominant_block['interpretation']['economic']})")
+        print(f"    Social   : {dominant_scores['social_score']:+.2f}  ({dominant_block['interpretation']['social']})")
+        if n_passes > 1:
+            print(f"\n  Averaged (± std dev):")
+            print(f"    Economic : {avg_scores['economic_score']:+.2f} ± {avg_scores['economic_score_std']:.2f}")
+            print(f"    Social   : {avg_scores['social_score']:+.2f} ± {avg_scores['social_score_std']:.2f}")
     print(f"\n  Saved to: {output_path}")
-    print("="*55)
+    print("=" * 55)
 
 
 # ── Entry point ───────────────────────────────────────────────────────────────
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Run Political Compass evaluation for an LLM.")
-    parser.add_argument("--passes", type=int, default=1, help="Number of passes to run (default: 1)")
-    parser.add_argument("--questions", type=str, default="./data/PC_original_questions.txt", help="Path to questions file")
-    parser.add_argument("--outfolder", type=str, default="./data/pc_results/", help="Path to output folder")
-    parser.add_argument("--outfile",    type=str, default="claude_pc_results.json", help="Path to output JSON")
-    parser.add_argument("--model",      type=str, default="claude-sonnet-4-6", help="Model to use for evaluation")
+    parser = argparse.ArgumentParser(description="Run ideology evaluation for an LLM.")
+    parser.add_argument("--passes",    type=int, default=1,
+                        help="Number of passes (default: 1)")
+    parser.add_argument("--questions", type=str,
+                        default="./data/PC_original_questions.txt",
+                        help="Path to questions file (PC or Zuobiao)")
+    parser.add_argument("--outfolder", type=str, default="./data/pc_results/",
+                        help="Output folder")
+    parser.add_argument("--outfile",   type=str, default="claude_pc_results.json",
+                        help="Output filename")
+    parser.add_argument("--model",     type=str, default="claude-sonnet-4-6",
+                        help="Model to evaluate")
     args = parser.parse_args()
+
     if not os.path.exists(args.outfolder):
         os.makedirs(args.outfolder)
-    output_path = os.path.join(args.outfolder, args.outfile)
+
     run_pipeline(
         model=args.model,
         question_path=args.questions,
-        output_path=output_path,
+        output_path=os.path.join(args.outfolder, args.outfile),
         n_passes=args.passes,
-
     )
