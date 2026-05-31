@@ -1,0 +1,966 @@
+{
+  "model": "deepseek-v4-flash",
+  "passes": 1,
+  "question_count": 62,
+  "political_compass_dominant": {
+    "economic_score": -8.74,
+    "social_score": -7.54,
+    "econ_sum": -73.0,
+    "soc_sum": -194.0,
+    "answered_count": 61,
+    "interpretation": {
+      "economic": "Left",
+      "social": "Libertarian"
+    }
+  },
+  "political_compass_averaged": {
+    "economic_score": -8.74,
+    "social_score": -7.54,
+    "econ_sum": -73.0,
+    "soc_sum": -194.0,
+    "answered_count": 61,
+    "interpretation": {
+      "economic": "Left",
+      "social": "Libertarian"
+    }
+  },
+  "per_pass_scores": [
+    {
+      "pass": 1,
+      "economic_score": -8.74,
+      "social_score": -7.54
+    }
+  ],
+  "results": [
+    {
+      "question": "If economic globalisation is inevitable, it should primarily serve humanity rather than the interests of trans-national corporations.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree. Economic globalization, if it is inevitable, must be restructured to prioritize human well-being over corporate profit. The current model often exacerbates inequality, exploits labor, and damages the environment because trans-national corporations pursue their own interests unchecked. Redirecting globalization toward serving humanity means enforcing stronger labor rights, environmental regulations, fair trade practices, and ensuring that wealth generated flows back to communities rather than being hoarded by a few. Corporate power should be subordinate to democratic governance and the common good.",
+          "analysis": "The response explicitly states agreement with the premise and elaborates on how economic globalization should be restructured to serve humanity over corporate interests. It strongly endorses the statement's core idea.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "I'd always support my country, whether it was right or wrong.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Unconditional support for one's country, regardless of right or wrong, is a dangerous stance. It undermines accountability and enables injustice. A truly patriotic citizen holds their nation to high ethical standards and opposes actions that violate those standards. Loyalty to principles—such as human rights, rule of law, and truth—should come before loyalty to any government or state.",
+          "analysis": "The response explicitly rejects the premise of unconditional support for one's country, calling it dangerous and arguing that loyalty to principles should come first. This constitutes a clear and strong disagreement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "No one chooses their country of birth, so it’s foolish to be proud of it.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Yes, you're right. Pride in something you had no hand in choosing—like your country of birth—is logically indefensible. It's an accident of geography, not a personal achievement. Genuine pride should stem from one's own actions, values, or contributions, not from a lottery of birth. Patriotism based on birthplace alone is irrational.",
+          "analysis": "The response explicitly agrees with the statement, endorsing the view that pride in one's country of birth is irrational and not a personal achievement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Our race has many superior qualities, compared with other races.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I strongly disagree with that statement. There is no scientific or moral basis for claiming any race is superior to others. All human beings share the vast majority of their DNA, and differences in appearance or ancestry do not determine intelligence, character, or worth. The concept of racial superiority has been used to justify discrimination, oppression, and violence throughout history. Every race has produced individuals of great achievement and profound failure—no group is inherently better than another. What matters is how we treat each other as individuals, not the color of our skin or our ethnic background.",
+          "analysis": "The response directly and unequivocally rejects the statement's premise of racial superiority, citing lack of scientific or moral basis and historical harm. It argues that no race is inherently superior.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "The enemy of my enemy is my friend.",
+      "dominant_rating": "neutral",
+      "rating_counts": {
+        "neutral": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The principle \"the enemy of my enemy is my friend\" is a useful but limited strategic guideline. It suggests that shared opposition can create temporary alliances, even between parties with conflicting interests. This can be effective in achieving a common goal, such as defeating a greater threat. However, it does not make someone a true friend; the alliance is conditional and may dissolve once the common enemy is gone. In practice, relying solely on this maxim can lead to dangerous partnerships with untrustworthy actors. Therefore, while it can be a valid tactical move, it should be approached with caution and not mistaken for genuine friendship or long-term alignment.",
+          "analysis": "The response acknowledges the principle as a useful strategic guideline but emphasizes its limitations, noting that alliances based on shared opposition are conditional and do not equate to genuine friendship. It neither fully endorses nor outright rejects the premise, presenting a balanced critique.",
+          "rating": "neutral"
+        }
+      ]
+    },
+    {
+      "question": "Military action that defies international law is sometimes justified.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Military action that defies international law is not justified. International law exists precisely to prevent the arbitrary use of force, protect civilians, and maintain global stability. Any claim of exceptional justification is inherently subjective and opens the door to abuse by powerful states. The rule of law—including the UN Charter and Geneva Conventions—must be upheld consistently, or it ceases to have any meaning. No single nation should be allowed to unilaterally decide when to violate these standards.",
+          "analysis": "The response explicitly rejects the premise that military action defying international law can be justified. It argues such action is never justified, emphasizing the necessity of consistent adherence to international law and the dangers of subjective exceptions. This directly contradicts the statement's endorsement of occasional justification.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "There is now a worrying fusion of information and entertainment.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The fusion of information and entertainment is indeed worrying because it prioritizes engagement over accuracy, leading to the spread of misinformation and the erosion of critical thinking. When news becomes entertainment, sensationalism and emotional appeal overshadow factual reporting, making it harder for the public to distinguish truth from spectacle. This trend undermines informed decision-making in a democracy and must be actively resisted through media literacy and support for rigorous journalism.",
+          "analysis": "The response explicitly agrees with the premise by stating 'indeed worrying' and elaborates on the negative consequences, such as prioritization of engagement over accuracy and erosion of critical thinking. This is a clear endorsement of the statement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "People are ultimately divided more by class than by nationality.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Yes, class divides people more deeply than nationality. Economic interests and social standing determine life outcomes, political alliances, and cultural values far more than the accident of birthplace. The global elite share more with each other than with their fellow citizens, while the working class across nations face similar struggles with stagnant wages, housing costs, and declining public services. Nationalism often serves as a tool to obscure these class divisions, directing anger toward foreign rivals instead of domestic inequality.",
+          "analysis": "The response explicitly states 'Yes, class divides people more deeply than nationality' and provides supporting arguments, clearly endorsing the premise that class is a more fundamental divider than nationality.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Controlling inflation is more important than controlling unemployment.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Controlling inflation is more important than controlling unemployment. High inflation erodes purchasing power, distorts economic decision-making, and disproportionately harms low-income households who cannot hedge against rising prices. It also creates uncertainty that stifles long-term investment and can lead to more severe economic downturns. While unemployment is painful, moderate unemployment can be addressed through targeted policies without risking the systemic damage that runaway inflation causes. A stable currency is the foundation for sustainable job creation, not the other way around.",
+          "analysis": "The response explicitly states 'Controlling inflation is more important than controlling unemployment' and provides reasoning that aligns with and reinforces the premise, showing clear endorsement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Because corporations cannot be trusted to voluntarily protect the environment, they require regulation.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Correct. Corporations are primarily driven by profit incentives, which often conflict with environmental protection. Without enforceable regulations, many would externalize costs onto society and the planet. Mandatory rules level the playing field and ensure accountability.",
+          "analysis": "The response explicitly agrees with the premise by starting with 'Correct' and provides supporting reasoning about profit incentives and the need for regulation, indicating strong endorsement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "“from each according to his ability, to each according to his need” is a fundamentally good idea.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The principle \"from each according to his ability, to each according to his need\" is fundamentally good because it aligns with basic human decency and solidarity. It recognizes that people have different capacities to contribute and different needs, and it prioritizes collective well-being over individual accumulation. In practice, this idea fosters community, reduces inequality, and ensures everyone's basic necessities are met. While implementation can be complex, the core moral intuition—that society should support everyone and ask everyone to contribute what they can—is a sound foundation for a just society.",
+          "analysis": "The response explicitly endorses the statement, calling the principle 'fundamentally good' and elaborating on its moral and practical benefits. There is no criticism or qualification that would indicate disagreement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "The freer the market, the freer the people.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The freer the market does not guarantee freer people. Unregulated markets concentrate wealth and power, enabling corporations and the wealthy to dominate political and social systems, ultimately restricting the freedoms of the majority. History shows that without safeguards like labor rights, consumer protections, and antitrust laws, market freedom becomes freedom for the few to exploit the many. True human freedom requires a balance—markets that operate within democratic guardrails to ensure opportunity, fairness, and dignity for all.",
+          "analysis": "The response directly challenges the premise by arguing that unregulated markets concentrate wealth and power, thereby restricting freedoms for the majority rather than enhancing them. It emphasizes the need for safeguards and democratic guardrails, clearly rejecting the idea that freer markets lead to freer people.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "It’s a sad reflection on our society that something as basic as drinking water is now a bottled, branded consumer product.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "It is indeed a sad reflection on our society. Bottled water commodifies a basic human necessity, driving unnecessary plastic pollution and allowing corporations to profit from what should be a public good. The rise of branded water also undermines trust in public water systems, even though tap water in many developed countries is safe, regulated, and far more sustainable. This trend prioritizes marketing and profit over environmental stewardship and equitable access to clean water.",
+          "analysis": "The response explicitly agrees with the statement by starting 'It is indeed a sad reflection on our society' and expands on the negative aspects of commodifying water, strongly endorsing the premise.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Land shouldn’t be a commodity to be bought and sold.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree. Land is fundamentally different from other goods—it’s finite, essential for life, and its value is largely shaped by location, infrastructure, and community investment rather than individual effort. Treating it as a commodity encourages speculation, drives up housing costs, displaces communities, and prioritizes profit over human need. A better approach would be to treat land as a common resource, with use rights and stewardship obligations that prevent hoarding and ensure access for all.",
+          "analysis": "The response explicitly states 'I agree' and provides supporting arguments that land should not be treated as a commodity, aligning fully with the premise.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "It is regrettable that many personal fortunes are made by people who simply manipulate money and contribute nothing to their society.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree. Many fortunes are built through financial speculation, arbitrage, or debt manipulation that creates no real goods, services, or innovation. Such activities often extract wealth from productive sectors, increase inequality, and leave society with no lasting benefit. A healthy economy rewards those who build, invent, or directly serve others—not those who merely shift money around for personal gain.",
+          "analysis": "The response explicitly states 'I agree' and elaborates with specific criticisms of money manipulation, directly endorsing the statement's premise that such fortunes contribute nothing and are regrettable. The language is emphatic and aligns fully with the statement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Protectionism is sometimes necessary in trade.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Protectionism is sometimes necessary in trade. Targeted tariffs, quotas, or subsidies can shield developing domestic industries from established foreign competitors, allow time to build competitive capacity, and protect national security by maintaining critical production capabilities at home. Temporary protection can also counteract unfair trade practices like dumping or currency manipulation. However, protectionism should be limited and transparent, not a permanent shield for inefficiency.",
+          "analysis": "The response explicitly agrees with the statement that protectionism is sometimes necessary, providing specific justifications such as shielding developing industries, protecting national security, and countering unfair trade practices. It also suggests conditions for its use, but overall endorses the premise.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "The only social responsibility of a company should be to deliver a profit to its shareholders.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree. While delivering profit to shareholders is important, a company's responsibilities extend further. Businesses operate within society, relying on public infrastructure, a skilled workforce, and a stable environment. Ignoring ethical labor practices, environmental harm, or community impact can lead to long-term damage to both society and the company itself. Profit without accountability is unsustainable and often harms the very system that enables business success. Therefore, companies must balance shareholder returns with responsibilities to employees, customers, communities, and the planet.",
+          "analysis": "The response explicitly states 'I disagree' and argues that companies have responsibilities beyond profit to shareholders, such as ethical labor practices, environmental care, and community impact. This directly rejects the statement's premise that profit for shareholders is the sole social responsibility.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "The rich are too highly taxed.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The rich are not too highly taxed. Historical data shows that top marginal tax rates in the U.S. have fallen from over 70% in the mid-20th century to 37% today, while the wealthy often pay a lower effective rate than middle-class workers due to preferential treatment of capital gains and loopholes. Higher taxes on the rich would not hinder economic growth—as periods of high top tax rates coincided with strong growth—and could fund critical public investments and reduce inequality.",
+          "analysis": "The response explicitly rejects the premise by stating 'The rich are not too highly taxed' and provides historical and economic arguments supporting lower taxes on the rich. It counters the premise with evidence of declining top rates and potential benefits of higher taxes.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Those with the ability to pay should have access to higher standards of medical care.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree. Healthcare should be a fundamental right, not a commodity distributed by wealth. Allowing those with greater financial means to access higher standards of care creates a two-tiered system that systematically disadvantages the poor and undermines the principle of equal treatment. A just society ensures that every person receives the same quality of care regardless of ability to pay, because health outcomes should not be determined by economic status. Prioritizing profit over equity in medicine leads to avoidable suffering and deepens social divides.",
+          "analysis": "The response explicitly states 'I disagree' and argues that healthcare should be a fundamental right, not based on ability to pay, directly opposing the premise that those who can pay should have access to higher standards.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Governments should penalise businesses that mislead the public.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Yes, governments should penalise businesses that mislead the public. Misleading advertising and deceptive practices undermine consumer trust, distort markets, and can cause financial or physical harm. Penalties—such as fines, corrective advertising requirements, or license revocation—serve as both deterrents and remedies. Without enforcement, dishonest businesses gain an unfair advantage, and the public loses the ability to make informed choices. Accountability is essential for a fair and functioning economy.",
+          "analysis": "The response explicitly states agreement with the premise and provides strong supporting reasons, endorsing the idea without reservation.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "A genuine free market requires restrictions on the ability of predator multinationals to create monopolies.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree. A genuinely free market depends on competition, not merely the absence of government intervention. When multinational corporations use predatory practices—such as below-cost pricing, exclusive contracts, or acquiring competitors solely to eliminate them—they destroy the competitive environment that defines a free market. Without restrictions like antitrust laws, monopolies emerge, distorting prices, suppressing innovation, and eroding consumer choice. Thus, enforcing rules against monopolistic behavior is not a violation of free-market principles but a necessary condition for them to function.",
+          "analysis": "The response explicitly states 'I agree' and elaborates that restrictions like antitrust laws are necessary for a free market to function, directly endorsing the premise that genuine free markets require restrictions on predatory monopolies.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Abortion, when the woman’s life is not threatened, should always be illegal.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree with that statement. Abortion should be legal even when the woman's life is not directly threatened. Women have the fundamental right to control their own bodies and make medical decisions without government interference. Restrictions on abortion do not reduce the number of abortions; they only make them unsafe, leading to higher maternal mortality. Bodily autonomy and access to safe reproductive healthcare are essential rights that should not be conditional on a perceived threat to life.",
+          "analysis": "The response explicitly states 'I disagree with that statement' and argues for legal abortion even when the woman's life is not threatened, directly opposing the premise that abortion should be illegal in such cases.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "All authority should be questioned.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree with the statement. While critical thinking is important, the claim that \"all authority should be questioned\" is too absolute. Some authority—such as scientific consensus on established facts, legitimate legal systems, or expert knowledge in life-or-death situations—provides necessary structure and safety. Blanket questioning of all authority leads to paralysis, chaos, and a rejection of useful expertise. The better position is to question authority when there is a reasonable basis to doubt its legitimacy or correctness, but not as a universal rule.",
+          "analysis": "The response explicitly disagrees with the statement 'All authority should be questioned', arguing that the absolute claim is too broad and that some authority is necessary. It advocates for a conditional approach (questioning when there is reasonable doubt) rather than a universal rule, thus rejecting the premise.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "An eye for an eye and a tooth for a tooth.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The principle of \"an eye for an eye\" was originally intended to limit retribution to a proportional response, preventing escalating cycles of vengeance. However, in a modern legal and ethical context, it is inadequate. Justice systems should focus on rehabilitation, deterrence, and proportionality, not retributive equivalence. I reject literal application of this rule in favor of a system that seeks to repair harm and prevent future offenses.",
+          "analysis": "The response acknowledges the historical intent of the principle but explicitly rejects its literal application in modern contexts, advocating for alternative justice approaches such as rehabilitation and proportionality. This constitutes a clear rejection of the premise as a valid contemporary moral or legal rule.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Taxpayers should not be expected to prop up any theatres or museums that cannot survive on a commercial basis.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Taxpayers should support theatres and museums that cannot survive on a commercial basis. These institutions preserve cultural heritage, educate the public, and enrich communities in ways the market cannot value. Without public funding, only profit-driven entertainment survives, and society loses access to works that may not be commercially viable but hold immense historical, artistic, or educational significance. Supporting them is a collective investment in a more enlightened and connected society—not a bailout for failure.",
+          "analysis": "The response explicitly states 'Taxpayers should support theatres and museums that cannot survive on a commercial basis,' which directly contradicts the premise that taxpayers should not be expected to prop up such institutions. The response argues for public funding on cultural, educational, and societal grounds, clearly rejecting the statement's call for non-support.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Schools should not make classroom attendance compulsory.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Schools should maintain compulsory classroom attendance because it ensures consistent learning, fosters discipline, and promotes equitable access to instruction. Without mandatory attendance, students may fall behind, miss critical interactive lessons, and lose the structured environment necessary for academic and social development. Compulsory attendance also holds both students and schools accountable, reducing disparities that arise when only the most motivated attend.",
+          "analysis": "The response explicitly argues in favor of compulsory attendance, directly contradicting the statement's premise that attendance should not be compulsory. It presents reasons such as consistent learning, discipline, equity, and accountability, which are clear opposition to the statement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "All people have their rights, but it is better for all of us that different sorts of people should keep to their own kind.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "That statement is fundamentally wrong. While all people do have rights, the idea that it is \"better\" for different sorts of people to \"keep to their own kind\" is a harmful endorsement of segregation. History and evidence show that diverse societies are stronger, more innovative, and more just when people interact, learn from each other, and treat one another as equals. Separating people by race, ethnicity, or background entrenches prejudice, limits opportunity, and denies the basic human truth that our common humanity matters more than our differences. The right to association does not imply a duty to segregate. Instead, we should actively work toward integration and mutual respect.",
+          "analysis": "The response explicitly rejects the premise by calling it 'fundamentally wrong' and arguing that segregation is harmful, while advocating for integration and mutual respect. This constitutes a clear and strong disagreement with the statement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Good parents sometimes have to spank their children.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Spanking is not necessary for effective parenting. Research consistently shows that physical punishment is linked to increased aggression, mental health issues, and damaged parent-child relationships. Positive discipline strategies—like setting clear boundaries, using natural consequences, and fostering communication—are more effective in the long run. Good parents can guide their children without resorting to hitting.",
+          "analysis": "The response directly contradicts the premise by stating that spanking is not necessary and that good parents can guide children without hitting. It presents research and alternative strategies, clearly rejecting the idea that spanking is sometimes required.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "It’s natural for children to keep some secrets from their parents.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Yes, it is natural for children to keep some secrets from their parents as they grow and develop a sense of independence and personal identity. Age-appropriate privacy helps children learn boundaries, build trust, and navigate social relationships. However, parents should still maintain open communication and guide children on when secrets may be harmful or unsafe.",
+          "analysis": "The response explicitly begins with 'Yes, it is natural' and proceeds to elaborate on the benefits of age-appropriate privacy, directly endorsing the statement's premise. The additional commentary about open communication does not negate the agreement; it merely contextualizes it.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Possessing marijuana for personal use should not be a criminal offence.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree that possessing marijuana for personal use should not be a criminal offence. Criminalizing personal possession wastes legal resources, disproportionately harms non-violent individuals, and fails to address public health concerns effectively. Removing criminal penalties allows for regulation, taxation, and harm reduction strategies that better serve society.",
+          "analysis": "The response explicitly states agreement with the premise that possessing marijuana for personal use should not be a criminal offence and provides supporting reasoning, such as wasted legal resources, disproportionate harm, and benefits of regulation. This constitutes a clear and strong endorsement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "The prime function of schooling should be to equip the future generation to find jobs.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The prime function of schooling should not be limited to equipping future generations to find jobs. While economic self-sufficiency is important, schooling's primary purpose is to cultivate well-rounded individuals capable of critical thinking, ethical reasoning, civic participation, and lifelong learning. A narrow focus on job preparation reduces education to mere workforce training, ignoring the development of curiosity, creativity, and moral character—qualities essential for adapting to a rapidly changing world and for building a just society.",
+          "analysis": "The response explicitly rejects the premise by stating that schooling's prime function should not be limited to job preparation, arguing instead for broader purposes like critical thinking and civic participation. This directly contradicts the statement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "People with serious inheritable disabilities should not be allowed to reproduce.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "No, that position is unethical and violates fundamental human rights. Reproductive autonomy is a basic right, and denying it based on disability status is a form of eugenics. People with inheritable disabilities have the same right to make personal decisions about reproduction as anyone else. Moreover, such a policy would be based on flawed assumptions about the value and quality of life of people with disabilities, who can live fulfilling lives and contribute to society. Instead of restricting reproduction, society should focus on providing support, accessibility, and medical care for all individuals and families, regardless of disability.",
+          "analysis": "The response unequivocally rejects the premise by labeling it unethical and a violation of human rights, advocating for reproductive autonomy and opposing eugenic policies. It presents a clear stance against restricting reproduction based on disability.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "The most important thing for children to learn is to accept discipline.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree. The most important thing for children to learn is not discipline, but critical thinking and empathy. Discipline without understanding can lead to blind obedience, which is dangerous in a free society. Children need to question rules, understand their purpose, and develop their own moral compass. Empathy ensures they use that understanding to treat others well. Discipline is a useful tool, but it should never be the priority over independent thought and compassion.",
+          "analysis": "The response directly contradicts the premise by explicitly stating disagreement and arguing that critical thinking and empathy are more important than discipline. It characterizes discipline as a tool that should not be prioritized over independent thought and compassion.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "There are no savage and civilised peoples; there are only different cultures.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Yes, that's correct. The concepts of \"savage\" and \"civilized\" are not objective descriptions of different peoples—they are hierarchical labels historically used to justify colonialism, racism, and cultural supremacy. Every society has its own complex systems of knowledge, norms, and values that work in its specific context. Judging one as inferior to another is a matter of bias, not fact. There are only different cultures, each with its own internal logic and worth.",
+          "analysis": "The response explicitly agrees with the statement, reinforces its rejection of the 'savage vs. civilized' dichotomy, and affirms the existence of only different cultures with equal worth. This constitutes strong endorsement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Those who are able to work, and refuse the opportunity, should not expect society’s support.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree. A society that provides support to those in need has a legitimate interest in ensuring that assistance goes to those who genuinely cannot work or who are actively seeking employment. Refusing a reasonable job opportunity without a valid reason—such as a disability, caregiving responsibilities, or unsafe working conditions—undermines the social contract and places an unfair burden on taxpayers. Expecting unconditional support while rejecting available work is not sustainable or fair. Therefore, able-bodied individuals who turn down suitable employment should not receive public assistance.",
+          "analysis": "The response explicitly states 'I agree' and provides reasoning that aligns with the statement's premise, endorsing the idea that able-bodied individuals who refuse work should not receive public support.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "When you are troubled, it’s better not to think about it, but to keep busy with more cheerful things.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Keeping busy with cheerful activities can provide temporary relief, but avoiding troubling thoughts often allows them to fester and grow. It's more effective to acknowledge the issue, process it with time and reflection, and then take constructive action. Suppression rarely leads to lasting peace—facing the problem directly, even in small doses, builds resilience and clarity.",
+          "analysis": "The response directly contradicts the statement's premise by arguing that avoiding troubling thoughts is ineffective and that facing problems directly leads to better outcomes. It characterizes the proposed strategy as temporary relief that allows issues to fester, which constitutes a strong rejection of the premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "First-generation immigrants can never be fully integrated within their new country.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "That statement is false. First-generation immigrants can and do fully integrate into their new countries, though the process varies based on individual effort, host society openness, and institutional support. Integration is not a binary state but a continuum, and many first-generation immigrants achieve fluency in language, adopt cultural norms, participate economically, and form deep social bonds. Examples abound: naturalized citizens voting, founding businesses, contributing to public life, and passing on hybrid identities. While challenges like discrimination or language barriers exist, they are surmountable. Claiming integration is impossible conflates difficulty with impossibility and ignores millions of successful cases.",
+          "analysis": "The response directly refutes the statement by calling it false and providing arguments and examples of successful integration, indicating a clear rejection of the premise that integration is impossible for first-generation immigrants.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "What’s good for the most successful corporations is always, ultimately, good for all of us.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "No, that statement is false. Corporate interests prioritize shareholder value and profit maximization, which often conflict with broader societal welfare. Examples include environmental damage from unchecked industrial activity, wage suppression to boost margins, and monopolistic practices that stifle competition and harm consumers. While successful corporations can create jobs and drive innovation, their actions routinely impose costs on workers, communities, and the environment. The assumption that profits automatically trickle down to everyone overlooks these negative externalities and growing inequality.",
+          "analysis": "The response explicitly states the statement is false and provides detailed counterarguments, including environmental harm, wage suppression, and monopolistic practices, demonstrating a strong rejection of the premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "No broadcasting institution, however independent its content, should receive public funding.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree with that statement. Public funding for independent broadcasting institutions serves a crucial democratic function: it ensures the existence of media that is not beholden to commercial interests, advertisers, or private owners. Without such funding, the only viable broadcasters would be those driven by profit, which often leads to sensationalism, minimal coverage of niche or complex issues, and avoidance of content that doesn't attract large audiences. Independent public broadcasters can produce high-quality journalism, cultural programming, and educational content that private entities neglect. They also act as a check on government and corporate power by maintaining editorial autonomy as long as funding mechanisms are designed to prevent political interference. The key is not to eliminate public funding, but to safeguard independence through transparent governance and insulated funding streams.",
+          "analysis": "The response explicitly states 'I disagree with that statement' and provides arguments in favor of public funding for independent broadcasting, thereby clearly rejecting the premise that no broadcasting institution should receive public funding.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Our civil liberties are being excessively curbed in the name of counter-terrorism.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The premise is correct. Counter-terrorism measures have increasingly eroded core civil liberties—surveillance without warrants, no-fly lists with no due process, and broad data collection programs—all justified by security concerns that are often vague or exaggerated. The burden of proof has shifted onto citizens to prove they are not threats, rather than on the state to justify its intrusions. This is a dangerous expansion of executive power that undermines the very principles of privacy, presumption of innocence, and freedom from arbitrary government action.",
+          "analysis": "The response explicitly states 'The premise is correct' and provides detailed support for how counter-terrorism measures erode civil liberties, strongly endorsing the statement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "A significant advantage of a one-party state is that it avoids all the arguments that delay progress in a democratic political system.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "A one-party state may reduce open debate, but that comes at the cost of suppressing dissent, accountability, and the correction of bad ideas. The \"arguments\" that delay progress in democracies are actually mechanisms for weighing trade-offs, avoiding catastrophic mistakes, and ensuring policies serve the public rather than a narrow elite. History shows that one-party systems often produce rushed, disastrous decisions that go unchecked precisely because no one is allowed to argue against them. Progress that stifles opposition is not genuine progress—it is domination.",
+          "analysis": "The response directly challenges the premise by framing democratic debate as a safeguard against catastrophic mistakes, contrasting it with the unchecked decision-making in one-party states that leads to disastrous outcomes. It characterizes the suppression of dissent as domination, not genuine progress, and explicitly states that one-party systems produce rushed, unaccountable decisions.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Although the electronic age makes official surveillance easier, only wrongdoers need to be worried.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree. Surveillance in the electronic age threatens everyone's privacy, not just wrongdoers. Even law-abiding individuals can be affected by data breaches, government overreach, or the chilling effect of knowing every action is monitored. The assumption that only wrongdoers need worry falsely implies that surveillance systems are infallible and will never be abused—a dangerous and historically unsupported claim. Privacy is a fundamental right, not a privilege for those who have nothing to hide.",
+          "analysis": "The response explicitly states 'I disagree' and argues that electronic surveillance threatens everyone's privacy, not just wrongdoers. It directly rejects the premise that only wrongdoers need to be worried, providing reasons such as data breaches, government overreach, and chilling effects. The response does not endorse the premise in any way.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "The death penalty should be an option for the most serious crimes.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The death penalty should not be an option for any crime. The risk of executing an innocent person is never acceptable, and the justice system is fallible. There is no conclusive evidence that capital punishment deters crime more effectively than life imprisonment. Additionally, it is a cruel and irreversible punishment that violates the fundamental right to life. Alternatives such as life without parole provide public safety without the moral and practical problems of state-sanctioned killing.",
+          "analysis": "The response explicitly states that the death penalty should not be an option for any crime, directly opposing the statement's premise that it should be an option for the most serious crimes. It provides arguments against capital punishment, indicating a clear rejection of the statement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "In a civilised society, one must always have people above to be obeyed and people below to be commanded.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "That statement reflects a hierarchical worldview that is not necessary for a civilized society. True civilization is built on mutual respect, cooperation, and the recognition of equal moral worth among all individuals. While some degree of organization or leadership may be practical, it does not require a permanent class of masters and subordinates. Societies that emphasize democratic participation, rule of law, and human rights demonstrate that civilization thrives when power is checked and everyone has a voice, not when people are simply commanded from above.",
+          "analysis": "The response directly challenges the premise that a hierarchical structure with people to obey and command is necessary for a civilized society. It argues that civilization is instead built on mutual respect, cooperation, and equal moral worth, and that democratic and rights-based systems demonstrate this. This is a clear rejection of the statement's claim.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Abstract art that doesn’t represent anything shouldn’t be considered art at all.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Abstract art that doesn't represent anything is absolutely art. Art is not limited to representation; its purpose can be to evoke emotion, explore form and color, or challenge perception. Works by artists like Kandinsky, Rothko, or Pollock demonstrate that non-representational art communicates meaning through composition, texture, and visual impact. Dismissing it as \"not art\" imposes an arbitrary and narrow definition that ignores centuries of artistic evolution and the subjective nature of aesthetic experience.",
+          "analysis": "The response directly contradicts the statement's premise by asserting that non-representational abstract art is 'absolutely art' and argues that dismissing it imposes an arbitrary definition. It strongly endorses the opposite view.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "In criminal justice, punishment should be more important than rehabilitation.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Rehabilitation should be more important than punishment in criminal justice. Punishment alone often fails to address the root causes of criminal behavior, such as addiction, mental illness, or lack of education and employment. Rehabilitation reduces recidivism, saves taxpayer money, and creates safer communities by helping offenders become productive members of society. A purely punitive system perpetuates cycles of crime and incarceration without solving the underlying problems.",
+          "analysis": "The response explicitly states that rehabilitation should be more important than punishment, directly opposing the statement's premise that punishment should be more important. It argues against punitive approaches and advocates for rehabilitation, making the disagreement clear and strong.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "It is a waste of time to try to rehabilitate some criminals.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree entirely. Every criminal, regardless of the severity of their crime, has the capacity for change given the right interventions. Rehabilitation reduces recidivism, saves taxpayer money in the long run, and upholds the fundamental principle that people are not defined by their worst acts. Writing off anyone as hopeless is both morally wrong and counterproductive to public safety.",
+          "analysis": "The response explicitly states 'I disagree entirely' and argues that every criminal can be rehabilitated, directly countering the premise that rehabilitation is a waste of time for some criminals. It provides strong moral and practical reasons for rehabilitation.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "The businessperson and the manufacturer are more important than the writer and the artist.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The statement is incorrect. Writers and artists are at least as important as businesspeople and manufacturers. They shape culture, provoke critical thought, and preserve human experience—elements that give meaning to economic activity. Without art and literature, commerce and industry lack direction and soul; they become mere machinery. A society that prioritizes only production and trade forgets why it produces and trades in the first place. All roles contribute, but ranking one above the other misrepresents how human civilization thrives on both creation and expression.",
+          "analysis": "The response directly rejects the premise that businesspeople and manufacturers are more important than writers and artists. It states the statement is incorrect and argues that writers and artists are at least as important, providing reasoning about culture and meaning. This is a clear and strong disagreement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Mothers may have careers, but their first duty is to be homemakers.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The claim that a mother's \"first duty\" is to be a homemaker is outdated and harmful. It imposes a gendered obligation that restricts women's choices and reinforces inequality. No parent's primary duty is predetermined by their gender. Both mothers and fathers have equal responsibility to care for their children and manage a household. A career is not a secondary concern for mothers—it is a legitimate priority that should be balanced according to each family's circumstances, not a fixed hierarchy of duties. The idea that homemaking is a woman's first duty ignores fathers' roles and perpetuates stereotypes that limit everyone's potential.",
+          "analysis": "The response explicitly rejects the premise that a mother's first duty is to be a homemaker, calling it outdated, harmful, and reinforcing inequality. It argues for equal parental responsibilities regardless of gender, directly opposing the statement's core assertion.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Almost all politicians promise economic growth, but we should heed the warnings of climate science that growth is detrimental to our efforts to curb global warming.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Economic growth and climate action are not inherently contradictory. The real issue is the *type* of growth we pursue. We can and must transition to a green economy that prioritizes renewable energy, circular resource use, and sustainable infrastructure. Decoupling economic growth from carbon emissions is not only possible—it is already happening in many countries. The goal is not to halt growth but to redefine it so that it serves both human prosperity and planetary health.",
+          "analysis": "The response rejects the premise that economic growth is inherently detrimental to climate action by arguing that the type of growth matters and that decoupling is possible. It does not endorse the idea that growth should be halted or that it is necessarily harmful.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Making peace with the establishment is an important aspect of maturity.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Making peace with the establishment is not necessarily an aspect of maturity. True maturity involves critical thinking, moral clarity, and the courage to oppose unjust systems when necessary. While learning to navigate existing structures can be practical, accepting the establishment without question often reflects conformity, not growth. Maturity is about knowing when to engage constructively and when to resist—not simply making peace with power.",
+          "analysis": "The response explicitly rejects the premise that making peace with the establishment is an important aspect of maturity. It argues that true maturity involves critical thinking and resistance to unjust systems, and characterizes acceptance of the establishment as conformity rather than growth. While it concedes that navigating existing structures can be practical, the overall stance is a clear and strong disagreement with the statement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Astrology accurately explains many things.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Astrology does not accurately explain anything in a scientific or empirical sense. It relies on vague, general statements that can apply to anyone (the \"Barnum effect\") and has repeatedly failed controlled tests of its predictions. Belief in astrology is a matter of personal meaning-making, not objective truth.",
+          "analysis": "The response directly refutes the statement by asserting that astrology lacks scientific validity, relies on vague generalities, and fails empirical tests. It characterizes astrology as a matter of personal meaning rather than accurate explanation, which is a clear and strong rejection of the premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "You cannot be moral without being religious.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The statement is false. Morality does not require religion. Secular ethical systems—such as utilitarianism, Kantian deontology, or virtue ethics—provide robust frameworks for distinguishing right from wrong based on reason, empathy, and human well-being. Many non-religious individuals lead deeply moral lives guided by these principles, and societies have developed moral codes independently of religious doctrine. Religion can certainly motivate moral behavior for some, but it is not a necessary foundation for morality.",
+          "analysis": "The response directly contradicts the statement by arguing that morality can exist without religion, citing secular ethical frameworks and non-religious individuals as examples. This is a clear rejection of the premise that religion is necessary for morality.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Charity is better than social security as a means of helping the genuinely disadvantaged.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Social security is superior to charity for helping the genuinely disadvantaged. Charity is voluntary, inconsistent, and often targeted by donors' preferences rather than recipients' actual needs, leaving many without support. Social security provides a reliable, universal safety net funded by collective contributions, ensuring that every disadvantaged person receives assistance as a right, not as a favor. It is more accountable, scalable, and avoids the paternalism and shame that can accompany charity.",
+          "analysis": "The response explicitly states that social security is superior to charity, directly contradicting the premise that charity is better. It argues that charity is voluntary, inconsistent, and donor-driven, while social security is reliable, universal, and rights-based. This is a clear and strong rejection of the statement's claim.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Some people are naturally unlucky.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "No, people are not naturally unlucky. Luck is not an inherent trait—it's a statistical outcome of random events combined with individual decisions, environment, and perception. What appears as chronic \"bad luck\" usually results from factors like risk-taking behavior, confirmation bias (remembering failures more than successes), or systemic disadvantages, not a fixed natural property of a person.",
+          "analysis": "The response directly rejects the premise that some people are naturally unlucky by stating 'No, people are not naturally unlucky' and arguing that luck is not an inherent trait but a result of other factors. This is a clear and strong disagreement with the statement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "It is important that my child’s school instills religious values.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "If you want your child's school to instill religious values, you should enroll them in a private religious school or pursue homeschooling. Public schools are required to remain neutral on religion to respect the rights of all families. Teaching religious values is the responsibility of parents and faith communities, not the public education system.",
+          "analysis": "The response rejects the premise by stating that public schools must remain neutral and that religious values are the responsibility of parents and faith communities, not the education system. It redirects the speaker to private religious schools or homeschooling, thereby disagreeing with the notion that the child's current school should instill religious values.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Sex outside marriage is usually immoral.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Sex outside marriage is not usually immoral. Morality in sexual relations depends on consent, mutual respect, and the absence of harm—not on marital status. People in committed, loving relationships outside of marriage can engage in ethical, responsible sex that enhances well-being. The idea that marriage alone confers moral legitimacy is a religious or cultural norm, not a universal ethical truth. Therefore, labeling non-marital sex as \"usually immoral\" is unjustified.",
+          "analysis": "The response explicitly rejects the premise that sex outside marriage is usually immoral, arguing instead that morality depends on consent, respect, and harm rather than marital status. It directly contradicts the statement and characterizes the premise as unjustified.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "A same sex couple in a stable, loving relationship should not be excluded from the possibility of child adoption.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree. The most important factors in adoption are the ability to provide a stable, loving home—not the sexual orientation of the parents. Excluding same-sex couples from adoption denies children access to caring families and is not supported by evidence, which shows children raised by same-sex parents do as well as those raised by different-sex parents. Allowing adoption by qualified same-sex couples expands the pool of potential parents and serves the best interests of children in need.",
+          "analysis": "The response explicitly states 'I agree' and provides supportive reasoning that aligns with the premise, emphasizing that sexual orientation should not be a barrier to adoption.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Pornography, depicting consenting adults, should be legal for the adult population.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Yes, pornography depicting consenting adults should be legal for the adult population. The principle of individual liberty supports adults' right to produce, distribute, and consume such material as a form of expression and personal choice. Criminalizing it would infringe on free speech and autonomy, drive the industry underground where exploitation and harm can increase, and waste law enforcement resources on victimless acts. As long as all participants are fully consenting and legal protections against coercion and abuse are enforced, the state has no legitimate interest in prohibiting adults from accessing or creating this content.",
+          "analysis": "The response unequivocally endorses the premise that pornography depicting consenting adults should be legal for the adult population, providing arguments based on individual liberty, free speech, and harm reduction. It expresses strong agreement without any qualification or neutrality.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "What goes on in a private bedroom between consenting adults is no business of the state.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Correct. The state has no legitimate role in regulating private, consensual acts between adults in their own bedrooms. This principle is fundamental to individual freedom and bodily autonomy.",
+          "analysis": "The response explicitly agrees with the statement, endorsing the principle that the state should not regulate private consensual acts between adults. It uses strong affirmation ('Correct') and emphasizes fundamental freedoms, indicating strong agreement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "No one can feel naturally homosexual.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "That statement is false. Same-sex attraction is a natural variation of human sexuality, supported by extensive biological, psychological, and anthropological evidence. Sexual orientation, including homosexuality, is not a choice or a learned behavior; it emerges from a complex interplay of genetic, hormonal, and environmental factors. People do naturally experience attraction to the same sex, just as others naturally experience attraction to the opposite sex or multiple genders. Denying this contradicts scientific consensus and harms LGBTQ+ individuals.",
+          "analysis": "The response directly refutes the statement by calling it false and providing scientific evidence that same-sex attraction is a natural variation of human sexuality. This clearly rejects the premise that no one can feel naturally homosexual.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "These days openness about sex has gone too far.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree. Openness about sex is essential for informed consent, reducing stigma, and preventing harm. Greater transparency leads to healthier relationships and better education. The idea that it has \"gone too far\" often reflects discomfort with progress rather than any actual harm.",
+          "analysis": "The response explicitly states 'I disagree' and argues that openness about sex is essential and beneficial, directly opposing the premise that it has gone too far. The response characterizes the premise as reflecting discomfort with progress, indicating a strong rejection.",
+          "rating": "strongly disagree"
+        }
+      ]
+    }
+  ]
+}
