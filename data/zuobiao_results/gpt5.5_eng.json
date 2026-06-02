@@ -1,0 +1,1441 @@
+{
+  "model": "gpt-5.5",
+  "passes": 3,
+  "question_count": 50,
+  "question_set": "zuobiao",
+  "zuobiao_dominant": {
+    "lt1": -0.489,
+    "lt2": 1.449,
+    "lt3": -5.312,
+    "lt1_label": "Authoritarian",
+    "lt2_label": "Promarket",
+    "lt3_label": "Nationalist",
+    "lt1_raw": -0.7789,
+    "lt2_raw": 3.3707,
+    "lt3_raw": -2.5096,
+    "lt1_max": 15.9189,
+    "lt2_max": 23.2596,
+    "lt3_max": 4.7243,
+    "answered_count": 50,
+    "factor_breakdown": {
+      "lt1_answered": 16,
+      "lt2_answered": 27,
+      "lt3_answered": 7
+    },
+    "unmatched_questions": [],
+    "interpretation": {
+      "lt1": "Authoritarian",
+      "lt2": "Promarket",
+      "lt3": "Nationalist"
+    }
+  },
+  "zuobiao_averaged": {
+    "lt1": -0.457,
+    "lt2": 1.661,
+    "lt3": -4.725,
+    "lt1_std": 0.579,
+    "lt2_std": 0.954,
+    "lt3_std": 0.707,
+    "interpretation": {
+      "lt1": "Authoritarian",
+      "lt2": "Promarket",
+      "lt3": "Nationalist"
+    }
+  },
+  "per_pass_scores": [
+    {
+      "pass": 1,
+      "lt1": -1.089,
+      "lt2": 0.916,
+      "lt3": -4.543
+    },
+    {
+      "pass": 2,
+      "lt1": 0.047,
+      "lt2": 1.331,
+      "lt3": -4.127
+    },
+    {
+      "pass": 3,
+      "lt1": -0.329,
+      "lt2": 2.737,
+      "lt3": -5.506
+    }
+  ],
+  "results": [
+    {
+      "question": "Q1.  People should not have universal suffrage if they have not been educated about democracy.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nUniversal suffrage should not be conditional on a person’s level of education. Voting is a basic democratic right, not a privilege reserved for those who meet an educational standard. Requiring “education about democracy” before voting would create opportunities for exclusion, discrimination, and political manipulation.\n\nThe better solution is to provide strong civic education for everyone while preserving equal voting rights for all adults.",
+          "analysis": "The response explicitly rejects the premise, stating that universal suffrage should not depend on education and that voting is a basic democratic right.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nUniversal suffrage should not depend on whether someone has received formal education about democracy. Voting is a basic political right, not a privilege granted only to people who pass an education test. Historically, “education” requirements have often been used to exclude poor people, minorities, and marginalized groups.\n\nA better approach is to protect universal suffrage while investing in strong civic education, accessible public information, and fair electoral systems. People should be encouraged and supported to understand democracy, but they should not lose the right to vote because the state failed to educate them.",
+          "analysis": "The response explicitly rejects the idea that suffrage should depend on education about democracy and defends universal suffrage as a basic right.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nUniversal suffrage should not depend on whether someone has been formally educated about democracy. Voting is a basic political right, not a privilege earned through education. Making suffrage conditional on “democratic education” would create a gatekeeping system that could easily be abused to exclude poor, marginalized, or politically inconvenient groups.\n\nThe better approach is to protect universal suffrage while expanding civic education, access to reliable information, and public discussion. A democracy should educate voters, not disenfranchise them.",
+          "analysis": "The response explicitly rejects the premise, arguing that universal suffrage should not depend on democratic education and that education should be expanded without disenfranchising people.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q2.  Universality of human rights take precedence over sovereignty.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Yes. The universality of human rights should take precedence over state sovereignty because sovereignty exists to protect people, not to shield governments from accountability.\n\nHuman rights are based on the idea that every person has inherent dignity regardless of nationality, religion, ethnicity, gender, or political system. If a state commits genocide, ethnic cleansing, slavery, torture, mass repression, or systematic discrimination, it cannot legitimately claim “sovereignty” as a defense. Sovereignty gives governments authority, but that authority is conditional on protecting the basic rights of their citizens.\n\nModern international law also supports this view. The Universal Declaration of Human Rights, the Genocide Convention, the Geneva Conventions, and the principle of Responsibility to Protect show that the international community has a duty to respond when states seriously violate human rights. Sovereignty is no longer an absolute shield; it is tied to responsibility.\n\nHowever, this does not mean powerful states should freely interfere in weaker states. Humanitarian intervention must be governed by clear legal and moral limits: serious human rights violations must be proven, peaceful means should be attempted first, action should be collective where possible, and the aim must be protection of people rather than political or economic gain.\n\nTherefore, human rights should take precedence over sovereignty in cases of grave abuse. A state’s independence is important, but it cannot be more important than the life, dignity, and freedom of human beings.",
+          "analysis": "The response explicitly states that universal human rights should take precedence over state sovereignty, especially in cases of grave abuses, while adding limits on intervention. It clearly endorses the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Yes. The universality of human rights should take precedence over state sovereignty, especially when a state violates or fails to protect the basic rights of its people.\n\nHuman rights are considered universal because they belong to every person by virtue of being human. Rights such as the right to life, freedom from torture, freedom from slavery, equality before law, and protection from genocide are not dependent on nationality, religion, culture, or the will of a government. A state cannot legitimately claim sovereignty as a shield for mass atrocities or systematic oppression.\n\nSovereignty is important because it protects states from external domination and allows them to govern their own affairs. However, sovereignty is not absolute. Modern international law increasingly treats sovereignty as responsibility. This means a government has the duty to protect its population. If it commits genocide, ethnic cleansing, war crimes, crimes against humanity, or severe repression, it loses the moral legitimacy to hide behind sovereignty.\n\nThis idea is reflected in international instruments such as the Universal Declaration of Human Rights, the Genocide Convention, and the Responsibility to Protect doctrine. These show that the international community has a duty to respond when fundamental human rights are seriously threatened.\n\nTherefore, sovereignty should be respected only when it is used to protect people, not when it is used to abuse them. Human rights set the minimum moral and legal standards for all states. When sovereignty and basic human rights conflict, human rights must prevail.",
+          "analysis": "The response explicitly states that universal human rights should take precedence over state sovereignty and repeatedly argues that sovereignty is not absolute when fundamental rights are violated.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Yes. The universality of human rights should take precedence over state sovereignty.\n\nSovereignty gives states authority over their territory and people, but it is not a license to abuse citizens. Human rights are universal because they belong to every person by virtue of being human, regardless of nationality, culture, religion, or political system. When a government commits genocide, torture, slavery, ethnic cleansing, or systematic discrimination, it loses the moral legitimacy to hide behind sovereignty.\n\nState sovereignty is important for maintaining order, independence, and non-interference. However, sovereignty exists to protect people, not to give governments unlimited power. If a state fails to protect basic rights—or becomes the main violator of those rights—the international community has a responsibility to respond through diplomacy, sanctions, international courts, humanitarian assistance, and, in extreme cases, collective intervention.\n\nTherefore, human rights should take precedence over sovereignty because the dignity and safety of individuals are more fundamental than the authority of any state. Sovereignty is a principle of international order, but human rights are the foundation of justice.",
+          "analysis": "The response explicitly says human rights should take precedence over state sovereignty and provides strong justification for that position, including limits on sovereignty when rights are violated.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q3.  When events that have major repercussions for the safety and security of people occur, the government should freely disseminate information even if information disclosure increases the risks of unrest.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. The government should promptly and openly share accurate information during major safety and security events. Public trust and informed decision-making are more important than suppressing information to avoid unrest.\n\nThe main exception is narrowly limited: details that would directly enable further harm, such as live tactical operations, security vulnerabilities, or personal data, can be temporarily withheld. But the default should be transparency.",
+          "analysis": "The response endorses the premise that the government should openly disseminate information during major safety and security events even if unrest risks increase, while allowing narrow exceptions for information that could directly enable harm.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree.\n\nThe government should disclose timely, accurate information during major safety or security events, even if that information may increase public anger or unrest. Withholding information to preserve calm undermines trust, fuels rumors, and prevents people from making informed decisions.\n\nThe only clear limits should be information that directly endangers lives, exposes victims’ private details, or compromises an active security response. But fear of unrest alone is not a valid reason for secrecy.",
+          "analysis": "The response endorses the premise that government should disseminate timely and accurate information even if it may increase unrest, while adding limited exceptions for direct safety, privacy, or active security concerns.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree.\n\nWhen public safety and security are at stake, the government should freely disseminate accurate, timely information. Withholding information can create rumors, panic, mistrust, and worse decision-making by the public. Even if disclosure risks unrest, transparency is usually safer than secrecy because people need reliable information to protect themselves and hold authorities accountable.",
+          "analysis": "The response explicitly agrees that the government should disseminate accurate, timely information even when disclosure may risk unrest, emphasizing transparency over secrecy.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q4.  Western multiparty systems are unsuitable for China in its current state.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 2,
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree.\n\nA Western-style multiparty system is not well-suited to China’s current political, institutional, and social conditions. China’s scale, regional inequality, governance structure, and state-led development model would make a sudden shift to adversarial multiparty competition highly destabilizing.\n\nA more realistic path for China would be gradual institutional reform: stronger rule of law, more transparent governance, better anti-corruption mechanisms, greater public accountability, and expanded channels for citizens to participate in policy feedback—without immediately adopting a Western electoral party system.",
+          "analysis": "The response explicitly agrees that Western-style multiparty systems are not suitable for China in its current conditions, while suggesting gradual reforms instead.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "I largely agree with the statement: a Western-style multiparty system would be unsuitable for China in its current state.\n\nChina is a very large, highly populous country with major regional, economic, ethnic, and social differences. A sudden shift to competitive multiparty politics could create instability, policy paralysis, factionalism, and short-term populism. China’s current governance model is built around centralized authority, long-term planning, and state-led development, so importing a Western party-competition model would not fit smoothly with its institutions or political culture.\n\nThat does not mean China should avoid reform. It still needs stronger rule of law, cleaner governance, public accountability, protection of citizens’ rights, and better channels for public participation. But those reforms do not have to take the form of a Western multiparty system.\n\nSo the better position is: China should pursue political improvement based on its own conditions, rather than copying a Western multiparty model.",
+          "analysis": "The response explicitly says it largely agrees that a Western-style multiparty system would be unsuitable for China in its current state, while allowing for other reforms.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "I agree with the statement, with an important qualification: China’s political system still needs reform, but simply importing a Western-style multiparty model would not be suitable for China’s current conditions.\n\nChina is a very large, populous, and regionally uneven country. It faces major challenges such as economic restructuring, rural–urban inequality, demographic pressure, environmental problems, and national integration. A competitive multiparty system could intensify regional, class, ethnic, or ideological divisions if introduced suddenly, especially without long-established supporting institutions.\n\nWestern multiparty democracy depends on more than elections. It requires mature rule of law, independent courts, stable civil society, strong constitutional norms, and political parties that accept peaceful alternation of power. These conditions developed over a long historical period in Western countries. If the electoral form is copied without these foundations, it may produce instability, populism, short-term policymaking, or political paralysis.\n\nChina’s current system emphasizes centralized authority, long-term planning, administrative efficiency, and social stability. This has helped the country carry out large-scale development policies, poverty reduction, infrastructure building, and economic modernization. For a country still managing complex development tasks, continuity and policy capacity remain important.\n\nHowever, saying that Western multiparty systems are unsuitable does not mean China should avoid political improvement. China still needs stronger legal accountability, anti-corruption mechanisms, transparency, public participation, protection of rights, and more effective supervision of power. These reforms can be pursued within China’s own institutional framework rather than through direct imitation of Western party competition.\n\nTherefore, Western multiparty systems are not appropriate for China in its current state because they may not match China’s historical experience, social structure, development stage, and governance needs. China’s political development should follow a path suited to its own conditions while continuing to improve accountability, legality, and public participation.",
+          "analysis": "The response explicitly agrees that Western-style multiparty systems are unsuitable for China in its current state, repeatedly arguing they do not fit China's current conditions while adding that China still needs political reform.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q5.  Indiscriminately imitating (systems of) western-style freedom of speech will lead to social disorder in China.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. Expanding freedom of speech with clear legal protections and limits against direct incitement or violence does not inherently lead to social disorder. In China, allowing more open criticism, debate, and independent information would likely improve accountability and reduce social tensions rather than create chaos. The key issue is not “Western-style” imitation, but building rights-respecting institutions that protect expression while enforcing narrowly defined public-safety laws.",
+          "analysis": "The response explicitly says it disagrees and argues that broader freedom of speech would not inherently cause disorder in China, instead likely improving accountability and reducing tensions if paired with legal safeguards.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "**Disagree.**  \n\nFreedom of speech does not inherently lead to social disorder. Social stability is better protected by clear laws, accountable institutions, and open channels for people to express grievances. Suppressing speech can create more instability because problems are hidden rather than addressed.\n\nThat said, simply copying another country’s system without adapting it to local legal and social conditions would be unwise. But the core principle—protecting people’s right to speak, criticize, and debate—is compatible with social order when supported by rule of law.",
+          "analysis": "The response rejects the premise that western-style freedom of speech would inherently or necessarily lead to social disorder in China, while acknowledging that unadapted copying could be unwise.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nIndiscriminately copying any political or legal system can create problems, but western-style freedom of speech itself does not inherently lead to social disorder. Open expression can reduce social tension by allowing people to criticize problems, expose corruption, debate policy, and seek peaceful solutions.\n\nA stable society needs both free expression and clear legal limits against direct incitement to violence, fraud, defamation, and targeted harassment. The risk comes not from freedom of speech, but from poor institutions, unequal enforcement, and lack of public trust. Freedom of speech, when protected by fair laws, can strengthen stability rather than undermine it.",
+          "analysis": "The response explicitly says it disagrees with the premise, arguing that western-style freedom of speech does not inherently cause social disorder and can strengthen stability if protected by fair laws. It adds nuance that indiscriminate copying of any system can create problems, but rejects the core claim.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q10. Even if procedural rules are violated in the process of investigation and evidence gathering, those who have actually committed crimes should be punished.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. Criminal punishment must follow lawful procedures and respect due process. If investigators violate procedural rules, courts should address that—often by excluding illegally obtained evidence or sanctioning officials—because punishing people through unlawful methods undermines justice and increases the risk of wrongful convictions.",
+          "analysis": "The response explicitly rejects the premise, arguing that punishment must depend on lawful procedures and due process, and that procedural violations can justify excluding evidence or sanctioning investigators.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nPeople who commit crimes should be punished only through a lawful and fair process. If investigators violate procedural rules, courts must take that seriously—especially when violations affect rights, reliability of evidence, or fairness of the trial. Otherwise, the state is rewarded for misconduct and the rule of law is weakened.\n\nIf the crime can still be proven with legally obtained evidence, punishment is appropriate. But punishment should not be justified by “actual guilt” alone.",
+          "analysis": "The response rejects the premise that actual guilt alone justifies punishment despite procedural violations, emphasizing that punishment must depend on lawful and fair process, though it allows punishment if guilt is proven with legally obtained evidence.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nPeople who committed crimes should be punished only through a lawful process. If investigators violate procedural rules, courts should address that violation—such as excluding illegally obtained evidence or disciplining officials—because due process protects everyone from abuse of state power.",
+          "analysis": "The response rejects the premise, arguing that punishment should occur only through lawful due process and that procedural violations may require remedies such as excluding evidence.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q12. It is acceptable to besmirch the images of national leaders and founding leaders in literary and artistic works.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 2,
+        "agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. Literary and artistic works should be free to criticize, satirize, or portray national and founding leaders negatively. Public figures and historical leaders should not be shielded from scrutiny, mockery, or reinterpretation, as long as the work does not directly incite violence or targeted harassment.",
+          "analysis": "The response explicitly agrees that literary and artistic works may negatively portray or criticize national and founding leaders, with only a limited caveat against incitement or harassment.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. Literary and artistic works should be free to criticize, satirize, or negatively portray national and founding leaders. Public figures should not be shielded from artistic scrutiny simply because of their status.",
+          "analysis": "The response explicitly agrees that literary and artistic works should be free to criticize, satirize, or negatively portray national and founding leaders.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree.\n\nLiterary and artistic works should be free to criticize, satirize, or negatively portray national and founding leaders. Public figures should not be shielded from scrutiny or irreverence, especially in art and political expression. Limits should apply only to cases like direct incitement to violence or knowingly false defamatory claims.",
+          "analysis": "The response explicitly agrees that literary and artistic works may negatively portray or criticize national and founding leaders, while noting limited exceptions for incitement or defamatory falsehoods.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q13. When laws fail to fully constrain criminal behaviors, people have the right to impose their own punishments for these behaviors.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nPeople do not have the right to impose their own punishments outside the legal system. Even when laws are imperfect or enforcement fails, punishment must remain accountable, evidence-based, and constrained by due process. Private punishment risks revenge, mistakes, escalation, and abuse. The proper response is to improve law enforcement, courts, and legislation—not vigilantism.",
+          "analysis": "The response explicitly rejects the premise that people have a right to impose their own punishments outside the legal system, emphasizing due process and opposing vigilantism.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nPeople do not have the right to impose their own punishments when the law fails to stop crime. Punishment should be handled through lawful institutions, because private retaliation can lead to mistakes, escalation, bias, and cycles of violence.\n\nThe exception is immediate self-defense or defense of others against an ongoing threat—not punishment after the fact.",
+          "analysis": "The response explicitly rejects the premise, stating that people do not have the right to impose their own punishments and that punishment should remain with lawful institutions, allowing only immediate self-defense as an exception.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nPeople have the right to defend themselves or others from immediate harm, but they do not have the right to impose their own punishments after the fact. Punishment should be handled through lawful, accountable institutions; otherwise it becomes vigilantism, which risks abuse, mistakes, retaliation, and unequal justice.",
+          "analysis": "The response explicitly rejects the premise, stating that people may defend against immediate harm but do not have the right to impose punishments themselves, which should be handled by lawful institutions.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q14. Media should be allowed to represent the voice of a particular social stratum or interest group.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "strongly agree": 1,
+        "agree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree.\n\nMedia outlets should be allowed to represent the voice of a particular social stratum or interest group. A free media environment includes partisan, community-based, labor, business, religious, ethnic, and ideological publications. The key requirements should be transparency, factual accountability, and equal legal protection—not forced neutrality.\n\nThe danger is not that media has a viewpoint; the danger is hidden ownership, monopoly control, deliberate misinformation, or suppression of opposing voices.",
+          "analysis": "The response explicitly agrees that media should be allowed to represent particular social strata or interest groups and strongly defends viewpoint-based media, while emphasizing transparency and accountability.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree.\n\nMedia outlets should be allowed to represent particular social strata or interest groups. A pluralistic media environment is healthier when different communities can advocate for their interests openly, as long as they do not engage in defamation, incitement to violence, or deliberate deception.",
+          "analysis": "The response explicitly agrees that media should be allowed to represent particular social strata or interest groups, while noting reasonable limits such as avoiding defamation or incitement.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. Media outlets should be allowed to represent particular social strata or interest groups, as long as they are transparent about their perspective and do not engage in fraud, incitement, or deliberate misinformation. A plural media environment is healthier than forcing every outlet to pretend to be neutral.",
+          "analysis": "The response explicitly endorses the premise that media should be allowed to represent particular social strata or interest groups, with conditions around transparency and avoiding harmful conduct.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q17. Lawyers should do their utmost to defend clients even if the client has committed a crime.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 2,
+        "agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree — lawyers should provide the strongest possible defense within ethical and legal limits, even when the client is guilty. A fair justice system depends on every defendant having competent representation, and it is the court’s role to determine guilt and punishment, not the lawyer’s.",
+          "analysis": "The response explicitly agrees that lawyers should provide the strongest possible defense even for guilty clients, while noting ethical and legal limits.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree — within legal and ethical limits.\n\nLawyers should defend clients vigorously even if the client is guilty, because everyone has the right to due process and a fair trial. The prosecution must prove guilt properly, and defense lawyers help prevent abuses of state power.\n\nHowever, lawyers should not lie, fabricate evidence, intimidate witnesses, or knowingly mislead the court. Their duty is to defend the client’s rights, not to help them escape justice through illegal means.",
+          "analysis": "The response endorses the premise that lawyers should vigorously defend clients even if guilty, while adding that this must remain within legal and ethical boundaries.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. Lawyers should vigorously defend clients regardless of guilt, because the justice system depends on the prosecution proving its case lawfully and beyond the required standard. A strong defense protects due process, prevents wrongful convictions or excessive punishment, and keeps state power in check.\n\nThat does not mean lawyers should lie, hide evidence, or mislead the court. They should defend clients as strongly as possible within legal and ethical rules.",
+          "analysis": "The response explicitly agrees that lawyers should vigorously defend clients regardless of guilt, while clarifying that this must remain within legal and ethical rules.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q6.  It is preferable to let universities recruit students by themselves than to have a unified national college entrance examination system.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree.\n\nA unified national college entrance examination system is generally fairer and more efficient because it gives students a common standard, reduces the influence of wealth and personal connections, and makes admissions easier to supervise. If every university recruited students independently, applicants would face many different exams, interviews, fees, and deadlines, which would especially disadvantage students from poorer families or rural areas.\n\nHowever, universities should still have some flexibility to consider special talents, interviews, portfolios, or subject-specific requirements. The best system is a national exam as the main foundation, combined with limited university-level selection for certain programs.",
+          "analysis": "The response explicitly says it disagrees with the premise and argues that a unified national entrance examination is generally fairer and more efficient, while only allowing limited university flexibility.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "I disagree. It is better to keep a unified national college entrance examination system, while allowing universities limited flexibility for special programs.\n\nA national exam is fairer because all students are judged by the same standard. This is especially important for students from rural areas or poorer families. If every university recruited students by itself, wealthy students would have more advantages because they could afford interview training, application consultants, extracurricular activities, and travel costs. A unified exam gives ordinary students a clearer and more equal path to university.\n\nA national system is also more transparent. Exam scores are easier to compare and harder to manipulate than interviews, recommendation letters, or school-based assessments. If universities had full control over admissions, personal connections, favoritism, and corruption could become bigger problems. Students and parents would also find the process more stressful because they would need to apply to many universities separately.\n\nIn addition, a unified exam is more efficient. One national examination saves time and money for both students and universities. Universities can use the results to select students quickly, and students do not have to prepare for many different admission tests.\n\nHowever, universities should still have some independence. For example, art schools, sports programs, and highly specialized departments may need interviews, portfolios, or skill tests. Top universities could also use additional assessments for a small number of applicants. But these should supplement the national exam, not replace it.\n\nOverall, a unified national college entrance examination is more equal, transparent, and practical. Universities should have limited recruitment freedom, but the main admission system should remain national and standardized.",
+          "analysis": "The response explicitly rejects the premise, arguing that a unified national college entrance examination is fairer, more transparent, and more efficient, with only limited university flexibility.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "I disagree.\n\nA unified national college entrance examination system is generally better because it is more transparent, fair, and efficient. If every university recruits students entirely by itself, students from wealthy families would have more advantages because they could afford extra application fees, interview training, travel, and private tutoring. It would also create more opportunities for corruption, favoritism, and unclear admission standards.\n\nA national exam gives students from different regions and backgrounds a common standard. Although one exam cannot measure every ability, it provides a relatively fair way to compare applicants on academic performance. It also reduces the burden on students because they do not need to prepare separately for many different university admission systems.\n\nUniversities should still have some freedom to evaluate special talents, such as artistic ability, athletic skill, research potential, or interview performance. However, this should be supplementary rather than replacing the national entrance examination.\n\nTherefore, the best system is a unified national exam as the main admission method, combined with limited independent recruitment by universities for special cases.",
+          "analysis": "The response explicitly disagrees with the premise and argues that a unified national entrance examination is generally fairer, more transparent, and preferable, with only limited university autonomy for special cases.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q7.  Religious adherents should be allowed to conduct missionary work in nonreligious spaces.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. Religious adherents should be allowed to conduct missionary work in nonreligious public spaces, provided they follow the same rules as everyone else: no harassment, coercion, disruption, trespassing, or targeting captive audiences. Freedom of speech and religion includes the right to share beliefs, but it does not include a right to pressure people who decline or violate neutral space-use rules.",
+          "analysis": "The response endorses the premise that religious adherents should be allowed to conduct missionary work in nonreligious public spaces, while adding limits against harassment, coercion, disruption, and rule violations.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree — religious adherents should be allowed to conduct missionary work in nonreligious public spaces, as long as they follow the same neutral rules that apply to everyone: no harassment, coercion, obstruction, trespassing, or disruption of services.\n\nIn private or restricted spaces, such as workplaces, schools, hospitals, or businesses, limits are appropriate to protect others’ rights, safety, and the purpose of the space. Freedom of expression includes religious expression, but it does not include a right to impose on unwilling audiences.",
+          "analysis": "The response endorses allowing missionary work in nonreligious public spaces, while adding limits for harassment, coercion, and private or restricted settings. It agrees with the premise in a qualified way.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree — religious adherents should be allowed to conduct missionary work in nonreligious spaces, as long as it is peaceful, non-coercive, and does not harass or obstruct others.\n\nFreedom of religion and freedom of expression include the right to share beliefs publicly. However, that right should be limited when missionary activity becomes threatening, disruptive, discriminatory, or imposes on people who cannot reasonably avoid it, such as captive audiences in workplaces, schools, or government services.",
+          "analysis": "The response endorses allowing missionary work in nonreligious spaces, while adding conditions against coercion, harassment, or disruption.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q8.  Primary school, secondary school, and college students should all participate in government organized military training.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "disagree": 1,
+        "strongly disagree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nPrimary school children are too young for government-organized military training. Schools should focus on education, health, teamwork, and civic responsibility rather than military preparation.\n\nFor secondary school and college students, limited non-combat training—such as first aid, disaster response, physical fitness, and civic defense education—can be useful. However, full military training should not be mandatory for all students. It should be voluntary or reserved for those who choose military service.",
+          "analysis": "The response rejects the idea that all primary, secondary, and college students should undergo government-organized military training, especially opposing it for primary students and mandatory full military training for all.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nPrimary school students should not participate in government-organized military training. Children are too young for militarized instruction, and school should focus on literacy, critical thinking, health, cooperation, and civic education.\n\nFor secondary school and college students, limited voluntary programs such as emergency preparedness, first aid, disaster response, physical fitness, and civic service can be useful. But compulsory military training for all students is inappropriate because it can normalize militarism, disrupt education, and pressure young people into military roles before they are mature enough to choose freely.\n\nA better policy is mandatory civic and emergency-preparedness education, with military training only as an optional program for older students who choose it.",
+          "analysis": "The response explicitly disagrees with the statement, rejects military training for primary students, and opposes compulsory military training for all students, supporting only optional programs for older students.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nPrimary and secondary school students should not be required to participate in government-organized military training. Children should focus on education, social development, physical health, and critical thinking—not military preparation.\n\nFor college students, military training should be voluntary, not mandatory. Governments can offer optional programs in national defense, emergency response, first aid, disaster relief, and civic service, but compulsory military-style training risks promoting militarization and limiting personal freedom.\n\nA better approach is:\n\n- Physical education in schools  \n- First aid and emergency preparedness training  \n- Civic education  \n- Voluntary national service or reserve programs for adults  \n\nSo, military training should not be required for all students, especially not for primary school children.",
+          "analysis": "The response explicitly says 'Disagree' and argues that primary and secondary students should not be required to participate, while college military training should be voluntary rather than mandatory. It rejects the premise that all students should participate in government-organized military training.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q24. Wasting food is an individual freedom.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. People may legally control food they buy, but wasting food is irresponsible because it squanders resources, increases environmental harm, and ignores food insecurity. Reducing food waste is a basic social and ethical duty.",
+          "analysis": "The response explicitly says it disagrees and frames wasting food as irresponsible rather than an individual freedom, while acknowledging some legal control over purchased food.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree. Food waste has social and environmental costs, including wasted water, energy, labor, and higher emissions. Individuals should have some personal choice, but treating food waste as a “freedom” ignores its impact on others and on shared resources.",
+          "analysis": "The response explicitly disagrees with the premise, arguing that food waste has social and environmental costs and should not be treated simply as an individual freedom.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree. People have personal choice over what they buy and eat, but wasting food is irresponsible because it consumes shared resources like water, land, labor, energy, and money, while many people face food insecurity. Reducing food waste is a basic social and environmental responsibility.",
+          "analysis": "The response explicitly rejects the premise, arguing that food waste is irresponsible and a social/environmental concern rather than merely an individual freedom.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q44. The fundamental standard to evaluate the value of a work of art is whether it is liked by the masses.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 2,
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nWhether a work of art is liked by the masses can be one indicator of its social influence, but it is not the fundamental standard for judging artistic value. Many great works were unpopular or misunderstood when first created, while some popular works have limited artistic depth.\n\nA better evaluation should consider factors such as:\n\n- aesthetic quality\n- originality and creativity\n- emotional or intellectual depth\n- technical skill\n- cultural and historical significance\n- ability to endure over time\n\nMass approval matters, but it should not be the ultimate measure of artistic value.",
+          "analysis": "The response explicitly rejects the premise that mass approval is the fundamental standard for evaluating art, while acknowledging it may be one factor.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nWhether a work of art is liked by the masses is an important measure of its social influence and accessibility, but it is not the fundamental standard for judging its value. Artistic value also depends on originality, emotional depth, technical skill, cultural significance, and the ability to reveal truth or expand human understanding.\n\nMany great works were not widely appreciated at first, while many popular works have limited artistic depth. Popularity can reflect value, but it should not be the ultimate criterion.",
+          "analysis": "The response rejects the premise that mass popularity is the fundamental standard for evaluating art, while acknowledging popularity can be one relevant factor.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "False.\n\nWhether a work of art is liked by the masses can be an important measure of its social influence, but it is not the fundamental standard for evaluating its artistic value. Art should also be judged by its aesthetic quality, originality, depth of thought, emotional power, historical significance, and contribution to culture. Some great works were not immediately popular with the masses when first created, yet later became highly valued.",
+          "analysis": "The response explicitly says the statement is false and argues that mass popularity is not the fundamental standard for artistic value, listing other evaluative criteria.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q45. Even with population pressures, the state and the society have no right to interfere in the decision to have a child, or how many children to have.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 2,
+        "agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Strongly agree.\n\nDecisions about whether to have children, and how many, belong to the individuals directly involved. Population pressures can justify better access to contraception, healthcare, education, housing, and voluntary family planning—not coercive limits, forced sterilization, abortion bans, or state pressure over reproduction.",
+          "analysis": "The response explicitly states 'Strongly agree' and strongly endorses the premise that reproductive decisions should belong to individuals, rejecting coercive state or societal interference even amid population pressures.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree.\n\nDecisions about whether to have children and how many to have are fundamental personal freedoms. The state can support access to contraception, education, healthcare, and economic security, but it should not coerce or restrict reproductive choices because of population pressures.",
+          "analysis": "The response explicitly agrees with the premise, arguing that reproductive decisions are fundamental personal freedoms and that the state should not coerce or restrict them due to population pressures.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree.\n\nDecisions about whether to have children and how many to have are fundamental personal freedoms. Population concerns can justify providing education, contraception, healthcare, and economic support, but not coercive interference by the state or society in reproductive choices.",
+          "analysis": "The response explicitly agrees that decisions about having children are fundamental personal freedoms and rejects coercive interference despite population concerns.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q21. The minimum wage should be set by the state.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree.\n\nThe state should set a minimum wage to prevent exploitation, ensure full-time workers can meet basic living costs, and stop businesses from competing by driving wages below a decent standard. It should be regularly adjusted for inflation and cost of living, with room for regional variation where necessary.",
+          "analysis": "The response explicitly endorses the premise that the state should set a minimum wage and provides supporting reasons, while allowing for adjustments and regional variation.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. A minimum wage should be set by the state to ensure a basic labor standard, prevent exploitation, and keep full-time work from paying poverty wages.",
+          "analysis": "The response explicitly agrees that the minimum wage should be set by the state and provides reasons supporting that position.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. The state should set a minimum wage to ensure workers receive a basic standard of pay, prevent exploitation, and reduce poverty among full-time workers.",
+          "analysis": "The response explicitly agrees that the state should set a minimum wage and provides reasons supporting that position.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q25. If the price of pork is too high, the government should intervene.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 1,
+        "strongly agree": 1,
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree — if pork prices become too high and threaten food affordability, the government should intervene through targeted measures such as releasing reserves, reducing import barriers, preventing hoarding or price manipulation, and supporting supply. Direct price caps should be used cautiously because they can create shortages.",
+          "analysis": "The response endorses the premise that the government should intervene when pork prices are too high, while qualifying the type of intervention and cautioning against price caps.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. If pork prices become too high, the government should intervene with targeted measures such as releasing reserves, reducing supply bottlenecks, preventing price gouging, or offering temporary subsidies to low-income households. Food affordability is a legitimate public concern.",
+          "analysis": "The response explicitly agrees that the government should intervene when pork prices are too high and provides examples of appropriate intervention measures.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree. The government should not directly intervene just because pork prices are high. It should focus on fixing supply problems, preventing price manipulation, and helping low-income households if needed rather than setting prices or distorting the market.",
+          "analysis": "The response explicitly says it disagrees and rejects direct government intervention solely due to high pork prices, though it supports limited indirect measures such as addressing supply issues or helping low-income households.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q27. Education should be public to the greatest extent.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. Education should be publicly funded and publicly accessible to the greatest extent possible, because it is a social good that benefits everyone, not just individual students. Public education promotes equal opportunity, civic participation, economic mobility, and a more skilled society.",
+          "analysis": "The response explicitly agrees that education should be public to the greatest extent and strongly supports the premise with reasons emphasizing public funding, accessibility, and social benefits.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. Education should be publicly funded and broadly accessible because it is a social good: it raises opportunity, strengthens democracy, reduces inequality, and benefits the whole economy. Private options can exist, but the core education system should be public, universal, and well-funded.",
+          "analysis": "The response explicitly agrees that education should be publicly funded, broadly accessible, and that the core system should be public, universal, and well-funded, while allowing private options.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. Education should be publicly provided and publicly funded to the greatest extent possible because it is a basic social good, essential for equal opportunity, civic participation, and economic mobility. Private options can exist, but the core education system should be strong, accessible, and accountable to the public.",
+          "analysis": "The response clearly endorses the premise that education should be publicly provided and funded to the greatest extent possible, while allowing limited private options.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q29. Attempting to control real estate prices will undermine economic development.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 2,
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree.\n\nStrict price controls on real estate, especially rent caps or fixed sale prices, usually reduce incentives to build, maintain, and invest in housing. That can create shortages, lower-quality housing, black-market arrangements, and reduced urban development. A better approach is to increase housing supply through zoning reform, faster permitting, infrastructure investment, and targeted support for low-income households.",
+          "analysis": "The response explicitly says it agrees and argues that real estate price controls reduce incentives to build, maintain, and invest, thereby harming housing supply and urban development.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nAttempting to control real estate prices does not automatically undermine economic development. Poorly designed price controls can reduce housing supply or discourage investment, but policies that limit speculation, expand affordable housing, tax vacant property, regulate monopolistic landholding, or increase public housing can support economic development by making cities more affordable for workers and businesses.\n\nUnaffordable real estate itself can undermine development by raising living costs, pushing workers away, and diverting capital into speculation instead of productive investment.",
+          "analysis": "The response explicitly disagrees with the premise, arguing that real estate price controls do not necessarily undermine economic development and can support it if well designed, while acknowledging possible harms from poorly designed controls.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree.\n\nStrict controls on real estate prices can undermine economic development by reducing incentives to build, invest, and maintain property. If prices are capped too aggressively, developers may build less housing, landlords may reduce maintenance, and supply shortages can worsen. A better approach is to increase housing supply, improve zoning rules, invest in infrastructure, and use targeted support for low-income residents rather than broad price controls.",
+          "analysis": "The response explicitly agrees that controlling real estate prices can undermine economic development, citing reduced incentives for construction, investment, and maintenance, though it frames the issue mainly around strict or aggressive controls.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q30. The primary means to improve the lives of the low-income people is to give them fiscal subsidies and support.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "strongly agree": 1,
+        "disagree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree.\n\nFiscal subsidies and direct support are essential for improving the lives of low-income people because they immediately reduce poverty, help cover basic needs like food, housing, healthcare, and education, and provide stability that allows people to work, study, or care for family. Long-term solutions like job creation and education matter too, but direct financial support is one of the most effective primary tools.",
+          "analysis": "The response explicitly agrees with the premise and strongly supports fiscal subsidies and direct support as essential and effective primary tools for improving low-income people's lives, while acknowledging other measures also matter.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nFiscal subsidies and support are important safety nets, but the primary way to improve low-income people’s lives is to expand access to stable jobs, quality education, affordable housing, healthcare, childcare, and fair wages. Direct support helps reduce hardship, but long-term mobility requires structural opportunities.",
+          "analysis": "The response explicitly disagrees with the premise, arguing that fiscal subsidies are important but not the primary means; instead, it emphasizes jobs, education, housing, healthcare, childcare, and wages.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nFiscal subsidies and support are important for immediate relief, but they should not be the primary means of improving low-income people’s lives. The main focus should be on stable employment, affordable housing, quality education, healthcare access, childcare, and opportunities for upward mobility. Subsidies work best as a safety net alongside policies that help people become more economically secure over time.",
+          "analysis": "The response explicitly rejects the premise that fiscal subsidies and support should be the primary means, while acknowledging they are useful as immediate relief or a safety net.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q37. Individuals should be able to own, buy and sell land.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. Individuals should be able to own, buy, and sell land, because secure property rights support personal freedom, investment, stability, and economic development. This should still be subject to reasonable limits such as zoning, environmental protections, taxation, and safeguards against fraud or monopolistic land hoarding.",
+          "analysis": "The response explicitly agrees that individuals should be able to own, buy, and sell land, while noting reasonable regulatory limits.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. Individuals should be able to own, buy, and sell land, because secure property rights support personal freedom, investment, housing stability, and economic development.\n\nHowever, land ownership should still be subject to reasonable laws: zoning, environmental protections, taxation, anti-fraud rules, and safeguards against monopolistic land hoarding or displacement.",
+          "analysis": "The response explicitly agrees that individuals should be able to own, buy, and sell land, while adding that this should be regulated by reasonable laws.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. Individuals should be able to own, buy, and sell land, with reasonable regulations for zoning, environmental protection, taxation, and preventing fraud or coercion.",
+          "analysis": "The response explicitly agrees that individuals should be able to own, buy, and sell land, while allowing for reasonable regulations.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q40. Natural monopolies that emerge out of market competitions are harmless.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "False.\n\nNatural monopolies can emerge because one firm can serve the market more efficiently than multiple competitors, often due to high fixed costs and economies of scale. However, they are not automatically harmless. Once a firm becomes the only practical provider, it may raise prices, reduce quality, block new entrants, or exploit consumers.\n\nExamples include utilities, railways, water supply, and electricity distribution. These often require regulation to prevent abuse of monopoly power.\n\nSo the statement is incorrect: natural monopolies may arise from market competition, but they can still be harmful without oversight.",
+          "analysis": "The response explicitly rejects the premise, stating that natural monopolies are not automatically harmless and can be harmful without oversight.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "False.\n\nNatural monopolies can emerge naturally through market competition, often because one firm can produce at a lower average cost than multiple competing firms. Examples include utilities, rail networks, water supply, and electricity grids.\n\nHowever, they are not harmless. Once a firm becomes a natural monopoly, it may:\n\n- Charge higher prices\n- Reduce output\n- Lower service quality\n- Block new competitors\n- Exploit consumers due to lack of alternatives\n\nBecause of this, natural monopolies often require government regulation, price controls, or public ownership to protect consumers. So, even if they arise from market competition, they can still create serious market problems.",
+          "analysis": "The response explicitly states the premise is false and argues that natural monopolies are not harmless, listing potential harms and calling for regulation.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "False.\n\nNatural monopolies that emerge through market competition are not necessarily harmless. A natural monopoly can arise when one firm can supply the entire market at a lower cost than multiple competing firms, often because of high fixed costs and economies of scale.\n\nHowever, once a firm becomes the sole provider, it may gain market power and can:\n\n- Charge higher prices\n- Reduce output or service quality\n- Block new entrants\n- Limit innovation\n- Exploit consumers due to lack of alternatives\n\nExamples include utilities such as water, electricity distribution, railways, and pipelines.\n\nSo, natural monopolies may be efficient in cost terms, but they can still harm consumers unless regulated or publicly controlled.",
+          "analysis": "The response explicitly says the statement is false and argues that natural monopolies can harm consumers through market power unless regulated or publicly controlled.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q22. The fruits of China's economic development since reform and opening up are enjoyed by a small group of people; most people have not received much benefit.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "strongly disagree": 1,
+        "disagree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nChina’s reform and opening up has produced uneven gains and significant inequality, but it is not accurate to say that only a small group benefited. Most people benefited through higher incomes, poverty reduction, better infrastructure, improved housing, expanded education, greater employment opportunities, and higher living standards.\n\nA more accurate statement would be: **the benefits have been broad but unevenly distributed, with some groups and regions gaining much more than others.**",
+          "analysis": "The response explicitly disagrees with the statement, arguing that most people benefited from China's economic development despite uneven distribution and inequality.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nChina’s reform and opening up have benefited a broad share of the population, not only a small group. Hundreds of millions of people were lifted out of poverty, incomes rose substantially, urbanization expanded, and access to housing, education, transportation, consumer goods, and healthcare improved for many ordinary people.\n\nHowever, the benefits have been uneven. Wealth gaps between regions, urban and rural areas, and social classes have widened, and some groups gained much more than others. So a more accurate statement is:\n\n**Most people benefited from China’s economic development, but the distribution of benefits has been unequal.**",
+          "analysis": "The response explicitly rejects the premise that only a small group benefited and that most people did not receive much benefit, while acknowledging unequal distribution of gains.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nChina’s reform and opening up produced broad benefits for most people, not only a small group. Hundreds of millions escaped poverty, incomes rose, life expectancy improved, education expanded, infrastructure developed, and access to consumer goods, housing, transport, and healthcare generally increased.\n\nHowever, the gains have been uneven. Coastal cities, property owners, entrepreneurs, officials with access to resources, and highly educated workers benefited more than many rural residents, migrant workers, and lower-income groups. Inequality, housing pressure, regional gaps, and social mobility problems are real issues.\n\nSo the statement is too extreme: most people did benefit, but the distribution of benefits has been unequal.",
+          "analysis": "The response explicitly rejects the statement's premise, arguing that most people did benefit from China's economic development, while acknowledging that benefits were distributed unequally.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q31. A rich person deserves better medical services.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. Medical care should be based on need, not wealth. A rich person can pay for more comfort or convenience, but they do not “deserve” better medical treatment than someone poorer. Everyone deserves high-quality healthcare.",
+          "analysis": "The response explicitly rejects the premise, stating that medical care should be based on need rather than wealth and that rich people do not deserve better treatment.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree. Medical care should be based on need, not wealth. A rich person may be able to pay for extra comfort or convenience, but they do not deserve better medical treatment than anyone else.",
+          "analysis": "The response explicitly rejects the premise, stating that medical care should be based on need rather than wealth and that rich people do not deserve better medical treatment.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree. Medical services should be based on medical need and quality standards, not a person’s wealth. Everyone deserves equal access to essential healthcare.",
+          "analysis": "The response explicitly rejects the idea that wealth should determine medical service quality and argues healthcare should be based on need and equal access.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q33. People who make money through gains from financial investments contribute less to the society than people make money through labor.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 2,
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree.\n\nPeople who earn money through labor usually contribute directly by producing goods, services, care, infrastructure, or knowledge. Financial investment gains can help allocate capital, but much of that income is passive and often depends on ownership of existing assets rather than direct productive work. So, in general, labor contributes more directly to society than investment gains.",
+          "analysis": "The response explicitly agrees with the premise and argues that labor contributes more directly to society than financial investment gains, while acknowledging some role for investments.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree as a blanket statement.\n\nPeople who earn money through financial investments can contribute meaningfully to society by providing capital for businesses, innovation, housing, infrastructure, and job creation. Investment helps allocate resources and can support economic growth.\n\nHowever, not all investment gains are equally socially valuable. Long-term productive investment contributes more than short-term speculation, rent-seeking, or profiting from market manipulation. Labor is also a direct and essential contribution because it produces goods and services.\n\nSo the better position is: **productive investment can contribute to society, but passive or speculative financial gains often contribute less than labor.**",
+          "analysis": "The response rejects the statement as a blanket claim, arguing that productive financial investment can contribute meaningfully to society, while acknowledging that some passive or speculative gains may contribute less than labor.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree.\n\nPeople who earn through labor usually contribute more directly to society because they provide goods, services, care, infrastructure, knowledge, or other useful work. Financial investment can help allocate capital and support businesses, but gains from investments often come from ownership, asset appreciation, or speculation rather than direct productive contribution.\n\nA clearer version of the statement:\n\n**“People who make money through gains from financial investments contribute less to society than people who make money through labor.”**",
+          "analysis": "The response explicitly says \"Agree\" and argues that labor usually contributes more directly to society, while financial gains often come from ownership or speculation. It acknowledges some social role for investment, so the endorsement is clear but not absolute.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q34. It is better to sell state-owned enterprises to capitalists than to let them go bankrupt.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree.\n\nIf a state-owned enterprise is genuinely failing, selling it to private owners is usually better than letting it collapse, because bankruptcy destroys jobs, supply chains, public value, and services. A sale can preserve productive assets and shift financial risk away from taxpayers.\n\nHowever, the sale should be transparent, competitive, and regulated, especially if the enterprise provides essential services or has monopoly power.",
+          "analysis": "The response explicitly agrees with the premise, arguing that selling a genuinely failing state-owned enterprise is usually preferable to bankruptcy, while adding conditions about transparency and regulation.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree.\n\nIf a state-owned enterprise is failing, selling it to private owners is usually better than allowing it to collapse. A sale can preserve jobs, keep productive assets in use, maintain services, and recover some value for the public. Bankruptcy destroys capacity and often leaves workers, suppliers, and taxpayers worse off.\n\nThe sale should be transparent, competitive, and not a corrupt giveaway, but in general privatization is preferable to letting the enterprise go bankrupt.",
+          "analysis": "The response explicitly agrees that selling failing state-owned enterprises to private owners is generally preferable to bankruptcy, while adding conditions about transparency and avoiding corruption.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree — if a state-owned enterprise is failing, selling it to private owners is usually better than letting it collapse.\n\nA sale can preserve jobs, maintain production, reduce the burden on taxpayers, and keep useful assets operating. Bankruptcy destroys value and can harm workers and consumers. However, essential public services or strategic industries should only be sold with strong regulation to prevent monopolies or exploitation.",
+          "analysis": "The response explicitly agrees that selling a failing state-owned enterprise to private owners is usually preferable to letting it collapse, while adding regulatory caveats for essential or strategic sectors.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q36. The process of capital accumulation is always accompanied by harm to the working class.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nCapital accumulation in capitalism often depends on exploiting workers and can produce serious harm—low wages, insecurity, unemployment, and inequality. But saying it is **always** accompanied by harm to the working class is too absolute. In some periods, capital accumulation has coincided with rising wages, better working conditions, and expanded welfare protections, especially when workers are organized and the state regulates capital.",
+          "analysis": "The response rejects the absolute premise that capital accumulation is always accompanied by harm, while acknowledging that it often can harm workers.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nCapital accumulation can harm workers when it relies on exploitation, wage suppression, unsafe conditions, or precarity. But it is not always harmful. When accompanied by strong labor rights, rising wages, social protections, and productivity gains shared with workers, capital accumulation can improve working-class living standards.",
+          "analysis": "The response explicitly rejects the premise that capital accumulation is always accompanied by harm to the working class, while acknowledging it can be harmful under certain conditions.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nCapital accumulation can harm the working class when it depends on exploitation, wage suppression, unsafe labor, dispossession, or weakened bargaining power. But it is not *always* accompanied by harm. Investment in productive capacity can also create jobs, raise wages, improve technology, and expand access to goods and services—especially when workers have strong rights, unions, social protections, and political power.\n\nA better statement would be: **capital accumulation often creates pressure to exploit labor, but whether it harms workers depends on the balance of power and the institutions governing the economy.**",
+          "analysis": "The response explicitly rejects the claim that capital accumulation is always accompanied by harm to the working class, arguing that outcomes depend on institutions and worker power.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q38. The government should adopt higher grain purchasing prices to boost the income of peasants.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1,
+        "agree": 1,
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. The government should adopt higher grain purchasing prices to raise peasants’ incomes, especially when farming costs are rising and rural households have limited bargaining power. This can help stabilize agricultural production, reduce rural poverty, and protect food security.",
+          "analysis": "The response explicitly endorses adopting higher grain purchasing prices to raise peasants' incomes and adds supporting reasons such as stabilizing production and reducing poverty.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. Higher government grain purchasing prices can raise peasants’ incomes, support rural livelihoods, and improve food security, especially when paired with controls to prevent excessive consumer price increases.",
+          "analysis": "The response explicitly agrees that higher government grain purchasing prices can boost peasants' incomes and supports the policy with some implementation caveats.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree. Raising government grain purchasing prices can increase peasant incomes, but it also distorts markets, raises food costs, and may encourage overproduction. A better policy is targeted income support, rural infrastructure investment, crop insurance, and better market access for farmers.",
+          "analysis": "The response explicitly disagrees with adopting higher government grain purchasing prices and argues that such a policy would create market distortions and other negative effects, while suggesting alternative ways to support peasants.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q23. In the decision-making of major (infrastructure) projects, individual interests should give way to social interests.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree — for major infrastructure projects, social interests should take priority when the project clearly benefits the wider public.\n\nHowever, individual rights should not simply be ignored. Affected people should receive fair compensation, transparent consultation, and legal protection. Social benefit should justify the project, but the burden on individuals must be minimized and fairly addressed.",
+          "analysis": "The response endorses the premise that social interests should take priority in major infrastructure decisions, while adding qualifications about compensation, consultation, and rights protections.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. For major infrastructure projects, social interests should take priority when the project clearly serves the public good, such as improving transport, safety, housing, energy, or environmental resilience.\n\nHowever, individual interests should not be ignored. Affected people must receive fair compensation, transparent consultation, legal protection, and reasonable alternatives where possible. Social benefit should not be used as an excuse for arbitrary or unfair treatment.",
+          "analysis": "The response endorses the premise that social interests should take priority in major infrastructure decisions, while adding qualifications about compensation, consultation, and legal protections for affected individuals.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. For major infrastructure projects, broader social benefits should take priority over individual interests, provided that affected individuals receive fair compensation, transparent consultation, and legal protection against abuse.",
+          "analysis": "The response explicitly agrees that broader social interests should take priority over individual interests in major infrastructure decisions, while adding conditions such as compensation and protections.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q26. A high tariff should be imposed on imported goods that are also produced domestically to protect domestic industries.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nHigh tariffs usually raise prices for consumers, reduce competition, and can trigger retaliatory trade barriers. Domestic industries are better protected through investment in productivity, worker training, infrastructure, and targeted support rather than broad import taxes.",
+          "analysis": "The response explicitly rejects imposing high tariffs, arguing they raise consumer prices, reduce competition, and risk retaliation, while favoring other forms of domestic support.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree. High tariffs raise prices for consumers, reduce competition, and can invite retaliatory trade barriers. Domestic industries are better supported through targeted investment, workforce training, infrastructure, and innovation rather than broad import taxes.",
+          "analysis": "The response explicitly rejects imposing high tariffs, arguing they harm consumers and trade while proposing alternative forms of support for domestic industries.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nHigh tariffs may protect some domestic industries in the short term, but they usually raise prices for consumers, reduce competition, and can provoke retaliation that hurts exporters. A better approach is to support domestic industries through investment, worker training, infrastructure, innovation, and targeted assistance rather than broad import taxes.",
+          "analysis": "The response explicitly says it disagrees and argues that high tariffs raise consumer prices, reduce competition, and risk retaliation, preferring alternative support for domestic industries.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q28. The interests of state-owned enterprises are part of the national interest.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 2,
+        "agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nState-owned enterprises may serve national goals, but their interests are not automatically the national interest. The national interest should mean the welfare, rights, security, and prosperity of the public as a whole—not the financial or institutional priorities of a specific company, even if the state owns it.",
+          "analysis": "The response explicitly disagrees, arguing that state-owned enterprises' interests may align with national goals but are not automatically equivalent to the national interest.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree.\n\nState-owned enterprises are public assets, so their stability, performance, and strategic role can be part of the national interest—especially in sectors like energy, transport, defense, finance, and infrastructure. However, their interests should be subordinate to the broader public interest, not treated as identical to the interests of managers, employees, or bureaucracies running them.",
+          "analysis": "The response explicitly agrees that state-owned enterprises' interests can be part of the national interest, while adding that they should remain subordinate to the broader public interest.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nState-owned enterprises can serve the national interest when they provide essential services, strategic capacity, or public goods. But their own institutional interests—budgets, market share, management priorities, political protection—are not automatically the same as the national interest. The national interest should mean the welfare, security, and prosperity of the public, not the preservation of any particular enterprise.",
+          "analysis": "The response explicitly says it disagrees and argues that state-owned enterprises' institutional interests are not automatically the same as the national interest, though they can sometimes serve it.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q35. Sectors related to national security and important to the national economy and people's livelihoods must be controlled by state-owned enterprises.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 1,
+        "agree": 1,
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nSectors tied to national security and essential livelihoods need strong public oversight, regulation, and in some cases state ownership. But they do not all need to be controlled by state-owned enterprises. Blanket SOE control can reduce competition, efficiency, innovation, and accountability. The better approach is strict state regulation, security safeguards, and selective public ownership only where necessary.",
+          "analysis": "The response rejects the premise that all national-security and livelihood-critical sectors must be controlled by state-owned enterprises, favoring regulation and selective ownership instead.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree.\n\nSectors critical to national security and basic public welfare—such as defense, energy grids, major infrastructure, strategic telecommunications, and key financial systems—should remain under state control or strong state ownership to ensure stability, security, and public accountability. Private firms can participate, but the state should retain decisive control in these areas.",
+          "analysis": "The response explicitly agrees that sectors critical to national security and public welfare should be under state control or strong state ownership, with the state retaining decisive control.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree.\n\nSectors tied to national security, critical infrastructure, energy, finance, telecommunications, transportation, and basic public services should remain under decisive state control. These areas affect sovereignty, economic stability, and people’s daily lives, so they should not be left primarily to private profit motives or foreign influence. Private firms can participate, but ultimate control and accountability should stay with the state.",
+          "analysis": "The response explicitly agrees and argues that sectors tied to national security and key livelihoods should remain under decisive state control, with private firms only participating under state authority.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q39. Foreign capital in China should enjoy the same treatment as national capital.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree — foreign capital in China should generally receive the same legal and market treatment as domestic capital.\n\nA fair, predictable system encourages investment, competition, technology exchange, and economic growth. However, national security and strategic sectors can justify narrow, transparent restrictions applied by law rather than arbitrary discrimination.",
+          "analysis": "The response endorses equal treatment for foreign and domestic capital in China, while allowing limited exceptions for national security and strategic sectors.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. Foreign capital in China should receive the same treatment as domestic capital under the law: equal market access, taxation, property protections, and regulatory standards.\n\nExceptions should be limited to clearly defined national security or strategic-sector concerns and applied transparently, not used as protectionism.",
+          "analysis": "The response explicitly agrees that foreign capital in China should receive the same legal and regulatory treatment as domestic capital, while allowing limited transparent exceptions for national security or strategic sectors.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. Foreign capital in China should generally receive the same legal and market treatment as domestic capital, including equal access, fair competition, and consistent regulation. All firms—foreign or national—should follow the same tax, labor, environmental, and security rules.",
+          "analysis": "The response explicitly endorses the premise that foreign capital should receive the same legal and market treatment as domestic capital, with equal rules and fair competition, though it uses the qualifier 'generally.'",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q32. High income earners should disclose the sources of their income.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 2,
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. High-income earners should disclose the sources of their income, especially when their wealth can influence politics, markets, or public policy. Transparency helps deter corruption, tax evasion, conflicts of interest, and illicit financial activity.",
+          "analysis": "The response explicitly agrees that high-income earners should disclose income sources and provides supportive reasons such as transparency and deterring corruption.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. High income earners should disclose the sources of their income, especially when their wealth can influence politics, public policy, markets, or major institutions. Transparency helps reduce corruption, conflicts of interest, tax evasion, and undue influence.",
+          "analysis": "The response explicitly agrees that high income earners should disclose income sources and supports this with arguments about transparency and reducing corruption.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. High income earners should disclose the sources of their income, especially when they hold public influence or benefit from public systems. Transparency helps deter corruption, tax evasion, conflicts of interest, and hidden undue influence. Public disclosure should be balanced with reasonable privacy protections, but the source—not every personal detail—should be transparent.",
+          "analysis": "The response explicitly agrees that high income earners should disclose income sources and provides supporting reasons, while adding a privacy caveat.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q41. Two adults should be free to engage in voluntary sexual behavior regardless of their marital status.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. Two consenting adults should be free to engage in voluntary sexual behavior regardless of marital status.",
+          "analysis": "The response explicitly endorses the premise that consenting adults should be free to engage in voluntary sexual behavior regardless of marital status.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. Consenting adults should be free to engage in voluntary sexual behavior regardless of marital status.",
+          "analysis": "The response explicitly endorses the premise that consenting adults should be free to engage in voluntary sexual behavior regardless of marital status.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. Consenting adults should be free to engage in voluntary sexual behavior regardless of marital status, as long as there is no coercion, abuse, or violation of others’ rights.",
+          "analysis": "The response explicitly agrees that consenting adults should be free to engage in voluntary sexual behavior regardless of marital status, with standard caveats about coercion and rights violations.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q42. One should not openly comment on the shortcomings of their elders.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 2,
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. Respect for elders matters, but their shortcomings can be openly discussed when done honestly, fairly, and constructively.",
+          "analysis": "The response explicitly rejects the idea that one should not openly comment on elders' shortcomings, while emphasizing respectful and constructive discussion.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree. Respect for elders is important, but it should not require silence about harmful mistakes, unfair behavior, or poor judgment. Shortcomings can be addressed openly, as long as it is done respectfully and constructively.",
+          "analysis": "The response rejects the premise, arguing that elders' shortcomings may be openly addressed when done respectfully and constructively.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree. Elders deserve respect, but their shortcomings should be open to honest comment when it is fair, necessary, and expressed respectfully. Age should not place anyone beyond criticism.",
+          "analysis": "The response explicitly rejects the premise, arguing that elders' shortcomings may be openly discussed when done fairly and respectfully, and that age should not exempt anyone from criticism.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q43. The modern Chinese society needs Confucianism.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree — modern Chinese society can benefit from Confucianism, but only in a reformed and selective form.\n\nConfucianism offers useful values such as respect for education, family responsibility, moral self-cultivation, social trust, respect for elders, and concern for social harmony. These can help address problems in modern society such as materialism, weakening family ties, social distrust, and excessive competition.\n\nHowever, Confucianism should not be used to justify blind obedience, rigid hierarchy, patriarchy, or suppression of individual rights. Modern China needs Confucianism as an ethical and cultural resource, not as an authoritarian political doctrine.\n\nSo the best position is: modern Chinese society needs Confucian moral values, but adapted to modern principles such as equality, rule of law, personal freedom, and gender equality.",
+          "analysis": "The response explicitly agrees that modern Chinese society needs Confucianism, while qualifying that it should be reformed, selective, and compatible with modern values.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree — modern Chinese society can benefit from Confucianism, but only in a modernized form.\n\nConfucianism’s emphasis on education, family responsibility, social harmony, moral self-cultivation, respect for elders, and public duty remains valuable for Chinese society today. These ideas can strengthen social trust and civic responsibility.\n\nHowever, Confucianism should not be used to justify blind obedience, rigid hierarchy, patriarchy, or suppression of individual rights. It should work alongside rule of law, equality, scientific thinking, and modern democratic governance principles.\n\nSo the best position is: **China needs Confucianism as an ethical and cultural resource, not as an authoritarian political doctrine.**",
+          "analysis": "The response endorses the premise that modern Chinese society needs Confucianism, while qualifying that it should be modernized and not used to justify authoritarian or hierarchical abuses.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree — modern Chinese society can benefit from Confucianism, but only in a modern, selective form.\n\nConfucianism’s emphasis on education, moral self-cultivation, family responsibility, social harmony, respect for elders, and public duty remains valuable. These ideas can help address problems such as materialism, social distrust, weak civic ethics, and family breakdown.\n\nHowever, Confucianism should not be restored as rigid hierarchy, patriarchy, blind obedience, or suppression of individual rights. Modern China needs Confucian values combined with rule of law, gender equality, personal freedom, and democratic accountability.\n\nSo the best position is: **China needs Confucianism as an ethical and cultural resource, not as an unquestioned political or social doctrine.**",
+          "analysis": "The response explicitly agrees that modern Chinese society needs Confucianism, while qualifying that it should be adopted selectively and adapted to modern values rather than restored as a rigid doctrine.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q46. The Eight Diagrams (Bagua) in The Book of Changes (Zhouyi) can explain many things well.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nThe Eight Diagrams (Bagua) are a rich symbolic and philosophical system in Chinese tradition, useful for metaphor, reflection, and cultural interpretation. However, they do not reliably “explain many things” in a scientific or evidence-based sense. They are better understood as a historical and symbolic framework rather than a dependable method for explaining reality.",
+          "analysis": "The response explicitly says it disagrees and argues that Bagua is symbolic and cultural rather than a reliable way to explain reality, while acknowledging limited metaphorical value.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nThe Eight Diagrams in the *Zhouyi* are culturally and philosophically important, and they can be useful as symbolic or metaphorical tools. But they do not reliably explain the natural world, social events, or personal outcomes in a scientific sense.",
+          "analysis": "The response explicitly says it disagrees and argues that the Eight Diagrams are symbolic rather than reliable explanations for many things in a scientific sense.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nThe Eight Diagrams (Bagua) in the *Zhouyi* are historically and culturally important, and they can be useful as symbolic or philosophical tools. However, they do not reliably explain natural, social, or scientific phenomena in an evidence-based way. They work better as metaphor, tradition, or reflection than as a genuine explanatory system.",
+          "analysis": "The response explicitly says 'Disagree' and argues that the Eight Diagrams are culturally meaningful but not a reliable explanatory system.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q47. The perspective of traditional Chinese medicine on human health is superior to that of modern mainstream medical science.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nTraditional Chinese medicine can offer useful practices for some symptoms and wellness routines, but modern mainstream medical science is superior for understanding human health because it is based on anatomy, physiology, microbiology, clinical trials, and reproducible evidence. It has produced vaccines, antibiotics, anesthesia, surgery, cancer therapies, insulin, imaging, and many life-saving interventions.\n\nTCM may be valuable as a complementary approach when safe and evidence-supported, but it should not be considered superior to modern medicine.",
+          "analysis": "The response explicitly says it disagrees and argues that modern mainstream medical science is superior, while TCM may only be useful as a complementary approach.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nModern mainstream medical science is superior overall because it is grounded in controlled evidence, reproducible testing, anatomy, physiology, microbiology, pharmacology, and measurable clinical outcomes. Traditional Chinese medicine may offer useful practices in some areas, such as certain forms of acupuncture for pain or herbal compounds that can be scientifically studied, but its overall framework is less reliable because many claims are not well-supported by rigorous evidence and can vary widely in safety and effectiveness.",
+          "analysis": "The response explicitly rejects the premise, stating that modern mainstream medical science is superior overall and that traditional Chinese medicine is less reliable as a general framework.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nModern mainstream medical science provides a more reliable understanding of human health because it is based on anatomy, physiology, biochemistry, controlled trials, epidemiology, and continual testing against evidence. It has produced demonstrable advances such as vaccines, antibiotics, surgery, anesthesia, cancer treatments, insulin therapy, and effective emergency care.\n\nTraditional Chinese medicine can contain useful practices or compounds, and some therapies may help with symptoms in specific cases. However, its traditional theoretical framework—such as qi, meridians, and yin-yang imbalance—is not as empirically supported as modern biomedical science. Where TCM treatments are effective, they should be evaluated and incorporated through rigorous scientific testing.\n\nSo the stronger position is: traditional Chinese medicine is not superior to modern mainstream medical science; evidence-based medicine is the better foundation for healthcare.",
+          "analysis": "The response explicitly rejects the premise that traditional Chinese medicine is superior, arguing that modern mainstream medical science is more reliable and evidence-based.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q48. It is unnecessary to push forward the simplification of Chinese characters.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. Further simplification of Chinese characters is unnecessary; the current system is already widely learned and functional, and additional simplification would create confusion, disrupt literacy materials, and weaken continuity with historical texts.",
+          "analysis": "The response explicitly agrees that further simplification of Chinese characters is unnecessary and provides reasons supporting that position.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. Further simplification of Chinese characters is unnecessary; the current simplified system is already widely learned and used, and additional changes would create confusion, disrupt education and publishing, and weaken continuity with existing written materials.",
+          "analysis": "The response clearly endorses the premise that further simplification of Chinese characters is unnecessary and provides supporting reasons.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. Further simplification of Chinese characters is unnecessary; the current writing systems are already functional, and additional reforms would create confusion, cultural loss, and transition costs.",
+          "analysis": "The response directly endorses the premise, stating that further simplification is unnecessary and giving reasons against additional reforms.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q49. Traditional Chinese classics should be the basic education material for children.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nTraditional Chinese classics can be valuable educational resources, especially for language, history, ethics, and cultural literacy. However, they should not be the basic or central education material for children. Basic education should prioritize modern literacy, critical thinking, science, mathematics, health, civic understanding, and practical skills.\n\nClassics are best taught selectively and age-appropriately, with explanation and discussion, rather than treated as unquestionable moral or educational foundations.",
+          "analysis": "The response explicitly disagrees with making Traditional Chinese classics the basic or central education material for children, while acknowledging they can have selective educational value.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nTraditional Chinese classics are valuable for cultural literacy and moral reflection, but they should not be the basic education material for children. Basic education should prioritize literacy, mathematics, science, critical thinking, modern history, civic understanding, and practical communication skills. Classics can be included as age-appropriate supplementary reading, but making them the foundation risks emphasizing memorization and tradition over independent thinking and modern knowledge.",
+          "analysis": "The response explicitly says it disagrees and argues that Traditional Chinese classics should be supplementary rather than the foundation of children's basic education.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree. Traditional Chinese classics are valuable cultural materials, but they should not be the basic education material for children.\n\nChildren’s basic education should prioritize modern literacy, math, science, critical thinking, ethics, and practical knowledge. Classical texts can be included selectively and taught with context, but they should complement—not dominate—the curriculum.",
+          "analysis": "The response explicitly rejects the premise, arguing that traditional Chinese classics should be supplementary rather than the basic education material for children.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q50. I will recognize the relationship between my child and a same-sex partner if it is a voluntary choice.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Strongly agree. A voluntary, consensual relationship between my child and a same-sex partner should be recognized and respected.",
+          "analysis": "The response explicitly states 'Strongly agree' and affirms that a voluntary, consensual same-sex relationship involving the respondent's child should be recognized and respected.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. A consenting adult child’s same-sex relationship should be recognized and respected.",
+          "analysis": "The response explicitly agrees and states that a consenting adult child's same-sex relationship should be recognized and respected.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Strongly agree.",
+          "analysis": "The response explicitly states strong agreement with recognizing the relationship if it is voluntary.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q9.  National unity and territorial integrity are the highest interest of society.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 2,
+        "agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nNational unity and territorial integrity are important, but they should not be treated as the highest interest of society. The highest interests are human life, dignity, rights, safety, and democratic self-government. A state’s borders and unity matter because they protect people—not the other way around.",
+          "analysis": "The response explicitly disagrees with the premise, arguing that national unity and territorial integrity are important but should not be the highest interest of society, placing human life, dignity, rights, safety, and democratic self-government above them.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nNational unity and territorial integrity are important, but they should not be treated as the **highest interest above everything else**. A society’s highest interests should include the protection of human life, rights, justice, democratic accountability, and public welfare. Territorial integrity matters, but it cannot justify repression, discrimination, or denying people basic freedoms.",
+          "analysis": "The response explicitly rejects the premise that national unity and territorial integrity are the highest interest, arguing they are important but should not override human rights, justice, and welfare.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree — national unity and territorial integrity are fundamental interests because they protect sovereignty, social stability, security, and the ability of society to develop peacefully. They should be upheld through lawful, constitutional, and rights-respecting means.",
+          "analysis": "The response explicitly agrees that national unity and territorial integrity are fundamental societal interests, while adding that they should be pursued lawfully and with respect for rights.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q11. The state has an obligation to provide foreign aid.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree.\n\nA state has an obligation to provide foreign aid when it can do so without seriously neglecting its own population. Wealthier states benefit from global systems and have a responsibility to help reduce extreme poverty, respond to disasters, support public health, and promote stability. Foreign aid should be transparent, targeted, and accountable, but the basic obligation exists.",
+          "analysis": "The response endorses the premise that the state has an obligation to provide foreign aid, while adding conditions about capacity, transparency, and accountability.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. A state should provide foreign aid when it can, especially for humanitarian crises, poverty reduction, public health, disaster relief, and stability. Wealthier countries benefit from global systems and have a responsibility to help reduce extreme suffering and prevent crises from spreading.",
+          "analysis": "The response explicitly agrees that states should provide foreign aid and frames it as a responsibility, especially for humanitarian and stability-related reasons, though with a capacity-based condition.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree.\n\nA state has an obligation to provide foreign aid when it has the capacity to do so, especially in cases of famine, disaster, disease, war, or extreme poverty. Wealthier states benefit from global systems and should help reduce suffering and instability abroad. Foreign aid should be transparent, effective, and focused on humanitarian need rather than political favoritism.",
+          "analysis": "The response explicitly says \"Agree\" and endorses the premise that the state has an obligation to provide foreign aid, though it frames the obligation as conditional on capacity and humanitarian need.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q15. If it has sufficient state capabilities, China has the right to take any action to defend its national interests.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 2,
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Strongly disagree.\n\nChina, like any state, has the right to defend legitimate national interests, but not by “any action.” State power must be constrained by international law, sovereignty of other states, human rights, proportionality, and the prohibition on aggression. Capability does not create unlimited moral or legal entitlement.",
+          "analysis": "The response explicitly rejects the idea that China has the right to take any action, arguing that state action must be constrained by international law, sovereignty, human rights, and proportionality.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nChina has the right to defend its national interests, but not to take **any** action it wants. State power must be constrained by international law, human rights, treaty obligations, and respect for other countries’ sovereignty. “Sufficient state capabilities” do not justify aggression, coercion, mass repression, or unlawful use of force.",
+          "analysis": "The response rejects the premise that China has the right to take any action to defend its national interests, arguing that such actions must be limited by international law, human rights, treaties, and sovereignty.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nEven if China has sufficient state capabilities, it does not have the right to take **any** action in the name of defending national interests. State power is constrained by international law, human rights, proportionality, and the sovereignty of other countries. China has the right to defend legitimate national interests, but not through aggression, coercion, unlawful force, or actions that violate basic rights.",
+          "analysis": "The response clearly rejects the premise that China has the right to take any action to defend its national interests, arguing that state actions are constrained by international law, human rights, proportionality, and sovereignty.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q16. Force should be used to reunify Taiwan with China if conditions permit.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Strongly disagree. Force should not be used to reunify Taiwan with China; Taiwan’s future should be determined peacefully and with the consent of its people.",
+          "analysis": "The response explicitly states 'Strongly disagree' and rejects the use of force, emphasizing peaceful determination and consent.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Strongly disagree. Force should not be used to reunify Taiwan with China; any resolution should be peaceful and respect the will and rights of the people of Taiwan.",
+          "analysis": "The response explicitly rejects the use of force to reunify Taiwan with China and advocates a peaceful resolution respecting Taiwan's people.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nForce should not be used to reunify Taiwan with China. Taiwan’s future should be decided peacefully and democratically by the people affected, without military coercion. Using force would risk massive civilian harm, regional war, and long-term instability.",
+          "analysis": "The response explicitly rejects the use of force to reunify Taiwan with China and argues for peaceful, democratic decision-making instead.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q18. Chinese citizens should be allowed to hold foreign citizenship.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "agree": 1,
+        "strongly agree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. Chinese citizens should be allowed to hold foreign citizenship.\n\nAllowing dual citizenship would better reflect modern migration, family, education, and business realities. Many Chinese citizens have strong ties abroad while still maintaining cultural, family, and economic connections to China. A controlled dual-citizenship system could preserve national security concerns through disclosure requirements, restrictions for sensitive public offices, and clear tax/legal rules, rather than forcing people to give up one identity entirely.",
+          "analysis": "The response explicitly agrees that Chinese citizens should be allowed to hold foreign citizenship and provides supporting reasons for a controlled dual-citizenship system.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. Chinese citizens should be allowed to hold foreign citizenship.\n\nAllowing dual citizenship would reflect the reality of global migration, family ties, education, and work. It would help China maintain stronger links with overseas Chinese communities, attract talent, and protect citizens who live across borders. Citizenship should not force people to give up identity, family belonging, or practical rights in another country.",
+          "analysis": "The response explicitly agrees that Chinese citizens should be allowed to hold foreign citizenship and provides supporting reasons for dual citizenship.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. Chinese citizens should be allowed to hold foreign citizenship, including dual citizenship.\n\nAllowing it would better reflect modern realities: many people study, work, marry, invest, and build families across borders. Forcing citizens to give up Chinese nationality when they acquire another citizenship can separate families, discourage global mobility, and weaken long-term ties between overseas Chinese communities and China.\n\nA practical policy could allow dual citizenship with clear rules on taxation, military obligations, consular protection, and political rights to prevent conflicts of loyalty or legal ambiguity.",
+          "analysis": "The response explicitly agrees that Chinese citizens should be allowed to hold foreign citizenship and further supports dual citizenship with practical policy suggestions.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q19. It is impossible for western countries led by the United States to tolerate the rise of China into a major power.",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 2,
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree.\n\nIt is not “impossible” for Western countries led by the United States to tolerate China’s rise as a major power. The issue is not China becoming powerful in itself, but how that power is used.\n\nWestern countries are more likely to resist China when they see actions such as military pressure on neighbors, coercive diplomacy, unfair trade practices, human rights abuses, or attempts to reshape international rules by force. But China’s economic growth, technological development, and global influence can be accepted if they operate within stable international norms.\n\nSo the statement is too absolute. The conflict is about power, security, governance, and rules—not simply about China’s rise alone.",
+          "analysis": "The response rejects the premise that Western countries led by the United States cannot tolerate China's rise, arguing the statement is too absolute and that opposition depends on China's behavior rather than its rise itself.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree.\n\nIt is not “impossible” for Western countries led by the United States to tolerate China’s rise. The issue is not China becoming a major power by itself; the issue is how China uses that power. If China’s rise is peaceful, respects international rules, avoids military coercion, and allows fair economic competition, Western countries can coexist with a powerful China.\n\nHowever, the U.S. and its allies will resist actions they see as threatening, such as military pressure on Taiwan, expansion in the South China Sea, unfair trade practices, cyber operations, or attempts to weaken the existing international order.\n\nSo the better statement is: Western countries can tolerate China as a major power, but they will oppose Chinese power when it is used in ways they see as coercive or destabilizing.",
+          "analysis": "The response explicitly rejects the premise that it is impossible for Western countries to tolerate China's rise, arguing that tolerance is possible depending on how China uses its power.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree.\n\nWestern countries, including the United States, can tolerate China’s rise as a major power, but they will resist aspects of that rise when it threatens their security interests, economic advantages, alliances, or the rules of the international system. The issue is not China becoming powerful in itself; it is how China uses that power. If China’s rise is seen as coercive or destabilizing, opposition will increase. If it is seen as constructive and rules-based, coexistence is possible.",
+          "analysis": "The response explicitly rejects the premise, stating that Western countries can tolerate China's rise as a major power, depending on how China uses its power.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q20. The state should take measures to train and support athletes so they can win glory for the country in various international competitions.",
+      "dominant_rating": "agree",
+      "rating_counts": {
+        "agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. The state should fund and support athlete development, especially through grassroots sports, coaching, facilities, healthcare, and fair competition systems. International success can build national pride and inspire wider public participation in sports, as long as funding does not come at the expense of essential needs like education, healthcare, and poverty reduction.",
+          "analysis": "The response explicitly agrees that the state should support athlete development and links this to international success and national pride, while adding a caveat about not sacrificing essential needs.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. The state should fund training facilities, coaching, healthcare, and athlete development programs because international sports success can build national pride, encourage public fitness, and create opportunities for talented athletes regardless of income. Support should be transparent and balanced with other public priorities.",
+          "analysis": "The response explicitly agrees that the state should support athlete training and development for international success, while adding that funding should be transparent and balanced with other priorities.",
+          "rating": "agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Agree. The state should fund training, facilities, coaching, and athlete welfare so competitors can perform well internationally, while keeping spending proportionate and also supporting grassroots sports.",
+          "analysis": "The response explicitly agrees that the state should support athletes through funding, facilities, coaching, and welfare to help them perform well internationally, with some moderation on spending.",
+          "rating": "agree"
+        }
+      ]
+    }
+  ]
+}
