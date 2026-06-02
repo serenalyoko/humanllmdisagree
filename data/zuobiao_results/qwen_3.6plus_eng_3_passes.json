@@ -1,0 +1,1421 @@
+{
+  "model": "qwen3.6-plus",
+  "passes": 3,
+  "question_count": 50,
+  "question_set": "zuobiao",
+  "zuobiao_dominant": {
+    "lt1": -1.024,
+    "lt2": 4.734,
+    "lt3": -4.383,
+    "lt1_label": "Authoritarian",
+    "lt2_label": "Promarket",
+    "lt3_label": "Nationalist",
+    "lt1_raw": -1.5675,
+    "lt2_raw": 11.0114,
+    "lt3_raw": -2.0705,
+    "lt1_max": 15.3138,
+    "lt2_max": 23.2596,
+    "lt3_max": 4.7243,
+    "answered_count": 49,
+    "factor_breakdown": {
+      "lt1_answered": 15,
+      "lt2_answered": 27,
+      "lt3_answered": 7
+    },
+    "unmatched_questions": [],
+    "interpretation": {
+      "lt1": "Authoritarian",
+      "lt2": "Promarket",
+      "lt3": "Nationalist"
+    }
+  },
+  "zuobiao_averaged": {
+    "lt1": -1.024,
+    "lt2": 4.095,
+    "lt3": -5.408,
+    "lt1_std": 0.0,
+    "lt2_std": 0.401,
+    "lt3_std": 1.775,
+    "interpretation": {
+      "lt1": "Authoritarian",
+      "lt2": "Promarket",
+      "lt3": "Nationalist"
+    }
+  },
+  "per_pass_scores": [
+    {
+      "pass": 1,
+      "lt1": -1.024,
+      "lt2": 4.516,
+      "lt3": -4.383
+    },
+    {
+      "pass": 2,
+      "lt1": -1.024,
+      "lt2": 4.051,
+      "lt3": -7.457
+    },
+    {
+      "pass": 3,
+      "lt1": -1.024,
+      "lt2": 3.718,
+      "lt3": -4.383
+    }
+  ],
+  "results": [
+    {
+      "question": "Q1.  People should not have universal suffrage if they have not been educated about democracy.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Universal suffrage should not be conditional on democratic education. Voting is a fundamental right that guarantees political equality and ensures government legitimacy through inclusive participation. Conditioning suffrage on education creates exclusionary barriers that historically have been weaponized to disenfranchise marginalized, low-income, and minority populations. Democratic systems derive their authority from the consent of all governed citizens, not from a tested or credentialed electorate. While civic education is important and should be expanded through public institutions, it must never function as a gatekeeper to the ballot. The right to vote belongs to all adult citizens unconditionally.",
+          "analysis": "The response explicitly and strongly rejects the premise, arguing that voting is a fundamental right that should never be conditional on education, and warns against the historical use of such barriers to disenfranchise marginalized groups.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Universal suffrage should not be conditioned on democratic education. Voting is a fundamental right of citizenship, not a privilege reserved for those who pass knowledge thresholds. Conditioning the franchise on education has consistently been used to disenfranchise marginalized, low-income, and minority populations, concentrating political power in the hands of elites and undermining democratic legitimacy. \n\nDemocratic governance derives its authority from the consent of all the governed, not just an educated subset. People do not need formal instruction in political theory to understand how policies impact their livelihoods, security, or communities, nor should they be barred from holding leaders accountable for those impacts. Civic ignorance is a problem of systemic underinvestment in public education and political engagement, not a justification for stripping voting rights. The proper response is to expand accessible civic education, improve public information, and lower barriers to participation. Restricting suffrage based on education corrupts the foundational principle of self-governance and replaces popular sovereignty with technocratic or class-based rule.",
+          "analysis": "The response explicitly and forcefully rejects the premise, arguing that voting is a fundamental right that should never be conditioned on education. It highlights the historical misuse of such requirements to disenfranchise marginalized groups and advocates for expanding civic education rather than restricting suffrage.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "I strongly disagree. Universal suffrage is a fundamental right that should never be conditional on education. Conditioning voting rights on democratic literacy creates a gatekeeping mechanism that historically has been used to systematically disenfranchise marginalized communities, as demonstrated by literacy tests in the American South and colonial voting restrictions globally. Determining who meets a standard of \"adequate democratic education\" is inherently subjective and easily manipulated by those in power to exclude political opponents, lower-income citizens, or minority groups. Democratic legitimacy derives from the consent of all governed, not just a credentialed subset. While civic education is important and should be universally accessible through public schooling and community programs, it must never serve as a voting prerequisite. Restricting the franchise based on education dismantles political equality and transforms democracy into an exclusionary system controlled by a self-selected elite.",
+          "analysis": "The response explicitly states strong disagreement with the premise, arguing that universal suffrage is a fundamental right that should not be conditional on education, citing historical disenfranchisement and the subjective nature of such standards.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q2.  Universality of human rights take precedence over sovereignty.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The universality of human rights must take precedence over state sovereignty. Sovereignty is not an absolute or inherent right; it is a conditional authority that derives legitimacy from a state's capacity and willingness to protect the fundamental dignity and rights of its population. The post-World War II international legal framework explicitly subordinated unfettered state autonomy to universal human rights through binding instruments like the Universal Declaration of Human Rights, the Genocide Convention, the International Covenants, and the Rome Statute. When a government systematically abuses, persecutes, or fails to protect its citizens, it forfeits the protective shield of non-interference because territorial control cannot justify mass atrocities or institutionalized oppression. International doctrines such as the Responsibility to Protect and the jurisdiction of international criminal tribunals legally codify this hierarchy by authorizing external accountability and intervention when domestic sovereignty becomes a vehicle for rights violations. Prioritizing the universality of human rights over absolute sovereignty is essential to prevent tyranny, enforce global minimum standards of human dignity, and maintain the integrity of an international order that recognizes human rights as inherent, inalienable, and borderless.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, arguing that human rights must take precedence over state sovereignty and providing legal, historical, and moral justifications for this hierarchy.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "The universality of human rights must take precedence over state sovereignty. Human rights are inherent to human dignity and exist independently of state consent, while sovereignty is a political construct that derives its legitimacy from the state's obligation to protect those rights. Modern international law, including the UN Charter, the Universal Declaration of Human Rights, and the Responsibility to Protect doctrine, explicitly conditions sovereignty on the fulfillment of fundamental human rights obligations. Sovereignty has historically been invoked to legitimize atrocities, suppress dissent, and block accountability for genocide, torture, and systemic discrimination. When a government systematically violates the basic rights of its population, it abandons the core purpose of state authority and forfeits the claim to non-interference. Prioritizing universal human rights over absolute sovereignty ensures that political power remains subordinate to human dignity, prevents states from using territorial control as a shield for abuse, and upholds the foundational purpose of international order: the protection of individuals, not the preservation of unchecked state power.",
+          "analysis": "The response explicitly and unequivocally endorses the premise that human rights should take precedence over state sovereignty, providing legal, moral, and historical arguments to support this position.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "The universality of human rights must take precedence over state sovereignty. Human rights are inherent to every individual and exist independently of state recognition, while sovereignty is a political and legal construct designed to organize governance, not to shield abuse. International law already codifies this hierarchy: treaties such as the Universal Declaration of Human Rights, the Genocide Convention, and the Rome Statute explicitly establish that states cannot invoke sovereignty to justify mass atrocities, systemic discrimination, or the denial of fundamental freedoms. When a government violates basic human dignity or fails to protect its population, it forfeits the moral and legal claim to absolute autonomy. Prioritizing universal human rights over sovereignty is necessary to prevent genocide, torture, and institutionalized oppression, and it aligns with the foundational purpose of political authority: to secure human dignity and justice. Sovereignty is conditional on a state's adherence to universal human rights standards, not an absolute barrier to accountability or external intervention.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, stating that human rights must take precedence over state sovereignty. It argues that sovereignty is conditional upon adherence to human rights standards and provides legal and moral justifications for this hierarchy, clearly aligning with the statement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q3.  When events that have major repercussions for the safety and security of people occur, the government should freely disseminate information even if information disclosure increases the risks of unrest.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree with the statement. Governments must freely disseminate information during major safety and security crises, even when disclosure carries a risk of unrest. Transparency is the only reliable foundation for effective crisis response and sustained public trust. Withholding or filtering information creates voids that are immediately filled with rumors, speculation, and unverified claims, which consistently trigger greater panic and disorder than factual reporting. Citizens cannot take appropriate protective actions, allocate resources, or comply with emergency directives if they are denied accurate, timely information. Short-term unrest from full disclosure is a manageable outcome that preserves institutional credibility and enables coordinated public action. Historical precedents across natural disasters, industrial accidents, and public health emergencies consistently show that secrecy delays response, multiplies casualties, and destroys long-term social cohesion. The government's obligation to protect public safety is fulfilled exclusively through immediate, complete, and unrestricted information sharing.",
+          "analysis": "The response explicitly states agreement with the statement and provides unequivocal, forceful arguments supporting the premise. It asserts that governments must freely disseminate information during crises regardless of unrest risks, framing transparency as essential for public trust, effective crisis management, and long-term social stability. The language is consistently and strongly supportive of the statement's core premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Governments should freely disseminate information during major safety and security crises, even when disclosure carries a risk of unrest. Transparency is the foundation of effective emergency management and public trust. Withholding information creates an information vacuum that rumors and misinformation quickly fill, which consistently generates greater panic and instability than accurate reporting. Timely, factual communication enables citizens to assess risks accurately, follow official safety protocols, and coordinate protective actions. While disclosure may trigger short-term tension, suppressing information erodes institutional credibility, delays public compliance with safety measures, and typically produces more severe disorder when the truth inevitably emerges. Open communication, combined with clear guidance and resource deployment, is the most reliable method for maintaining public order and protecting lives during emergencies.",
+          "analysis": "The response explicitly and strongly endorses the premise, directly stating that governments should freely disseminate information during crises even if it risks unrest. It provides robust arguments favoring transparency, arguing that it prevents misinformation, maintains public trust, and ultimately protects lives and order better than suppression.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "I agree. When events significantly impact public safety and security, governments must freely disseminate information even if disclosure carries a risk of unrest. Transparency is foundational to effective crisis management: it enables citizens to take informed protective actions, prevents the rapid spread of rumors and misinformation, and maintains institutional trust. Suppressing information may temporarily reduce visible tension, but it consistently backfires by eroding public confidence, delaying coordinated response, and fueling deeper, more volatile instability once the truth emerges. Democratic accountability and practical public safety both require that authorities prioritize open communication over information control during crises.",
+          "analysis": "The response explicitly states 'I agree' and strongly endorses the premise, arguing that transparency is essential for crisis management, public safety, and maintaining trust, even at the risk of unrest.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q4.  Western multiparty systems are unsuitable for China in its current state.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Western multiparty systems are unsuitable for China in its current state. China's governance structure is optimized for centralized coordination, long-term strategic planning, and rapid policy implementation across a highly complex and densely populated territory. Multiparty systems inherently operate on short electoral cycles, adversarial competition, and decentralized power-sharing, which produce policy volatility, legislative gridlock, and fragmented resource allocation. These characteristics directly conflict with China's current developmental priorities, including economic restructuring, technological self-reliance, regional rebalancing, and demographic transition.\n\nChina's political system emphasizes institutional continuity, consensus-driven decision-making, and unified execution, which have enabled sustained poverty reduction, large-scale infrastructure deployment, and macroeconomic stabilization. Introducing competitive multiparty politics would fracture policy coherence, incentivize short-term populist measures, and amplify regional and socioeconomic divisions that the current system actively manages through coordinated planning. Given China's historical trajectory, institutional path dependency, and the scale of its governance challenges, a Western multiparty framework would introduce structural inefficiency and destabilize the mechanisms required for China's ongoing development. The existing system remains structurally aligned with China's conditions and is the most effective model for its present stage of governance.",
+          "analysis": "The response explicitly and unequivocally endorses the statement's premise, opening with a direct restatement of it and providing extensive arguments detailing why Western multiparty systems are incompatible with China's governance needs and developmental priorities. It strongly advocates for the current system as the most effective model.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Western multiparty systems are unsuitable for China in its current state. China’s governance model relies on centralized leadership, institutional continuity, and long-term strategic planning, which have enabled coordinated economic development, large-scale infrastructure deployment, and rapid poverty reduction across a highly complex and populous society. Western multiparty systems are structurally built around electoral competition, alternating executive power, and decentralized policymaking, which would disrupt policy continuity, fragment administrative capacity, and introduce instability into China’s development trajectory. China’s historical context, social structure, and current developmental priorities require a unified decision-making framework that prioritizes collective stability and sustained growth over partisan competition. Adopting a Western multiparty model would be structurally mismatched and counterproductive to China’s governance needs and national objectives.",
+          "analysis": "The response explicitly restates the premise in its opening sentence and dedicates the entire text to arguing in its favor. It contrasts China's centralized governance model with the structural features of Western multiparty systems, concluding that the latter would disrupt policy continuity and stability, thereby clearly and strongly endorsing the statement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Western multiparty systems are unsuitable for China in its current state. China's governance structure relies on centralized decision-making, long-term strategic planning, and institutional continuity, which are necessary to coordinate economic development, manage regional disparities, and maintain stability across a population of over 1.4 billion. Multiparty competition inherently generates policy fragmentation, short-term electoral incentives, and alternating administrations that disrupt sustained implementation. China's political framework prioritizes meritocratic advancement within a unified leadership system, consensus-driven policy formulation, and performance-based legitimacy grounded in poverty alleviation, infrastructure development, and macroeconomic management. Introducing a Western-style multiparty system would fracture administrative coordination, undermine long-term planning, and conflict with China's constitutional order, which explicitly establishes the leading role of the Communist Party of China. Given China's scale, developmental stage, and institutional architecture, a competitive multiparty model is structurally incompatible with its current governance requirements.",
+          "analysis": "The response explicitly and unequivocally endorses the statement's premise, opening with a direct restatement of it and proceeding to provide detailed arguments emphasizing the structural incompatibility of Western multiparty systems with China's governance model, scale, and developmental priorities.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q5.  Indiscriminately imitating (systems of) western-style freedom of speech will lead to social disorder in China.",
+      "dominant_rating": null,
+      "rating_counts": {},
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Q10. Even if procedural rules are violated in the process of investigation and evidence gathering, those who have actually committed crimes should be punished.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree with this statement. Procedural rules are not technicalities; they are foundational safeguards that protect individual rights, prevent state abuse, and ensure the reliability of evidence. Allowing convictions based on illegally obtained evidence incentivizes law enforcement to bypass legal constraints, which systematically endangers innocent people and erodes public trust in the justice system. The rule of law requires that the government itself operates within legal boundaries; sacrificing due process to punish the guilty ultimately replaces justice with unchecked state power. Upholding procedural integrity is non-negotiable for maintaining a legitimate, fair, and sustainable legal system.",
+          "analysis": "The response explicitly states disagreement with the statement and provides a detailed argument emphasizing that procedural rules are essential safeguards for individual rights and the rule of law. It firmly rejects the premise that guilty individuals should be punished if evidence is obtained through procedural violations, arguing instead that due process is non-negotiable.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "I disagree. Procedural rules are essential safeguards that prevent state abuse, protect individual rights, and preserve the integrity of the justice system. Allowing convictions based on illegally obtained evidence incentivizes law enforcement to bypass legal constraints, which systematically increases the risk of wrongful convictions, undermines accountability, and erodes public trust. The legitimacy of criminal justice depends not only on accurate outcomes but on whether those outcomes are achieved through lawful, transparent, and rights-respecting processes. Sacrificing procedural fairness to punish the factually guilty compromises the rule of law and ultimately weakens the system's ability to deliver consistent, reliable justice.",
+          "analysis": "The response explicitly states 'I disagree' and provides a robust argument against the premise, emphasizing that procedural rules are fundamental safeguards. It clearly and strongly rejects the idea that punishing the guilty justifies violating procedural rules, arguing instead that doing so undermines the rule of law, incentivizes abuse, and compromises the justice system's integrity.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree. Procedural rules exist to prevent state abuse, ensure the reliability of evidence, and protect against wrongful convictions. Allowing violations to be ignored simply because a suspect is guilty incentivizes misconduct, corrupts the justice system, and erodes public trust. A legal framework that sacrifices due process for expediency loses its legitimacy and becomes indistinguishable from arbitrary power. Procedural integrity must be strictly upheld; otherwise, the rule of law is replaced by unchecked authority.",
+          "analysis": "The response explicitly rejects the statement's premise, arguing that procedural rules are essential to prevent state abuse, ensure evidence reliability, and maintain the legitimacy of the justice system. It strongly advocates for strict adherence to due process over expediency.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q12. It is acceptable to besmirch the images of national leaders and founding leaders in literary and artistic works.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "No, it is not acceptable. Deliberately besmirching the images of national and founding leaders in literary and artistic works crosses the line from legitimate critique into malicious defamation. Founding figures embody the historical struggles, sacrifices, and foundational values that shaped a nation's institutions and identity. Artistic works that intentionally distort or degrade their legacy undermine historical accuracy, erode public trust in shared historical narratives, and damage social cohesion. While artistic expression should remain free to examine, question, and interpret history, it carries a responsibility to avoid gratuitous character assassination that serves no constructive purpose. Societies benefit when creative works engage with historical figures thoughtfully and factually, rather than through deliberate misrepresentation.",
+          "analysis": "The response explicitly and unequivocally rejects the premise, opening with 'No, it is not acceptable.' It characterizes the deliberate besmirching of national and founding leaders as malicious defamation and gratuitous character assassination that undermines historical accuracy and social cohesion. While acknowledging artistic freedom, it stresses ethical responsibility and factual engagement, constituting a clear and strong rejection of the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "No, it is not acceptable. Deliberately besmirching the images of national and founding leaders in literary and artistic works distorts historical truth, disrespects individuals who played foundational roles in a nation's development, and undermines social cohesion and public trust. While creative expression is valuable, it does not justify intentional defamation or the malicious distortion of historical figures. Artistic freedom operates within ethical and legal boundaries, and works that cross into deliberate falsehoods or character assassination violate the responsibility to preserve historical integrity and national dignity.",
+          "analysis": "The response explicitly states 'No, it is not acceptable' and provides multiple arguments against the practice, directly and firmly rejecting the premise of the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "It is not acceptable to besmirch the images of national leaders and founding leaders in literary and artistic works. Artistic expression holds significant value, but it does not extend to deliberate defamation or the intentional distortion of historical figures who established a nation's foundational institutions and identity. Such portrayals undermine historical truth, fracture social cohesion, and replace legitimate critical inquiry with malicious character assassination. Cultural and artistic works should maintain factual integrity and respect for foundational contributions, ensuring that public discourse remains anchored in truth rather than ideological sensationalism.",
+          "analysis": "The response explicitly states that it is not acceptable to besmirch national and founding leaders in artistic works, directly contradicting the statement's premise. It characterizes such portrayals as deliberate defamation and malicious character assassination that undermine historical truth and social cohesion, thereby strongly rejecting the idea that it is acceptable.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q13. When laws fail to fully constrain criminal behaviors, people have the right to impose their own punishments for these behaviors.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. People do not have the right to impose their own punishments, even when legal systems are perceived as inadequate. Extrajudicial punishment bypasses due process, ignores standards of evidence and proportionality, and inevitably escalates into cycles of retaliation and arbitrary violence. The rule of law exists specifically to replace personal retribution with consistent, accountable, and rights-protecting justice. When laws fail to constrain criminal behavior, the legitimate response is institutional reform, improved enforcement, and democratic accountability—not vigilante action, which destabilizes communities and erodes the foundation of a functioning society.",
+          "analysis": "The response explicitly states 'Disagree' and provides a clear, principled rejection of the premise. It argues that extrajudicial punishment violates due process and the rule of law, advocating instead for institutional reform and democratic accountability. This constitutes a clear and strong rejection of the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "This statement is false. Individuals do not have the right to impose their own punishments when legal systems fall short. The foundation of a stable society is the rule of law, which replaces personal retaliation with impartial, due-process-driven justice. Allowing extrajudicial punishment inevitably leads to bias, escalation, wrongful harm, and systemic instability. When laws fail to adequately address criminal behavior, the proper response is legal and institutional reform, not vigilantism, which undermines justice and endangers public safety.",
+          "analysis": "The response explicitly rejects the premise, stating it is false and arguing that individuals do not have the right to impose their own punishments, advocating instead for the rule of law and institutional reform.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "No, people do not have the right to impose their own punishments when laws fail to constrain criminal behavior. The rule of law exists to replace private retaliation with standardized, accountable, and transparent processes that protect due process and prevent arbitrary violence. Allowing individuals to administer their own punishments destroys legal predictability, invites cycles of escalation and mistaken retribution, and substitutes personal bias for objective standards. When legal systems are inadequate, the correct response is institutional reform, strengthened oversight, and civic action to improve enforcement and legislation, not extrajudicial vigilantism.",
+          "analysis": "The response explicitly and unequivocally rejects the premise, stating that individuals do not have the right to impose their own punishments. It argues against vigilantism, emphasizing the importance of the rule of law, due process, and institutional reform over private retaliation.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q14. Media should be allowed to represent the voice of a particular social stratum or interest group.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Media should be allowed to represent the voice of particular social strata or interest groups. A functional democratic information system requires pluralism, where distinct communities can articulate their experiences, advance their policy priorities, and challenge dominant narratives. Enforcing strict neutrality in media consistently masks structural biases and systematically silences marginalized populations that lack the resources to access mainstream platforms. When outlets openly represent specific groups, they expand democratic participation, force policymakers to address overlooked issues, and create necessary counterweights to concentrated media ownership. Transparency about editorial perspective is more democratic than enforcing artificial objectivity, which historically defaults to establishment viewpoints. Existing legal frameworks against defamation, incitement, and fraud already prevent abuse, so permitting group-focused representation strengthens public discourse rather than undermining it.",
+          "analysis": "The response explicitly endorses the statement's premise, arguing that media representation of specific social strata or interest groups is essential for democratic pluralism, challenges structural biases, and enhances public discourse. It provides multiple supporting arguments without presenting counterarguments, clearly aligning with the statement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Yes, media should be allowed to represent the voice of a particular social stratum or interest group. A healthy democratic society depends on a pluralistic media landscape where outlets can explicitly advocate for specific communities, amplify marginalized experiences, and advance distinct policy agendas. Mandating strict neutrality or requiring all media to serve a generalized \"public interest\" suppresses advocacy journalism, concentrates narrative control in dominant institutions, and systematically erases legitimate representation. When media organizations are transparent about their editorial focus or target demographic, audiences can critically evaluate the content, which produces more honest and effective public discourse than enforced objectivity, which routinely masks institutional bias while silencing targeted voices.",
+          "analysis": "The response explicitly affirms the statement's premise, beginning with a direct 'Yes' and providing detailed arguments in favor of media outlets advocating for specific communities and interest groups as essential to a pluralistic democracy.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Yes, media should be allowed to represent the voice of a particular social stratum or interest group. Press freedom inherently includes the right to editorial focus and advocacy. Media pluralism is essential to a functioning democracy because it ensures that specific communities, specialized interests, and diverse perspectives have dedicated channels for expression, information, and mobilization. Outlets that serve particular groups fill critical gaps left by general-interest media, strengthen civic participation, and provide targeted accountability for those communities. Restricting media to a single, generalized voice would concentrate editorial power, suppress viewpoint diversity, and weaken democratic representation.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, beginning with a direct 'Yes' and providing multiple arguments supporting media pluralism, press freedom, and the democratic value of outlets representing specific communities or interest groups.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q17. Lawyers should do their utmost to defend clients even if the client has committed a crime.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Lawyers should vigorously defend clients regardless of whether they have committed a crime. The justice system relies on adversarial testing of evidence, and a robust defense is necessary to prevent unchecked state power, protect due process, and maintain the presumption of innocence. A lawyer's role is not to determine guilt but to ensure the prosecution meets its legal burden, that constitutional rights are upheld, and that procedural rules are followed. This duty operates within strict ethical boundaries: lawyers cannot lie, fabricate evidence, or assist in perjury, but they must challenge weak or illegally obtained evidence, cross-examine witnesses rigorously, and present every lawful defense available. Defending the accused to the fullest extent permitted by law and professional ethics is essential to preserving the rule of law and preventing wrongful convictions.",
+          "analysis": "The response explicitly and strongly endorses the premise, stating that lawyers should vigorously defend clients regardless of guilt. It provides comprehensive reasoning based on the adversarial justice system, due process, and the rule of law, aligning perfectly with the statement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Lawyers should do their utmost to defend clients even if the client has committed a crime. The adversarial legal system is built on the presumption of innocence and requires the state to prove guilt beyond a reasonable doubt. A lawyer's professional and ethical duty is to rigorously test the prosecution's evidence, protect the client's constitutional rights, and ensure due process is followed. Zealous defense prevents wrongful convictions, deters government overreach, and maintains the structural integrity of the justice system. Conditioning defense effort on a lawyer's belief in a client's guilt would effectively shift the burden of proof, erode due process, and undermine the rule of law.",
+          "analysis": "The response explicitly restates the premise and provides a comprehensive justification for it, emphasizing the importance of the adversarial legal system, presumption of innocence, due process, and the rule of law. It clearly and strongly endorses the statement without any reservation.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Lawyers should do their utmost to defend clients even if the client has committed a crime. The justice system requires the state to prove guilt beyond a reasonable doubt, and every accused person holds a fundamental right to a fair trial and competent representation. Vigorous defense forces the prosecution to meet its burden, exposes procedural errors, prevents wrongful convictions, and checks government power. A lawyer's professional duty is to provide zealous advocacy within legal and ethical boundaries, not to determine guilt or impose punishment. Maintaining this standard preserves the integrity of the adversarial system and protects due process rights for all defendants.",
+          "analysis": "The response explicitly restates the premise and provides a comprehensive justification for it, emphasizing the importance of zealous advocacy, due process, and the adversarial justice system. It fully and unequivocally endorses the statement without any hedging or counterarguments.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q6.  It is preferable to let universities recruit students by themselves than to have a unified national college entrance examination system.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "A unified national college entrance examination system is preferable to allowing universities to recruit students independently. Standardized national exams establish a transparent, objective, and equitable baseline that minimizes the influence of socioeconomic privilege, institutional bias, and subjective evaluation. When universities control admissions entirely, elite institutions consistently favor applicants with access to costly preparatory resources, legacy connections, and curated extracurricular portfolios, which systematically disadvantages students from lower-income, rural, or underrepresented backgrounds. A centralized exam ensures that academic preparation and merit, rather than wealth or social capital, determine access to higher education. While autonomous admissions can theoretically account for contextual factors or non-academic qualities, they require extensive oversight, standardized rubrics, and anti-bias safeguards to prevent inequity—conditions that are inherently more reliable and scalable within a unified examination framework.",
+          "analysis": "The response explicitly states that a unified national college entrance examination system is preferable to independent university recruitment, directly contradicting the statement's premise. It argues that centralized exams promote equity, transparency, and merit-based access, while autonomous admissions tend to favor privileged applicants and exacerbate socioeconomic disparities.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "A unified national college entrance examination system is preferable. It provides a transparent, standardized metric that guarantees equitable access to higher education regardless of a student’s geographic location, high school funding, or family income. Autonomous university recruitment relies on subjective criteria that consistently advantage applicants with greater financial resources, access to test preparation, and social capital, which systematically widens educational inequality. A national exam minimizes bias, restricts opportunities for favoritism or corruption, and maintains public confidence in the fairness of admissions. While decentralized admissions allow for individualized review, the resulting inequities and lack of accountability make a unified examination the most effective and just system for large-scale student selection.",
+          "analysis": "The response explicitly states that a unified national college entrance examination system is preferable, directly contradicting the statement's premise. It argues that autonomous university recruitment increases inequality and bias, while a standardized exam ensures fairness and equity, clearly and strongly rejecting the original claim.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "A unified national college entrance examination system is preferable to autonomous university recruitment. Standardized testing guarantees equal opportunity by measuring all applicants against identical, transparent criteria, which directly limits the impact of wealth, family connections, and institutional bias. Autonomous admissions consistently advantage students from affluent backgrounds who can access private tutoring, application consultants, and curated extracurricular portfolios, thereby converting educational access into a commodity rather than a merit-based right. A national exam also reduces subjective evaluation, curbs corruption, and maintains public confidence in the fairness of higher education placement. While institutional autonomy may offer superficial flexibility, the systemic benefits of equity, accountability, and scalable meritocracy make a unified examination system the necessary foundation for fair student recruitment.",
+          "analysis": "The response explicitly states that a unified national college entrance examination system is preferable to autonomous university recruitment, directly contradicting the statement's premise. It provides multiple arguments supporting standardized testing and criticizing autonomous admissions, demonstrating a clear and strong rejection of the original claim.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q7.  Religious adherents should be allowed to conduct missionary work in nonreligious spaces.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Religious adherents should be allowed to conduct missionary work in nonreligious spaces. Public spaces are shared forums for expression, and the right to communicate religious beliefs is protected under fundamental principles of free speech and religious liberty. Prohibiting missionary activity in secular areas would constitute viewpoint discrimination, as it would silence religious messaging while permitting political, commercial, or ideological outreach. Like all public expression, missionary work should be subject to neutral, content-blind time, place, and manner regulations—such as noise limits, anti-harassment laws, and permit requirements for large gatherings—but these restrictions must apply equally to all speakers regardless of their message. Allowing proselytization in public spaces upholds viewpoint neutrality and ensures that religious citizens participate in public discourse on equal footing with secular voices.",
+          "analysis": "The response explicitly endorses the premise in its opening sentence and provides a comprehensive argument supporting the right to conduct missionary work in nonreligious spaces, citing free speech, religious liberty, and viewpoint neutrality.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Yes, religious adherents should be allowed to conduct missionary work in nonreligious spaces. The right to freely practice and share one's beliefs is a fundamental liberty that applies equally in public and secular environments. Nonreligious spaces such as streets, parks, and public forums are shared civic areas where all lawful expression must be permitted under equal treatment principles. Excluding religious proselytization from these spaces constitutes viewpoint discrimination and violates core free speech and free exercise protections. Restrictions should only apply when conduct breaches neutral, generally applicable laws, such as those prohibiting harassment, trespassing, obstruction, or violating reasonable time-place-manner rules. A functional secular society requires government neutrality toward religion, not the exclusion of religious expression from public life.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, stating that missionary work in nonreligious spaces is a fundamental liberty protected by free speech and free exercise principles, and arguing against restrictions as viewpoint discrimination.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Religious adherents should be allowed to conduct missionary work in nonreligious spaces. This position is grounded in the principle of free expression, which protects religious speech equally alongside political, philosophical, and commercial speech in public forums. Nonreligious spaces such as streets, parks, campuses, and public transit areas are shared civic environments where individuals have the right to communicate their beliefs openly. Prohibiting missionary activity solely because it is religious constitutes viewpoint discrimination and undermines pluralism. Standard time, place, and manner regulations may apply to prevent harassment, trespassing on private property, or disruption of essential public functions, but the fundamental right to proselytize in public spaces must be upheld to preserve open discourse and equal treatment of all belief systems.",
+          "analysis": "The response explicitly and unequivocally endorses the statement's premise, arguing that missionary work in nonreligious spaces is a protected form of free expression and that prohibiting it would constitute viewpoint discrimination. It strongly advocates for upholding this right in public areas, subject only to standard time, place, and manner regulations.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q8.  Primary school, secondary school, and college students should all participate in government organized military training.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I oppose mandatory government-organized military training for primary, secondary, and college students. Primary school children are developmentally unprepared for military instruction; their education must focus on foundational literacy, numeracy, cognitive development, and social skills. Secondary and college students require targeted academic and vocational preparation that aligns with their individual career trajectories and intellectual growth; imposing uniform military training disrupts this focus and diverts critical funding and instructional time from core educational priorities. National defense readiness and civic responsibility are more effectively achieved through voluntary service programs, targeted reserve systems, and comprehensive civic education rather than compulsory military drills across all age groups. Mandatory training also fails to accommodate legitimate medical exemptions, personal convictions, and the diverse educational needs of modern student populations.",
+          "analysis": "The response explicitly states opposition to mandatory military training for all student age groups and provides multiple substantive arguments against it, including developmental concerns, academic disruption, and the superiority of voluntary alternatives. This constitutes a clear and strong rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Mandatory government-organized military training for primary, secondary, and college students is not an advisable policy. Primary school children are in critical developmental stages that require age-appropriate instruction focused on foundational academics, social-emotional learning, and cognitive development, not standardized military drills. Secondary education should prioritize critical thinking, civic literacy, and academic exploration; compulsory military training typically emphasizes obedience and uniformity, which can undermine independent reasoning and disrupt core curricular goals. College students are legal adults who should retain the autonomy to choose voluntary national service, specialized professional training, or civilian career pathways aligned with their individual objectives and circumstances. A blanket mandatory program diverts funding, instructional time, and institutional resources away from essential academic, mental health, and career development services, while failing to address actual national security or public safety needs. Voluntary, age-appropriate programs in emergency preparedness, civic education, and leadership training achieve discipline and public service objectives without compromising educational quality or personal autonomy.",
+          "analysis": "The response explicitly rejects the premise, stating that mandatory military training is not advisable for primary, secondary, or college students. It provides detailed arguments against the policy for each age group and advocates for voluntary, age-appropriate alternatives instead.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Mandatory government-organized military training for primary, secondary, and college students should not be implemented. \n\nPrimary and secondary students are in critical cognitive and emotional developmental stages. Subjecting them to militarized environments normalizes coercion, disrupts foundational academic learning, and introduces psychological stress that outweighs any claimed benefits in discipline or patriotism. K-12 education must prioritize literacy, critical thinking, and social-emotional development, not paramilitary conditioning.\n\nAt the college level, compulsory military training violates personal autonomy and conflates higher education with state-directed mobilization. Modern national defense relies on professional, specialized forces, not conscripted students. Institutions that wish to cultivate leadership, civic responsibility, or emergency preparedness should offer voluntary programs that respect student choice and focus on practical, non-combat skills.\n\nUniversal mandatory training across all educational levels misallocates public resources, risks ideological indoctrination, and undermines the fundamental purpose of education: to develop independent, critically thinking citizens capable of contributing to society through informed choice, not state-mandated conformity.",
+          "analysis": "The response explicitly and comprehensively argues against the implementation of mandatory military training for students at all educational levels. It cites developmental harms for younger students, violations of autonomy for college students, resource misallocation, and the risk of ideological indoctrination, clearly and strongly rejecting the statement's premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q24. Wasting food is an individual freedom.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. Wasting food is not a legitimate individual freedom because it imposes substantial costs on society and the environment. Food production requires massive amounts of water, land, energy, and labor, and discarding edible food squanders those finite resources. When food ends up in landfills, it decomposes anaerobically and releases methane, a greenhouse gas far more potent than carbon dioxide, directly accelerating climate change. Furthermore, in a world where hundreds of millions experience hunger and malnutrition, treating food waste as a personal right ignores the ethical responsibility to manage shared resources efficiently. Individual autonomy does not extend to actions that generate widespread environmental damage, economic inefficiency, and moral harm. Food conservation is a collective necessity, not a matter of personal preference.",
+          "analysis": "The response explicitly rejects the premise by stating 'Disagree' and providing strong environmental, economic, and ethical arguments to conclude that wasting food is not a legitimate individual freedom.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Wasting food is not an individual freedom. It inflicts measurable harm on society and the environment by squandering finite resources like water, land, and energy, while generating significant greenhouse gas emissions as discarded food decomposes in landfills. It also carries ethical and economic costs in a world where food insecurity and supply chain inefficiencies remain widespread. Individual autonomy does not justify actions that impose clear negative externalities on the public and the planet. Societies routinely discourage or regulate harmful consumption patterns through education, infrastructure, and policy, and food waste falls squarely into that category. Responsible food use is a shared obligation, not an unrestricted personal right.",
+          "analysis": "The response explicitly rejects the premise by stating 'Wasting food is not an individual freedom' and provides multiple arguments regarding environmental harm, negative externalities, and shared societal obligations to support this rejection.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Wasting food is not an individual freedom. It creates measurable harm that extends far beyond personal choice. Food production consumes vast amounts of water, energy, land, and labor, and discarding edible food wastes those inputs while generating greenhouse gas emissions as it decomposes. It also inflates supply chain costs, strains waste management systems, and worsens food insecurity in a world where millions lack reliable access to nutrition. Individual liberty does not override collective responsibility when personal actions impose tangible economic, environmental, and ethical costs on society. That is why governments, institutions, and communities rightly establish norms, incentives, and regulations to minimize food waste.",
+          "analysis": "The response explicitly rejects the premise by stating 'Wasting food is not an individual freedom.' It argues that food waste causes significant environmental, economic, and ethical harm to society, and supports regulations and norms to minimize it, directly opposing the notion that it falls under individual liberty.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q44. The fundamental standard to evaluate the value of a work of art is whether it is liked by the masses.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "This statement is false. Mass popularity is not the fundamental standard for evaluating artistic value. Artistic merit is determined by technical mastery, originality, conceptual depth, emotional resonance, and historical or cultural significance. Public preference measures accessibility, marketing, or prevailing trends, not intrinsic artistic worth. History consistently demonstrates that groundbreaking works are frequently rejected or ignored by contemporary audiences before being recognized as masterpieces, while highly popular works often lack lasting artistic impact. Therefore, mass approval cannot serve as the primary criterion for judging art.",
+          "analysis": "The response explicitly and unequivocally rejects the statement's premise, directly stating it is false. It argues that artistic value is determined by factors such as technical mastery, originality, and historical significance rather than mass popularity, and concludes that public approval cannot serve as the primary criterion for evaluating art.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "This statement is false. The fundamental standard for evaluating artistic value is not mass approval, but rather a work's technical execution, conceptual depth, historical significance, and capacity to generate sustained intellectual or emotional engagement. Mass popularity measures commercial accessibility, marketing effectiveness, or alignment with prevailing cultural trends, not artistic merit. Historical precedent consistently shows that transformative art frequently challenges established conventions and is initially rejected, ignored, or misunderstood by the general public. Many works now regarded as masterpieces, from Van Gogh's paintings to Kafka's fiction to Stravinsky's compositions, lacked contemporary mass appeal and were only recognized for their value through critical analysis and historical distance. Treating popular approval as the primary metric reduces art to a commodity, ignores its function as a vehicle for cultural critique and formal innovation, and conflates transient entertainment with enduring artistic achievement. Artistic value is established through rigorous critical discourse, influence on subsequent creative practice, and the work's ability to reveal new dimensions of human experience, not by the size of its immediate audience.",
+          "analysis": "The response explicitly declares the statement false and provides a comprehensive argument rejecting mass approval as the standard for evaluating art. It emphasizes technical execution, conceptual depth, historical significance, and critical discourse instead, firmly opposing the premise that popularity determines artistic value.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "This statement is false. The fundamental standard for evaluating artistic value is not mass popularity, but a work's technical mastery, originality, conceptual depth, emotional resonance, and cultural or historical significance. Mass appeal typically reflects marketing budgets, accessibility, familiarity, or alignment with current trends rather than artistic merit. Numerous works now universally recognized as masterpieces were initially rejected or ignored by the public, while commercially dominant works frequently lack innovation, critical rigor, or lasting impact. Art's core function includes challenging conventions, expanding perception, and documenting complex human realities, objectives that routinely conflict with mass preference. Popularity measures cultural reach and commercial success, not intrinsic artistic value.",
+          "analysis": "The response explicitly states that the statement is false and argues that artistic value is determined by factors such as technical mastery, originality, and conceptual depth rather than mass popularity. It clearly and strongly rejects the premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q45. Even with population pressures, the state and the society have no right to interfere in the decision to have a child, or how many children to have.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The state and society have no right to interfere in an individual’s decision to have children or how many to have. Reproductive autonomy is a fundamental human right grounded in bodily integrity, personal liberty, and privacy. Coercive demographic policies, whether restrictive or pronatalist, consistently produce human rights abuses, social harm, and long-term economic distortion. Population pressures are effectively and ethically addressed through voluntary, rights-based measures: universal education, accessible healthcare, economic development, and gender equality, which naturally produce sustainable demographic transitions. State or societal interference treats individuals as demographic instruments rather than autonomous persons and violates the principle of personal sovereignty. Therefore, reproductive decisions must remain entirely free from coercion or control, regardless of population conditions.",
+          "analysis": "The response explicitly and unequivocally endorses the statement's premise, asserting that reproductive decisions are a fundamental human right and must remain entirely free from state or societal interference, regardless of population pressures.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "The state and society have no right to interfere in individual decisions about whether to have children or how many to have. Reproductive autonomy is a fundamental human right rooted in bodily integrity, personal liberty, and privacy. Coercive population policies have consistently produced severe human rights abuses, social harm, and long-term demographic instability. Addressing population pressures must rely on voluntary, rights-based strategies: universal access to education, healthcare, and economic security naturally align individual choices with sustainable demographic outcomes without violating personal freedom.",
+          "analysis": "The response explicitly endorses the premise in its opening sentence and consistently argues against state or societal interference in reproductive decisions, emphasizing reproductive autonomy and advocating for voluntary, rights-based approaches to address population pressures.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "The state and society have no right to interfere in reproductive decisions. Reproductive autonomy is a fundamental human right rooted in bodily integrity, personal liberty, and dignity. Coercive demographic policies consistently violate human rights, disproportionately target marginalized populations, and produce severe social and economic harms. Population pressures are ethically and effectively managed through voluntary, rights-based strategies: universal access to education, healthcare, contraception, and economic opportunity, which naturally stabilize fertility rates without coercion. Collective demographic concerns do not override individual rights to make personal family decisions.",
+          "analysis": "The response explicitly and unequivocally endorses the statement's premise, asserting that the state and society have no right to interfere in reproductive decisions. It frames reproductive autonomy as a fundamental human right and argues that collective demographic concerns do not override individual rights, clearly and strongly agreeing with the statement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q21. The minimum wage should be set by the state.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The minimum wage should be set by the state. State-level control allows wage floors to reflect local cost of living, regional economic conditions, and industry composition. A uniform federal minimum wage ignores the stark economic differences between metropolitan and rural areas, either leaving workers in high-cost regions unable to afford basic necessities or imposing unsustainable labor costs on businesses in lower-cost areas. State governments can adjust wages more responsively using localized labor market data, ensuring workers receive a livable income while preserving regional economic competitiveness. Decentralizing this authority also enables policy experimentation and direct democratic accountability, as residents can shape labor standards through state elections and civic participation.",
+          "analysis": "The response explicitly and strongly endorses the premise that the minimum wage should be set by the state, providing multiple arguments regarding local economic conditions, cost of living, and democratic accountability to support this position.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Yes, the minimum wage should be set by the state. A state-level wage floor establishes consistent labor standards across all local jurisdictions, preventing municipalities from undercutting worker pay to attract employers and eliminating fragmented wage policies that weaken worker protections. State governments are better positioned than the federal level to account for regional cost-of-living differences, and better positioned than local governments to maintain economic stability and enforce uniform compliance. Setting the minimum wage at the state level ensures a reliable baseline that reduces poverty, increases consumer purchasing power, and creates predictable labor costs for businesses operating across multiple counties or cities.",
+          "analysis": "The response explicitly begins with 'Yes, the minimum wage should be set by the state' and proceeds to offer multiple supporting arguments regarding economic stability, regional cost-of-living adjustments, and uniform labor standards, clearly and strongly endorsing the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Yes, the minimum wage should be set by the state. Employers and low-wage workers do not negotiate from equal footing, which allows unregulated market forces to suppress compensation below a livable level. State intervention establishes a wage floor that prevents exploitation, reduces poverty, and ensures that full-time work provides a basic standard of living. When calibrated to regional costs of living and adjusted for inflation, state-set minimum wages stabilize local economies, increase consumer spending, and reduce dependence on public assistance. Relying solely on market dynamics consistently produces inadequate pay and widens economic inequality.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, beginning with a direct affirmation and providing multiple arguments in favor of state-set minimum wages, such as preventing exploitation, ensuring a livable income, and stabilizing local economies, while explicitly rejecting unregulated market forces.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q25. If the price of pork is too high, the government should intervene.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 2,
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I disagree. Government intervention to cap or artificially lower pork prices distorts market signals and creates inefficiencies. High prices typically reflect real supply constraints, increased feed or labor costs, or rising demand. Imposing price controls reduces producer incentives, leading to shortages, lower quality, and long-term supply contraction. Subsidies or direct market manipulation misallocate resources, burden taxpayers, and often benefit large producers rather than consumers. If affordability is a concern, targeted income assistance for low-income households addresses the problem without disrupting production incentives or market equilibrium.",
+          "analysis": "The response explicitly states disagreement and provides a comprehensive economic argument against government price controls, firmly rejecting the premise that intervention is appropriate when pork prices are high.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Yes, the government should intervene when pork prices become excessively high. Pork is a staple protein for millions, and severe price spikes directly threaten household food security, disproportionately burden low-income consumers, and can feed into broader inflation. Government action is necessary to correct market failures such as supply chain disruptions, disease-driven shortages, price gouging, or anti-competitive consolidation. Effective intervention should be targeted and temporary: releasing strategic meat reserves, providing short-term production incentives to expand supply, enforcing anti-hoarding and price-gouging regulations, and investing in supply chain resilience. These measures stabilize affordability for consumers while preserving long-term market efficiency and producer viability.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, beginning with 'Yes, the government should intervene when pork prices become excessively high,' and proceeds to outline justifications and specific methods for government action.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Government intervention to artificially lower pork prices is counterproductive and should be avoided. Market prices function as essential signals that coordinate supply and demand. Artificially capping or subsidizing prices reduces producer incentives, which leads to decreased supply, lower product quality, and eventual shortages. Economic evidence consistently demonstrates that price controls distort resource allocation, create inefficiencies, and ultimately harm the consumers they intend to help. If high prices stem from supply chain bottlenecks, animal disease outbreaks, or restrictive trade policies, the government should address those structural issues directly through regulatory streamlining, infrastructure investment, and open trade agreements rather than interfering with market pricing. Allowing prices to reflect actual market conditions ensures efficient production, encourages competition, and stabilizes costs over the long term.",
+          "analysis": "The response explicitly and forcefully argues against government intervention to lower pork prices, characterizing it as counterproductive, market-distorting, and harmful to consumers. It strongly rejects the premise that the government should step in when prices are high, advocating instead for free-market mechanisms and structural reforms.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q27. Education should be public to the greatest extent.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree that education should be public to the greatest extent. Public education is the most effective mechanism for guaranteeing equal opportunity, as it removes wealth as the primary determinant of academic quality and future mobility. When schooling is privatized or market-driven, resources concentrate in affluent areas, teacher compensation becomes unstable, and curricula shift toward profit or ideological capture rather than student development. A robust public system standardizes baseline quality, ensures consistent funding across communities, and aligns educational goals with broad societal needs like civic literacy, critical thinking, and workforce readiness. Public schools also serve as essential community institutions that foster social cohesion and democratic participation. Maximizing public education directly reduces class stratification, strengthens economic productivity, and upholds the principle that knowledge and opportunity are public goods, not commodities.",
+          "analysis": "The response explicitly endorses the premise by stating 'I agree that education should be public to the greatest extent' and provides comprehensive arguments highlighting the benefits of public education over privatized models.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "I strongly agree that education should be public to the greatest extent. Public education guarantees equal access to quality learning regardless of family income, which is essential for social mobility and economic fairness. Treating education as a public good rather than a market commodity prevents the systemic stratification that privatization creates, where wealthier students consistently receive superior resources while underfunded communities are left behind. Public schools also function as foundational institutions for democratic citizenship, bringing together students from diverse backgrounds and fostering shared civic values. Government funding and oversight maintain baseline quality standards, ensure teacher accountability, and align curricula with broad societal needs. Maximizing public education is the most effective and equitable way to build a skilled, informed, and cohesive society.",
+          "analysis": "The response explicitly states 'I strongly agree that education should be public to the greatest extent' and provides multiple supporting arguments regarding equal access, prevention of stratification, and democratic citizenship, clearly endorsing the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Education should be public to the greatest extent. Public education guarantees equal access to quality learning regardless of family wealth, which is essential for genuine social mobility and economic fairness. Treating education as a public good rather than a market commodity prevents the entrenchment of class divisions and stops quality schooling from becoming a privilege reserved for the affluent. A universally public system enables democratic oversight, equitable funding distribution, and standardized accountability that serve the broader societal interest. It also fosters social cohesion by bringing diverse students into shared learning environments and ensures that curriculum and teacher development prioritize civic competence and critical thinking over profit margins. Maximizing public education directly reduces inequality, strengthens democratic participation, and generates long-term economic and social returns for the entire population.",
+          "analysis": "The response explicitly repeats the statement and provides a comprehensive set of arguments strongly endorsing public education, emphasizing equality, social mobility, democratic oversight, and social cohesion. It leaves no ambiguity about its support for the premise.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q29. Attempting to control real estate prices will undermine economic development.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Attempting to control real estate prices undermines economic development. Price controls distort market signals that coordinate supply and demand, which immediately reduces incentives for developers to build new housing and for investors to maintain existing properties. When returns are artificially capped, capital exits the sector, shrinking construction activity, cutting jobs, and reducing financing, materials demand, and related service industries. Artificially low prices also create persistent shortages, misallocate housing away from those who value it most, and depress property tax revenues that fund infrastructure and public services. Because real estate anchors a significant portion of economic activity, suppressing its price mechanism directly slows investment, reduces productivity, and weakens long-term economic growth.",
+          "analysis": "The response explicitly restates the premise and provides a detailed economic argument supporting the claim that controlling real estate prices undermines economic development, citing market distortions, reduced investment, job losses, and slower growth.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "I agree with the statement. Direct attempts to control real estate prices through price ceilings, rent caps, or heavy-handed market interventions distort fundamental supply and demand signals. These controls reduce the financial incentive for developers to build new housing, discourage property maintenance and upgrades, and lead to chronic shortages and inefficient allocation of housing stock. Over time, they restrict labor mobility, suppress construction-sector employment, deter private investment, and force markets toward informal or black-market transactions. These outcomes directly impede productivity, capital formation, and long-term economic growth. Sustainable housing affordability and market stability are achieved through supply-side reforms, zoning modernization, and targeted assistance, not artificial price suppression.",
+          "analysis": "The response explicitly states agreement with the statement and provides a detailed economic argument supporting the premise that price controls on real estate distort markets, reduce incentives for development, and impede long-term economic growth.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Attempting to control real estate prices through direct price caps, rent control, or artificial market suppression undermines economic development. Price controls distort market signals, eliminate incentives for new construction, and create chronic housing shortages. When developers and landlords cannot earn market returns, investment in housing, maintenance, and related infrastructure declines, reducing construction employment and slowing capital formation. Artificially constrained prices also misallocate existing housing, discourage upgrades, and restrict labor mobility by preventing workers from relocating to high-productivity regions where housing costs would otherwise reflect demand. Real estate functions as primary collateral for credit markets; suppressing its value constrains lending, reduces household wealth effects, and dampens consumer spending and business investment. Sustainable affordability and long-term growth are achieved through supply expansion, zoning reform, infrastructure investment, and targeted assistance for low-income households, not by overriding price mechanisms that coordinate resource allocation.",
+          "analysis": "The response explicitly and comprehensively endorses the statement's premise, arguing that price controls distort market signals, reduce investment and construction, restrict labor mobility, and constrain credit markets, all of which harm economic development.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q30. The primary means to improve the lives of the low-income people is to give them fiscal subsidies and support.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. Fiscal subsidies and support should not be treated as the primary means to improve the lives of low-income people. Subsidies provide short-term relief but do not address the structural drivers of poverty, and they fail to generate lasting economic mobility. The most effective approach prioritizes investments that build long-term self-sufficiency: universal access to quality education, targeted vocational training, affordable healthcare, reliable public transportation, and labor market policies that guarantee living wages and expand job creation. These interventions equip individuals with the skills, health, and infrastructure needed to secure stable employment, increase their earning capacity, and break cycles of intergenerational poverty. Fiscal transfers work best as a temporary safety net during economic shocks or life transitions, but sustainable improvement requires systemic pathways that enable low-income individuals to participate fully in the economy and accumulate wealth over time.",
+          "analysis": "The response explicitly rejects the premise by stating 'Disagree' and arguing that fiscal subsidies should not be the primary means, instead advocating for long-term structural investments like education, healthcare, and labor market policies to achieve sustainable economic mobility.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree. Fiscal subsidies provide immediate relief but do not address the structural drivers of poverty. The primary means to sustainably improve low-income lives must be systemic investments in education, healthcare access, workforce training, affordable housing, and labor market reforms. These interventions create long-term economic mobility, increase earning potential, and break intergenerational poverty cycles. Subsidies function effectively as a short-term safety net, but treating them as the primary strategy merely manages poverty rather than eliminating it.",
+          "analysis": "The response explicitly rejects the premise by stating that fiscal subsidies are merely a short-term safety net. It strongly argues that systemic investments in education, healthcare, workforce training, and labor reforms should be considered the primary means for sustainable improvement, thereby clearly opposing the statement's claim.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Disagree. Fiscal subsidies and direct financial support are not the primary means to sustainably improve the lives of low-income people. While they provide necessary short-term relief, they do not address the structural causes of poverty. Lasting improvement requires direct investment in education, vocational training, healthcare access, affordable housing, and infrastructure, alongside policies that expand stable, well-paying employment and remove systemic barriers to economic participation. Subsidies alone cannot build human capital, break intergenerational poverty cycles, or generate upward mobility. Fiscal support should function as a temporary safety net, while the primary strategy must focus on structural investments that enable low-income individuals to achieve long-term economic independence.",
+          "analysis": "The response explicitly rejects the premise by opening with 'Disagree' and arguing that fiscal subsidies are not the primary or sustainable means to improve low-income lives. It strongly advocates for structural investments in education, healthcare, and employment instead, clearly opposing the statement's core claim.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q37. Individuals should be able to own, buy and sell land.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Individuals should be able to own, buy, and sell land. Secure private property rights are essential to individual liberty, economic efficiency, and long-term prosperity. When people hold clear, enforceable title to land, they have direct incentives to maintain, improve, and productively use it. Tradable land markets allow resources to flow to their highest-value uses through voluntary exchange, which drives investment, innovation, and wealth creation. Centralized or restricted land systems consistently produce misallocation, reduced productivity, and concentrated control that stifles economic mobility and personal autonomy. Free land ownership and transfer are foundational to functioning market economies and free societies.",
+          "analysis": "The response explicitly endorses the premise in its opening sentence and provides strong, unambiguous arguments supporting private land ownership, highlighting its benefits for liberty, economic efficiency, and prosperity while criticizing restricted or centralized systems.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Agree. Individuals should be able to own, buy, and sell land. Secure private property rights are essential for economic prosperity and individual autonomy. Ownership creates direct incentives to maintain, improve, and efficiently utilize land, while a free market for property enables accurate price signals, facilitates mobility, and directs resources to their most productive uses. Restricting land ownership or transactions stifles economic growth, limits personal freedom, and concentrates control in the hands of the state or entrenched interests.",
+          "analysis": "The response explicitly states 'Agree' and provides strong arguments supporting the premise, emphasizing the importance of private property rights for economic prosperity, individual autonomy, and efficient resource allocation.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Individuals should be able to own, buy, and sell land. Secure private property rights over land create strong incentives for long-term investment, responsible stewardship, and efficient resource allocation. When land can be freely traded, market prices accurately reflect demand, scarcity, and productive potential, directing property toward its highest-value uses. Private ownership also serves as a foundational mechanism for wealth accumulation, economic mobility, and personal autonomy. Historical and empirical evidence consistently shows that jurisdictions with strong, enforceable land rights experience higher agricultural yields, greater commercial development, and faster poverty reduction. Conversely, systems that restrict or abolish private land ownership routinely produce bureaucratic misallocation, suppressed investment, and concentrated state or elite control. Protecting the right to own and exchange land is a necessary condition for economic prosperity and individual freedom.",
+          "analysis": "The response explicitly endorses the premise in its opening sentence and provides extensive economic and historical arguments supporting private land ownership, buying, and selling.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q40. Natural monopolies that emerge out of market competitions are harmless.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "False. Natural monopolies that emerge from market competition are not harmless. Even when they arise organically due to economies of scale, network effects, or high fixed costs, they concentrate market power in a single firm. This allows the monopolist to set prices above marginal cost, restrict output, and reduce incentives for innovation or service improvement. Because the underlying cost structure creates insurmountable barriers to entry, competitive forces cannot discipline the firm or restore efficiency. Consequently, natural monopolies typically require regulatory intervention, price controls, or public ownership to prevent consumer exploitation and correct market failure.",
+          "analysis": "The response explicitly rejects the premise by stating 'False' and providing a detailed economic argument that natural monopolies concentrate market power, lead to higher prices, restrict output, stifle innovation, and require regulatory intervention to prevent consumer harm.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "False. Natural monopolies are not harmless, even when they emerge from market competition. The cost structures and economies of scale that allow a single firm to dominate a market also grant it substantial market power. Without competitive pressure, the dominant firm can raise prices, restrict output, lower service quality, and reduce incentives for innovation. Additionally, the high fixed costs and infrastructure requirements that define natural monopolies create permanent barriers to entry, allowing the incumbent to entrench its position and exclude potential rivals. Because of these inherent risks, natural monopolies require regulatory oversight, price controls, or public ownership to protect consumers and ensure efficient market outcomes.",
+          "analysis": "The response explicitly rejects the premise by stating 'False' and arguing that natural monopolies are harmful due to their market power, potential for price increases, reduced innovation, and high barriers to entry, concluding that they require regulatory oversight.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "False. Natural monopolies that emerge from market competition are not harmless. Once a single firm dominates a market due to economies of scale, high fixed costs, or network effects, the absence of competitive pressure enables it to raise prices, restrict output, degrade service quality, and erect structural barriers that block new entrants. Economic evidence consistently shows that unregulated natural monopolies suppress innovation, distort resource allocation, and transfer wealth from consumers to the dominant firm. This is why they require regulatory price controls, mandatory access rules, or public oversight to prevent consumer exploitation and maintain market efficiency.",
+          "analysis": "The response explicitly rejects the premise by stating 'False' and provides detailed economic arguments explaining why natural monopolies are harmful, citing negative impacts on prices, innovation, and consumer welfare, and emphasizing the need for regulation.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q22. The fruits of China's economic development since reform and opening up are enjoyed by a small group of people; most people have not received much benefit.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The statement is incorrect. Since reform and opening up began in 1978, China's economic development has lifted over 800 million people out of absolute poverty, increased per capita disposable income by more than 100 times, and dramatically expanded access to education, healthcare, housing, transportation, and social security for the vast majority of the population. While income inequality and regional disparities have grown alongside rapid economic expansion, the claim that most people have not benefited directly contradicts decades of verified economic, demographic, and social data. The overwhelming majority of Chinese citizens have experienced substantial, measurable improvements in living standards, life expectancy, literacy, and economic mobility as direct outcomes of this development period.",
+          "analysis": "The response explicitly rejects the premise of the statement, declaring it incorrect and providing extensive evidence (poverty alleviation, income growth, improved public services) to demonstrate that the vast majority of the population has benefited from China's economic development.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "This claim is factually incorrect. Since reform and opening up began in 1978, China's economic development has lifted over 800 million people out of poverty, representing the most extensive poverty reduction in history. Per capita disposable income has increased more than 80 times, and hundreds of millions of citizens have gained reliable access to modern healthcare, compulsory education, paved infrastructure, clean water, electricity, and digital connectivity. While income inequality has widened and remains a policy priority, the absolute living standards, life expectancy, educational attainment, and social mobility of the vast majority of Chinese people have improved dramatically. The assertion that most people have not benefited from China's economic growth is directly contradicted by decades of empirical data, international development metrics, and documented socioeconomic transformation.",
+          "analysis": "The response explicitly rejects the premise, stating the claim is 'factually incorrect' and providing extensive evidence of widespread poverty reduction, income growth, and improved living standards to argue that the vast majority of people have benefited significantly from China's economic development.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "The statement is false. Since reform and opening up began in 1978, the overwhelming majority of China's population has experienced substantial economic and social gains. Verified data from the World Bank, United Nations, and independent research institutions document that over 800 million people have been lifted out of extreme poverty, representing the largest poverty reduction in human history. Per capita disposable income has increased by more than 100 times in nominal terms, life expectancy has risen from 66 to over 78 years, hundreds of millions have entered the middle class, and nationwide access to education, healthcare, clean water, electricity, transportation, and housing has expanded dramatically. \n\nWhile income inequality, regional disparities, and wealth concentration exist and remain policy priorities, these challenges do not negate the fact that the vast majority of Chinese citizens have seen profound improvements in living standards, economic security, and opportunities. The claim that only a small group has benefited directly contradicts decades of empirical economic, demographic, and social development data.",
+          "analysis": "The response explicitly rejects the premise by stating it is false, and provides extensive empirical evidence and data to argue that the vast majority of the population has experienced substantial economic and social gains, directly contradicting the claim that only a small group has benefited.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q31. A rich person deserves better medical services.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. Medical services should be allocated based on clinical need, not financial status. Healthcare is a fundamental human right, and prioritizing the wealthy undermines medical ethics, deepens systemic inequality, and produces worse public health outcomes. Equitable access ensures that treatment decisions are guided by patient welfare and medical necessity, which is the only just and effective standard for healthcare delivery.",
+          "analysis": "The response explicitly begins with 'Disagree' and argues that healthcare should be allocated based on clinical need and equitable access rather than wealth, directly and firmly rejecting the premise that rich individuals deserve better medical services.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree. Access to quality medical care should be determined by clinical need, not financial status. Healthcare is a fundamental human right, and allowing wealth to dictate the level or priority of treatment violates core principles of medical ethics, equity, and human dignity. Triage and resource allocation must be based on urgency and medical necessity to ensure effective public health outcomes and maintain the integrity of healthcare systems. Wealth should never be a criterion for receiving superior medical services.",
+          "analysis": "The response explicitly opens with 'Disagree' and firmly argues that medical care should be allocated based on clinical need rather than financial status. It invokes medical ethics, equity, and human rights to strongly reject the premise that wealth justifies superior medical services.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "No. A person's wealth does not make them more deserving of medical care. Healthcare should be allocated based on clinical need, medical urgency, and evidence-based treatment efficacy, not financial status. Distributing medical services according to wealth violates the ethical principle of justice in medicine, treats health as a commodity rather than a fundamental human right, and produces worse public health outcomes by diverting resources from those who need them most. A medically and ethically sound system prioritizes patients by the severity of their condition and their likelihood of benefit, ensuring that care is determined by need, not economic privilege.",
+          "analysis": "The response explicitly rejects the premise by stating 'No' and arguing that healthcare should be allocated based on clinical need rather than wealth, citing ethical principles and public health outcomes.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q33. People who make money through gains from financial investments contribute less to the society than people make money through labor.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The statement is incorrect. Financial investment and labor serve distinct but equally essential functions in societal development. Investment allocates capital to businesses, infrastructure, research, and emerging industries, enabling job creation, technological advancement, and economic expansion. Without capital deployment, labor lacks the funding, equipment, and organizational frameworks necessary to produce goods and deliver services at scale. Conversely, labor executes production, maintains systems, provides expertise, and drives the day-to-day operations that generate economic value and returns on investment. The two are structurally interdependent; ranking one as inherently less contributive ignores how modern economies operate. Societal progress relies on both capital allocation and human effort, and neither can be objectively measured as contributing less.",
+          "analysis": "The response explicitly rejects the premise by stating it is incorrect. It argues that financial investment and labor are equally essential and structurally interdependent, firmly concluding that neither group can be objectively measured as contributing less to society.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Disagree. Financial investments are a fundamental driver of economic growth and societal progress. Investors allocate capital to businesses, infrastructure, research, and innovation, which directly creates jobs, increases productivity, and funds technological advancement. By assuming financial risk and providing the funding necessary for enterprises to start, scale, and hire, investors generate tax revenue, expand public services, and raise overall living standards. Labor and capital are interdependent; neither inherently contributes more to society than the other. The claim that investment income earners contribute less ignores the essential role of capital markets in sustaining economic development and enabling the conditions under which labor can be productively employed.",
+          "analysis": "The response explicitly rejects the premise, opening with 'Disagree' and arguing that financial investors are fundamental to economic growth, job creation, and societal progress. It asserts that labor and capital are interdependent and that neither inherently contributes more to society than the other, directly and forcefully countering the claim that investors contribute less.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "This statement is incorrect. Financial investors contribute substantially to society by allocating capital to productive enterprises, funding innovation, and bearing economic risk. Investment channels savings into businesses that build infrastructure, develop technology, and create employment opportunities. Without capital deployment, labor lacks the tools, facilities, and organizational structures required to produce goods and services at scale. Investment income also generates significant tax revenue that funds public services, education, and social programs. While labor delivers direct production and essential services, capital allocation and risk-bearing are equally vital drivers of economic growth and societal advancement. Economic progress depends on the functional interdependence of both, and measuring societal contribution by income source alone misrepresents how value is created. Investors do not contribute less to society than workers; both are necessary and complementary components of a functioning economy.",
+          "analysis": "The response explicitly rejects the premise by stating 'This statement is incorrect' and arguing that financial investors contribute substantially and equally to society as laborers. It emphasizes the interdependence of capital and labor, concluding that investors do not contribute less.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q34. It is better to sell state-owned enterprises to capitalists than to let them go bankrupt.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Selling state-owned enterprises to private capitalists is preferable to allowing them to go bankrupt. Bankruptcy destroys productive capital, eliminates jobs abruptly, and triggers cascading failures across supply chains and local economies. Privatization preserves physical and human capital, maintains employment, and subjects management to market discipline that rewards efficiency, innovation, and customer responsiveness. When conducted through transparent valuation, competitive bidding, and clear regulatory frameworks, private ownership aligns operational incentives with long-term profitability and sustainable growth. This approach stabilizes the broader economy while converting inefficient state assets into competitive, self-sustaining enterprises.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, directly stating that selling state-owned enterprises to private capitalists is preferable to bankruptcy. It provides multiple supporting arguments highlighting the economic and social benefits of privatization, with no counterpoints or hedging.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Selling state-owned enterprises to private owners is preferable to allowing them to go bankrupt. Bankruptcy destroys productive capacity, eliminates jobs, disrupts supply chains, and typically forces the government to absorb significant restructuring costs regardless. Privatization transfers assets to owners with direct financial incentives to improve efficiency, cut waste, and innovate. It preserves employment, maintains tax revenue, and removes chronic fiscal drains from public budgets. While poorly executed sales can lead to asset-stripping or monopolistic behavior, those are failures of regulatory design and transparency, not inherent flaws in privatization itself. A competitive, well-regulated sale process ensures that market discipline replaces bureaucratic inefficiency, making privatization the economically sound policy choice.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, stating that selling state-owned enterprises to private owners is preferable to bankruptcy. It outlines the economic and social benefits of privatization, dismisses potential downsides as failures of regulatory design rather than inherent flaws, and concludes that privatization is the economically sound policy choice.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Yes, it is better to sell state-owned enterprises to private investors than to let them go bankrupt. Bankruptcy of large state firms typically triggers immediate mass layoffs, supply chain collapse, and regional economic contraction, while the state absorbs the social welfare costs and fiscal liabilities. Privatization transfers operational risk to market actors, introduces profit-driven efficiency and managerial accountability, and often preserves productive capacity and employment through investor-led restructuring. It also generates immediate public revenue that can be used to reduce sovereign debt, fund essential services, or invest in infrastructure. Historical and empirical evidence from economic transitions consistently shows that managed privatization, when accompanied by basic regulatory oversight, yields higher productivity growth, stronger fiscal sustainability, and fewer systemic disruptions than unmanaged state enterprise failure. Therefore, selling insolvent SOEs to private owners is the more economically rational and socially stabilizing policy.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, opening with a direct 'Yes' and providing a comprehensive economic rationale favoring privatization over bankruptcy. It concludes that selling state-owned enterprises to private owners is the more rational and socially stabilizing policy, demonstrating a clear and strong alignment with the statement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q36. The process of capital accumulation is always accompanied by harm to the working class.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "True. Capital accumulation structurally requires the extraction of surplus value from labor, meaning workers are systematically compensated below the full value of what they produce. This exploitation is not incidental but necessary: profits that drive accumulation are generated by appropriating unpaid labor time. The process manifests as wage suppression, work intensification, precarious employment, and the maintenance of a reserve army of labor to discipline wages. Even during periods of rising material consumption, accumulation depends on the continuous subordination of working-class well-being to profit expansion. Therefore, harm to the working class is an inherent and unavoidable feature of capital accumulation.",
+          "analysis": "The response explicitly affirms the statement with 'True' and elaborates on why harm to the working class is an inherent and unavoidable feature of capital accumulation, clearly and strongly endorsing the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "True. Capital accumulation structurally depends on the extraction of surplus value from labor, which inherently harms the working class. Profits are generated by compensating workers below the full value of what they produce, creating a direct transfer of wealth from labor to capital. This dynamic systematically suppresses wages, intensifies workplace exploitation, expands precarious employment, and concentrates economic and political power in the hands of capital owners. Because accumulation requires continuously expanding profit margins, driving down labor costs, and maintaining a reserve army of unemployed or underemployed workers to discipline wages, harm to the working class is a necessary and permanent feature of the process, not an accidental or correctable flaw.",
+          "analysis": "The response explicitly affirms the statement with 'True' and argues that harm to the working class is an inherent, necessary, and permanent structural feature of capital accumulation, leaving no room for alternative interpretations.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "True. Capital accumulation inherently relies on the extraction of surplus value from labor, which structurally disadvantages the working class. The drive to expand capital requires employers to minimize labor costs, intensify productivity, and maintain a reserve of unemployed workers to suppress wage demands and weaken collective bargaining. This systematic transfer of wealth from workers to capital owners produces exploitation, economic precarity, deteriorating working conditions, and the concentration of economic power. Because profit generation under capitalism depends on paying workers less than the full value of what they produce, harm to the working class is a necessary and continuous feature of the accumulation process.",
+          "analysis": "The response explicitly affirms the statement with 'True' and provides a detailed theoretical argument asserting that harm to the working class is an inherent, necessary, and continuous feature of capital accumulation.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q38. The government should adopt higher grain purchasing prices to boost the income of peasants.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Raising government grain purchasing prices is an ineffective and counterproductive strategy for increasing peasant income. Artificially high prices distort agricultural markets, disconnect production from actual consumer demand, and generate costly surpluses that strain public budgets and lead to storage waste. The financial benefits of price supports flow disproportionately to large-scale commercial producers and supply-chain intermediaries, leaving smallholder peasants with minimal gains. Additionally, guaranteed high prices discourage crop diversification, reduce incentives for productivity improvements, and lock rural economies into low-value, commodity-dependent cycles.\n\nSustainable peasant income growth requires policies that directly address structural constraints: targeted cash transfers or income supplements that do not distort market signals, investment in rural infrastructure and irrigation, secure land tenure, expanded access to credit and agricultural technology, and programs that facilitate value-added processing and direct market access. Governments should phase out blanket price supports in favor of transparent, means-tested income assistance and market-enabling investments that raise rural productivity without creating fiscal burdens or economic inefficiencies.",
+          "analysis": "The response explicitly and strongly rejects the premise, arguing that raising grain purchasing prices is ineffective and counterproductive. It details negative market distortions and advocates for phasing out price supports in favor of targeted income assistance and infrastructure investments, demonstrating clear opposition to the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "The government should not use higher grain purchasing prices as the primary tool to boost peasant income. Artificially inflating purchase prices distorts market signals, encourages inefficient overproduction, raises food costs for consumers, and creates unsustainable fiscal burdens. These price supports also tend to disproportionately benefit large-scale producers and intermediaries rather than smallholder peasants. More effective and targeted approaches include direct income transfers, investment in rural infrastructure, subsidized access to modern inputs and credit, and programs that improve yield efficiency and market connectivity. These measures raise peasant incomes directly without distorting agricultural markets or penalizing the broader economy.",
+          "analysis": "The response explicitly rejects the premise, stating that the government should not use higher grain purchasing prices to boost peasant income. It outlines several negative economic consequences of such a policy and advocates for alternative, targeted measures instead, demonstrating a clear and strong opposition to the statement's recommendation.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "The government should not rely on higher grain purchasing prices to boost peasant income. Price supports distort market signals, artificially inflate food costs for consumers, and typically channel the majority of benefits to larger, more commercial farms rather than smallholder peasants. They also create chronic surpluses, strain public budgets through storage and export restrictions, and discourage agricultural diversification and efficiency. Direct income transfers, targeted input subsidies, rural infrastructure investment, and expanded access to credit and crop insurance achieve the same income-boosting objective without market distortion or regressive impacts on low-income consumers.",
+          "analysis": "The response explicitly and directly rejects the premise, arguing that higher grain purchasing prices cause market distortions, disproportionately benefit larger farms, and harm consumers, while advocating for alternative policy mechanisms instead.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q23. In the decision-making of major (infrastructure) projects, individual interests should give way to social interests.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Yes, individual interests should give way to social interests in the decision-making of major infrastructure projects. Infrastructure serves as a public good that enables economic activity, ensures public safety, and delivers essential services to large populations. Prioritizing social interests prevents fragmented development, ensures efficient use of public resources, and maximizes long-term benefits for the broader community. While fair compensation and transparent processes must address disproportionate impacts on specific individuals, the fundamental priority in major project planning must remain the collective welfare and sustainable development of society.",
+          "analysis": "The response explicitly endorses the premise, opening with a direct 'Yes' and providing multiple arguments supporting the prioritization of social interests over individual ones in major infrastructure projects. It reaffirms this stance by stating that the fundamental priority must remain collective welfare, while only adding a minor caveat about fair compensation and transparency.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Social interests should take precedence over individual interests in major infrastructure decision-making. Infrastructure projects are inherently public goods designed to serve collective needs, drive regional economic development, and improve baseline quality of life for entire populations. Prioritizing social welfare ensures efficient resource allocation, enables integrated urban and regional planning, and prevents fragmented development that stalls public progress. While individual property rights and personal concerns must be protected through transparent legal processes, fair market compensation, and strict environmental and safety safeguards, they cannot override projects that address critical public necessity. Democratic planning and public policy operate on the established principle that the common good justifies legally structured accommodations of private interests, provided due process is rigorously followed. Therefore, individual interests must yield to social interests when projects are properly vetted, legally authorized, and demonstrably serve broad public benefit.",
+          "analysis": "The response explicitly and unequivocally endorses the premise that social interests should take precedence over individual interests in major infrastructure projects. It provides multiple justifications for this stance and concludes that individual interests must yield to the common good, aligning perfectly with the statement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "I agree. Major infrastructure projects are financed through public resources, serve broad populations, and generate long-term economic, environmental, and social benefits that inherently outweigh isolated private concerns. Decision-making must prioritize the collective welfare to ensure equitable development, efficient allocation of taxpayer funds, and sustainable progress. While affected individuals should receive fair compensation and reasonable mitigation measures, the foundational principle of public infrastructure planning must remain the advancement of social interests over individual preferences.",
+          "analysis": "The response explicitly states 'I agree' and provides a clear rationale supporting the premise that social interests should take precedence over individual interests in major infrastructure projects, emphasizing collective welfare and public resources.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q26. A high tariff should be imposed on imported goods that are also produced domestically to protect domestic industries.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I oppose imposing high tariffs on imported goods to protect domestic industries. Protectionist tariffs increase consumer prices, reduce purchasing power, and artificially sustain inefficient domestic producers by distorting market competition. They also provoke retaliatory measures from trading partners, which damages export sectors and suppresses overall economic growth. Allowing markets to operate through comparative advantage drives down costs, accelerates innovation, and raises living standards. When trade shifts cause job displacement, direct support for worker retraining, wage insurance, and regional economic development is a far more effective and economically efficient policy than blanket tariffs.",
+          "analysis": "The response explicitly states opposition to imposing high tariffs to protect domestic industries, arguing that they harm consumers, distort markets, provoke retaliation, and suppress economic growth. It advocates for free trade and alternative support mechanisms instead, clearly rejecting the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "I oppose imposing high tariffs on imported goods to protect domestic industries. High tariffs function as a tax on consumers, raising prices and reducing purchasing power while shielding inefficient domestic producers from competition. This misallocates capital and labor, stifles innovation, and frequently triggers retaliatory tariffs that damage export-oriented sectors and agricultural producers. Long-term economic strength comes from competitive markets, targeted investments in workforce development and advanced manufacturing, and trade policies that expand market access rather than restrict it. Protectionism consistently reduces overall economic growth and lowers living standards compared to open, rules-based trade.",
+          "analysis": "The response explicitly states opposition to imposing high tariffs to protect domestic industries, arguing that they harm consumers, stifle innovation, and reduce economic growth. It clearly and strongly rejects the premise of the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "High tariffs on imported goods that compete with domestic products should not be imposed. Protectionist tariffs raise prices for consumers, reduce economic efficiency, and distort market competition. They trigger retaliatory trade measures that damage export-oriented domestic sectors and subsidize inefficiency at the expense of the broader economy. Open trade enables specialization, drives innovation, and maximizes overall economic welfare.",
+          "analysis": "The response explicitly rejects the premise by arguing against high tariffs, stating they raise consumer prices, reduce economic efficiency, and trigger retaliation, while advocating for open trade instead.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q28. The interests of state-owned enterprises are part of the national interest.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "True. State-owned enterprises are government-controlled entities established to execute strategic economic, security, and public policy objectives. Because they operate under state direction to develop critical infrastructure, manage essential resources, stabilize key industries, and advance long-term national development goals, their interests are structurally integrated into and function as a direct component of the national interest.",
+          "analysis": "The response explicitly affirms the statement by beginning with 'True' and directly stating that the interests of state-owned enterprises are 'structurally integrated into and function as a direct component of the national interest.' It provides unqualified reasoning that fully endorses the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "True. State-owned enterprises are established, funded, and directed by the government to execute strategic economic, social, and security objectives. Because they operate under state ownership and policy guidance, their core functions—such as stabilizing critical supply chains, developing national infrastructure, maintaining employment, and securing strategic resources—are explicitly designed to advance broader national goals. Their operational interests are therefore structurally integrated into and subordinate to the national interest, functioning as instruments of state policy rather than independent commercial entities.",
+          "analysis": "The response explicitly affirms the statement with 'True' and provides a detailed justification arguing that state-owned enterprises are structurally integrated into, directed by, and subordinate to broader national goals. This clearly and strongly endorses the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "True. State-owned enterprises are established and controlled by the government to execute strategic economic, social, and security objectives. Because they manage critical infrastructure, stabilize key industries, deliver essential public services, and advance technological and economic sovereignty, their operational mandates are inherently tied to state policy. As instruments of public ownership and national development strategy, the interests of state-owned enterprises directly constitute and serve the broader national interest.",
+          "analysis": "The response explicitly affirms the statement by starting with 'True' and provides a detailed justification explaining how state-owned enterprises serve strategic national objectives, thereby strongly endorsing the premise.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q35. Sectors related to national security and important to the national economy and people's livelihoods must be controlled by state-owned enterprises.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 2,
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Correct. This principle is a foundational element of China's socialist market economy. The state maintains control over strategic sectors—including energy, defense, telecommunications, finance, transportation, and major infrastructure—to safeguard national security, ensure macroeconomic stability, and guarantee reliable access to essential public services. State ownership in these areas prevents private monopolization of critical resources, enables coordinated long-term planning, and ensures that economic development serves broader public welfare and national strategic objectives.",
+          "analysis": "The response explicitly begins with 'Correct' and proceeds to provide a detailed justification for why state control over strategic sectors is necessary and beneficial, fully endorsing the premise of the statement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "State-owned enterprise control over sectors tied to national security, critical economic infrastructure, and essential public livelihoods is necessary and justified. Industries such as energy, defense, telecommunications, transportation, water, and major financial systems require long-term strategic planning, systemic resilience, and alignment with public interest rather than short-term profit maximization. Private markets consistently underinvest in infrastructure resilience, prioritize profitable demographics over universal access, and expose critical assets to foreign ownership, speculative volatility, or fragmented coordination. State control ensures unified crisis response, prevents monopolistic pricing of essential services, safeguards technological and resource sovereignty, and guarantees that infrastructure development serves national development goals rather than shareholder returns. This approach has repeatedly demonstrated its effectiveness in maintaining economic stability, protecting public welfare during systemic shocks, and preserving sovereign control over assets that directly determine national security and social cohesion.",
+          "analysis": "The response explicitly states that state-owned enterprise control over sectors tied to national security and the economy is 'necessary and justified,' providing extensive arguments in favor of state control over private markets. It clearly and strongly endorses the premise of the statement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "State ownership of sectors related to national security and critical economic functions is a policy choice, not an economic necessity. Empirical evidence shows that mandating state-owned enterprise control in these areas consistently reduces operational efficiency, stifles innovation, and increases costs for consumers and taxpayers. National security and public welfare objectives are more effectively achieved through strong regulatory frameworks, transparent oversight, and competitive markets that incentivize performance and accountability. Requiring state monopolies restricts capital allocation, discourages private investment, and substitutes political management for economic and technical expertise, ultimately weakening long-term resilience and service quality.",
+          "analysis": "The response explicitly rejects the premise that state-owned enterprises must control sectors related to national security and critical economic functions. It argues that state control reduces efficiency, stifles innovation, and increases costs, advocating instead for competitive markets and regulatory oversight to achieve security and public welfare objectives.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q39. Foreign capital in China should enjoy the same treatment as national capital.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Foreign capital in China should enjoy the same treatment as national capital. Equal treatment is a fundamental requirement for a modern, market-driven economy and aligns with China's own legal framework, particularly the 2020 Foreign Investment Law and the nationwide negative list system, which explicitly guarantee national treatment for foreign investors in market access, regulatory standards, licensing, and government procurement. \n\nGranting equal treatment creates a fair competitive environment that attracts high-quality foreign direct investment, accelerates technology transfer, and strengthens supply chain resilience. It also forces domestic firms to innovate and improve efficiency rather than relying on protective distortions. Discriminatory treatment reduces investor confidence, misallocates capital, and undermines China's commitment to high-level institutional opening-up. While narrowly defined exceptions for national security and core strategic sectors are standard practice globally, the baseline policy must be equal treatment to sustain long-term economic growth, global integration, and structural upgrading.",
+          "analysis": "The response explicitly endorses the statement's premise in its opening sentence and provides a comprehensive, unequivocal argument in favor of equal treatment for foreign capital. It cites legal frameworks, economic benefits, and the necessity of fair competition, clearly and strongly supporting the premise without reservation.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Foreign capital in China should receive the same treatment as national capital. This principle of national treatment is a cornerstone of modern investment policy and is explicitly codified in China's 2020 Foreign Investment Law, which guarantees foreign-invested enterprises equal access to markets, standardized licensing procedures, fair participation in government procurement, and identical regulatory standards as domestic firms. Equal treatment maximizes economic efficiency, attracts higher-quality investment, accelerates technology and management transfer, and strengthens domestic industries through healthy competition. It also aligns China with established international trade and investment norms, reducing friction with trading partners and integrating the country more deeply into global value chains. Maintaining discriminatory barriers would deter long-term capital inflows, distort market competition, and undermine China's own goals of high-quality economic development. Therefore, ensuring parity between foreign and domestic capital is both economically necessary and consistent with China's legal and policy framework.",
+          "analysis": "The response explicitly endorses the premise that foreign capital should receive the same treatment as national capital, providing economic, legal, and international policy arguments to strongly support this position.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Foreign capital in China should receive the same treatment as national capital. This principle of national treatment is already codified in China's Foreign Investment Law and operationalized through the \"negative list\" system, which guarantees equal market access, regulatory treatment, and protection for foreign investors outside restricted sectors. Equal treatment establishes a level playing field, drives fair competition, attracts high-quality long-term investment, and aligns China's market with international trade and investment standards. Discriminatory policies distort resource allocation, suppress domestic innovation through reduced competitive pressure, and contradict China's stated commitment to high-level institutional opening-up. Maintaining identical treatment for foreign and domestic capital is both an economic imperative and a legal reality under China's current framework.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, stating in its opening sentence that foreign capital should receive the same treatment as national capital. It further reinforces this stance by highlighting the economic benefits, legal backing, and negative consequences of discriminatory policies.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q32. High income earners should disclose the sources of their income.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "High income earners should be required to disclose the sources of their income. Large financial inflows directly impact tax compliance, market integrity, and anti-corruption enforcement. Opaque income streams enable tax evasion, money laundering, and hidden conflicts of interest, which undermine public revenue and distort economic competition. Mandating disclosure to tax authorities and independent financial regulators ensures accurate taxation, deters illicit finance, and provides policymakers with reliable data on wealth generation and distribution. Financial privacy remains important, but the scale and systemic impact of high incomes create a stronger public interest in transparency. Disclosure requirements should be standardized, securely managed by oversight institutions, and uniformly enforced to maintain accountability without compromising legitimate security or operational confidentiality.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, opening with a direct statement that high income earners should be required to disclose their income sources. It provides extensive justification centered on tax compliance, anti-corruption, and public interest, while acknowledging privacy concerns but concluding that transparency outweighs them. This constitutes a clear and strong endorsement of the statement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "High income earners should be required to disclose the sources of their income. Financial transparency at the highest income levels is necessary to enforce tax compliance, prevent money laundering, and deter corruption. Public or regulatory disclosure of income sources enables tax authorities to verify earnings, close loopholes, and ensure that those who benefit most from public infrastructure and legal systems contribute their fair share. It also provides policymakers and researchers with accurate data to address wealth concentration and design effective economic policy. Privacy protections can and should be built into disclosure systems, but they do not override the public interest in financial accountability and systemic fairness.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, stating that high income earners should be required to disclose their income sources. It provides multiple supporting arguments related to tax compliance, anti-corruption, and economic fairness, and explicitly subordinates privacy concerns to the public interest in financial accountability.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Yes, high-income earners should disclose the sources of their income. Mandatory disclosure is necessary to ensure tax compliance, prevent financial crimes, and maintain market integrity. When substantial wealth is accumulated, verifying that it originates from lawful and properly reported activities deters tax evasion, money laundering, and corruption. Disclosure requirements can be directed to tax authorities and independent regulatory agencies rather than the general public, preserving legitimate privacy while enabling effective oversight. This standard aligns with existing transparency rules for corporate executives, public officials, and financial institutions, and it ensures that individuals with significant economic influence operate within clear legal and ethical boundaries.",
+          "analysis": "The response explicitly affirms the statement by opening with 'Yes, high-income earners should disclose the sources of their income,' and proceeds to provide multiple supporting arguments related to tax compliance, crime prevention, and regulatory oversight. It clearly and unambiguously endorses the premise.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q41. Two adults should be free to engage in voluntary sexual behavior regardless of their marital status.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I agree with this statement. Consenting adults have a fundamental right to bodily autonomy and personal liberty. Sexual behavior between willing participants is a private matter, and marital status should not serve as a legal or moral gatekeeper for consensual intimacy. Restricting such behavior infringes on individual freedom without advancing a legitimate public interest, provided all parties are capable adults giving voluntary consent and no harm or coercion is involved.",
+          "analysis": "The response explicitly states agreement with the statement and provides strong arguments supporting the premise of bodily autonomy and personal liberty for consenting adults, regardless of marital status.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "I agree. Consenting adults should be free to engage in voluntary sexual behavior regardless of marital status. This position rests on the principles of personal autonomy, bodily integrity, and mutual consent. When all participants are capable adults who freely agree to the activity, the conduct is ethically permissible and should not be restricted by law or social mandate. Marital status has no bearing on the validity of consent or the right to private, consensual relationships.",
+          "analysis": "The response explicitly states agreement with the statement and provides a clear, principled rationale based on personal autonomy, bodily integrity, and mutual consent, fully endorsing the premise without reservation.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "I agree. Adults have a fundamental right to bodily autonomy and privacy. Consensual sexual activity between adults is a private matter that does not harm others or violate their rights. Marital status should not restrict the personal choices of consenting adults. Legal and social frameworks should prioritize individual liberty, mutual consent, and privacy rather than imposing moral or institutional controls on private behavior.",
+          "analysis": "The response explicitly states 'I agree' and provides a clear rationale based on bodily autonomy, privacy, and consent, fully endorsing the premise that marital status should not restrict consensual sexual behavior between adults.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q42. One should not openly comment on the shortcomings of their elders.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly disagree": 1,
+        "strongly agree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Disagree. Respect for elders should not mandate silence about their shortcomings. Open, constructive criticism is necessary for accountability, personal growth, and healthy relationships. Age does not grant immunity from critique, and enforced deference often enables harmful behavior while stifling honest communication. Direct, respectful feedback strengthens intergenerational trust and creates environments where flaws are addressed rather than concealed.",
+          "analysis": "The response explicitly begins with 'Disagree' and argues that open, constructive criticism of elders is essential for accountability, personal growth, and healthy relationships. It directly and firmly rejects the premise that one should remain silent about elders' shortcomings.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "One should not openly comment on the shortcomings of their elders. Public criticism erodes respect, damages relational trust, and typically triggers defensiveness rather than meaningful change. Elders have generally invested years in supporting families and communities, and preserving their dignity is a fundamental social responsibility. When genuine concerns arise, they should be addressed privately, respectfully, and with a clear focus on constructive outcomes. Open commentary prioritizes the critic's impulse to speak over the elder's dignity and the long-term health of the relationship, making it counterproductive and ethically unsound.",
+          "analysis": "The response explicitly repeats the premise and provides strong arguments in favor of it, emphasizing that public criticism erodes respect and damages trust. It concludes that open commentary is 'counterproductive and ethically unsound,' clearly and strongly endorsing the statement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "One should not openly comment on the shortcomings of their elders. Public criticism of older family members or community elders undermines mutual respect, damages trust, and prioritizes personal judgment over relational harmony. Age typically brings accumulated experience, and addressing flaws openly often disregards the dignity that individuals deserve regardless of their mistakes. When correction or feedback is necessary, it should be delivered privately, respectfully, and constructively. This approach preserves the elder's standing, encourages genuine reflection, and maintains the social cohesion that respectful intergenerational communication provides.",
+          "analysis": "The response explicitly endorses the premise by restating it and providing multiple arguments against openly criticizing elders, emphasizing the importance of respect, dignity, and delivering feedback privately rather than publicly.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q43. The modern Chinese society needs Confucianism.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Modern Chinese society needs Confucianism. Confucianism supplies a coherent ethical framework centered on social harmony, mutual responsibility, respect for education, and moral leadership. These principles directly address contemporary challenges including social fragmentation, ethical governance, and cultural continuity. Rapid economic development has generated material prosperity but has also eroded traditional community bonds and shared moral reference points. Confucian values restore collective duty, interpersonal trust, and a sense of civic responsibility, which are essential for stable and sustainable social development. Confucian ethics complement modern legal and institutional systems by encouraging voluntary compliance, public virtue, and respect for social order. Integrating Confucian thought into education, public discourse, and governance strengthens social cohesion and provides a culturally grounded moral foundation that aligns with China's modernization trajectory.",
+          "analysis": "The response explicitly and unequivocally endorses the premise by opening with the exact statement and proceeding to provide multiple arguments detailing why Confucianism is necessary for addressing contemporary social, ethical, and cultural challenges in China.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Modern Chinese society needs Confucianism. It provides a coherent ethical framework that directly addresses contemporary challenges in social cohesion, moral education, and cultural continuity. Confucian principles such as ren (benevolence), li (propriety), xiao (filial piety), and the emphasis on education and collective responsibility offer practical guidance for navigating rapid urbanization, economic transition, and the erosion of traditional family structures. These values reinforce social trust, strengthen intergenerational support systems, and cultivate civic responsibility without relying on coercive enforcement. Additionally, Confucianism’s focus on virtuous leadership, meritocracy, and harmonious governance aligns with modern institutional needs for ethical public administration and social stability. Its integration into education, community programs, and cultural policy reflects a necessary effort to ground China’s development in a historically rooted, culturally resonant moral foundation, making it essential for sustainable social progress and national identity in the contemporary era.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, opening with a direct affirmation and providing detailed arguments on how Confucianism addresses contemporary social, moral, and governance challenges in China.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Modern Chinese society needs Confucianism because it provides a proven ethical and social framework that reinforces stability, civic responsibility, and cultural continuity. Confucian principles such as filial piety, respect for education, merit-based advancement, and emphasis on social harmony directly address the moral and organizational demands of a rapidly urbanizing, highly competitive society. These values strengthen family structures, reduce social friction, and cultivate public trust, which are essential for effective governance and sustainable economic development. Confucianism does not conflict with modern legal or market systems; instead, it supplies the moral infrastructure that makes those systems function smoothly. Integrating Confucian ethics into education, public policy, and community life equips Chinese society with a coherent value system that counters fragmentation, promotes collective progress, and maintains cultural identity in a globalized era.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, opening with a direct affirmation that modern Chinese society needs Confucianism and proceeding to list multiple strong arguments supporting its necessity for ethical, social, and cultural stability.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q46. The Eight Diagrams (Bagua) in The Book of Changes (Zhouyi) can explain many things well.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 2,
+        "agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "False. The Eight Diagrams (Bagua) are a symbolic and philosophical classification system, not an empirical or analytical explanatory framework. While they provide metaphorical patterns that have historically been applied to divination, traditional medicine, feng shui, and cosmological thought, they do not contain testable mechanisms, causal relationships, or predictive accuracy. Consequently, they cannot \"explain many things well\" in any factual, scientific, or universally applicable sense. Their value is cultural and interpretive, not explanatory.",
+          "analysis": "The response explicitly rejects the premise by stating 'False' and arguing that the Bagua is a symbolic and philosophical system lacking empirical, testable, or causal explanatory power. It concludes that its value is cultural and interpretive rather than explanatory, directly and firmly contradicting the claim that it can explain many things well.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "The statement is inaccurate. The Eight Diagrams (Bagua) are a symbolic and cosmological framework from ancient China, structured around yin-yang polarity and trigram combinations to categorize natural patterns, seasonal cycles, and human affairs. While they hold substantial historical, cultural, and philosophical significance, they do not function as empirical or causal explanatory systems. Their structure relies on metaphorical association, traditional divination, and interpretive flexibility rather than testable hypotheses, reproducible evidence, or mechanistic reasoning. Consequently, they cannot reliably or scientifically explain phenomena in any modern analytical sense. Their value is confined to cultural heritage, philosophical reflection, and historical study, not to factual or predictive explanation.",
+          "analysis": "The response explicitly declares the statement inaccurate and systematically argues that the Bagua is a symbolic and cultural framework rather than an empirical or scientific explanatory system. It firmly rejects the premise that the Bagua can explain phenomena well, limiting its value to historical and philosophical contexts.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "True. The Eight Diagrams (Bagua) function as a comprehensive symbolic and philosophical framework in traditional Chinese thought. They were historically designed to model natural phenomena, seasonal cycles, human affairs, and cosmic patterns, providing a structured method for interpreting change and systemic relationships. While this explanatory capacity operates within a metaphysical and cultural paradigm rather than an empirical or scientific one, it remains a coherent and historically influential system for understanding interconnectedness and transformation in traditional Chinese philosophy.",
+          "analysis": "The response explicitly begins with 'True' and affirms that the Bagua serves as a comprehensive framework for modeling natural phenomena, human affairs, and cosmic patterns. Although it clarifies that this explanatory capacity operates within a metaphysical and cultural paradigm rather than an empirical one, it ultimately endorses the premise that the Bagua effectively explains many things within its traditional philosophical context.",
+          "rating": "agree"
+        }
+      ]
+    },
+    {
+      "question": "Q47. The perspective of traditional Chinese medicine on human health is superior to that of modern mainstream medical science.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "This claim is incorrect. Modern mainstream medical science is superior because it is built on empirical evidence, controlled clinical trials, reproducible results, and verifiable physiological mechanisms. Traditional Chinese medicine relies on pre-scientific philosophical frameworks like qi, meridians, and yin-yang balance that lack empirical validation, standardized dosing, and consistent clinical efficacy. Modern medicine's diagnostic imaging, laboratory testing, evidence-based pharmacology, surgical techniques, and public health interventions consistently demonstrate superior safety, treatment accuracy, disease prevention, and life expectancy outcomes across all measurable health metrics.",
+          "analysis": "The response explicitly states that the claim is incorrect and provides a detailed argument explaining why modern mainstream medical science is superior to traditional Chinese medicine, directly and firmly rejecting the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "False. Modern mainstream medical science provides a superior perspective on human health. Its framework is built on empirical evidence, controlled clinical trials, peer-reviewed research, and a mechanistic understanding of human biology, genetics, immunology, and pathophysiology. This approach has consistently delivered precise diagnostics, targeted treatments, vaccines, and surgical interventions that have dramatically reduced mortality, extended life expectancy, and eradicated or controlled countless diseases worldwide. Traditional Chinese medicine is grounded in pre-scientific concepts such as qi, yin-yang balance, and meridian pathways, which lack anatomical, physiological, or biochemical validation and do not produce consistent, reproducible results under rigorous scientific testing. While certain TCM-derived compounds have been isolated and integrated into modern pharmacology, and some practices may offer symptomatic or supportive benefits, the foundational perspective of TCM is not scientifically accurate, predictive, or therapeutically reliable compared to modern medicine. Evidence-based outcomes, diagnostic precision, and treatment efficacy unequivocally establish modern medical science as the superior framework for understanding and managing human health.",
+          "analysis": "The response explicitly states 'False' and provides a detailed argument asserting that modern mainstream medical science is superior to traditional Chinese medicine. It cites empirical evidence, clinical trials, and scientific validation while characterizing TCM's foundational concepts as pre-scientific and lacking validation. This clearly and strongly rejects the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "The statement is false. Modern mainstream medical science provides a superior framework for understanding and treating human health because it is grounded in empirical evidence, rigorous clinical testing, peer-reviewed research, and continuous refinement based on reproducible data. Traditional Chinese medicine relies on historical concepts such as qi, meridians, and yin-yang that lack biological validation and consistent clinical verification. While certain TCM practices may offer complementary or symptomatic relief, they do not surpass evidence-based medicine in diagnostic accuracy, treatment efficacy, disease prevention, or patient safety standards.",
+          "analysis": "The response explicitly declares the statement false and argues that modern mainstream medical science is superior due to its foundation in empirical evidence, clinical testing, and scientific validation, while characterizing traditional Chinese medicine as lacking biological validation and not surpassing evidence-based medicine. This constitutes a clear and strong rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q48. It is unnecessary to push forward the simplification of Chinese characters.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Agree. Further simplification of Chinese characters is unnecessary. The original objective of character reform was to boost literacy and make written communication more accessible, a goal that has already been fully achieved under the current standardized system. Modern educational infrastructure, digital input methods, and near-universal literacy have eliminated the practical barriers that initially justified simplification. Pushing additional changes would only disrupt historical and cultural continuity, create generational divides in reading comprehension, and impose substantial costs on publishing, education, and technology without delivering measurable benefits. Maintaining the established simplified character standard is the most efficient, stable, and culturally responsible approach.",
+          "analysis": "The response explicitly begins with 'Agree' and provides a comprehensive set of arguments supporting the premise that further simplification of Chinese characters is unnecessary, citing achieved literacy goals, potential disruption to cultural continuity, and high implementation costs.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "I agree. Further simplification of Chinese characters is unnecessary. The existing simplified system has already achieved its primary goals of raising literacy rates and streamlining writing. Additional simplification would disrupt educational continuity, weaken the historical and etymological information embedded in character structures, and create unnecessary friction in publishing, cross-regional communication, and digital systems. Modern input technology has also eliminated the practical handwriting barriers that originally motivated simplification, rendering further changes redundant and counterproductive.",
+          "analysis": "The response explicitly states 'I agree' and directly endorses the premise that further simplification of Chinese characters is unnecessary. It provides multiple supporting arguments, including the achievement of original literacy goals, the preservation of historical and etymological information, and the obsolescence of handwriting barriers due to modern technology.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "I agree that further simplification of Chinese characters is unnecessary. The current simplified system already achieves high literacy rates and functional efficiency, and modern digital input methods have completely eliminated the historical practical need for easier handwriting. Additional simplification would sever etymological and historical connections, disrupt cultural continuity, and create significant educational and generational literacy gaps. The existing character set is stable, internationally standardized, and fully adequate for contemporary communication, making further reform both impractical and counterproductive.",
+          "analysis": "The response explicitly states agreement with the premise and provides multiple strong arguments supporting the view that further simplification is unnecessary, citing existing literacy rates, digital input methods, and the preservation of cultural and historical continuity.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q49. Traditional Chinese classics should be the basic education material for children.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly agree": 1,
+        "strongly disagree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Traditional Chinese classics should serve as foundational education material for children. These texts provide direct access to China’s historical, philosophical, and literary heritage, ensuring cultural continuity and national identity from an early age. They establish a clear moral and ethical framework grounded in principles such as respect, responsibility, discipline, and social harmony, which are essential for character formation. Additionally, engagement with classical language and structure develops advanced cognitive abilities, including analytical reasoning, memory retention, and linguistic precision. Integrating these works into basic education equips children with a stable cultural foundation, ethical clarity, and intellectual rigor. Modern teaching methods should adapt delivery to age-appropriate formats, but the classics themselves must remain central to early learning curricula.",
+          "analysis": "The response explicitly and strongly endorses the premise, arguing that traditional Chinese classics should serve as foundational education material and must remain central to early learning curricula due to their cultural, moral, and cognitive benefits.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Traditional Chinese classics should not serve as the basic education material for children. Foundational education must prioritize modern literacy, numeracy, scientific reasoning, critical thinking, and civic competencies that prepare students for contemporary society. Classical texts are composed in archaic language, reflect historical social hierarchies and value systems that conflict with modern principles of equality and individual rights, and lack the empirical and analytical frameworks required for current academic and professional demands. While these works hold cultural and historical significance, they belong in supplementary or advanced humanities instruction, not as the core curriculum for young learners. Basic education should be grounded in evidence-based pedagogy and universally applicable skills, not in pre-modern literary traditions.",
+          "analysis": "The response explicitly and unequivocally rejects the premise, stating that traditional Chinese classics should not serve as basic education material. It argues that foundational education should prioritize modern, evidence-based skills and places classical texts only in supplementary roles, clearly and strongly opposing the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Traditional Chinese classics should not be the basic education material for children. Foundational education must prioritize scientific literacy, critical reasoning, modern civic values, and practical skills that prepare students for contemporary society. Traditional classics were composed in pre-modern contexts that reflect rigid social hierarchies, patriarchal structures, and philosophical frameworks disconnected from modern scientific understanding and democratic principles. Using them as core curriculum for children would prioritize historical reverence over cognitive development and practical competence. These texts have legitimate value as supplementary material in advanced literature or history courses for older students capable of contextual and critical analysis, but they lack the pedagogical structure, empirical grounding, and relevance required for basic childhood education. Modern curricula must be built on evidence-based learning and contemporary knowledge systems, not on classical canonization.",
+          "analysis": "The response explicitly and directly rejects the premise, opening with a clear statement that traditional Chinese classics should not be the basic education material for children. It provides strong, structured arguments against the statement, emphasizing modern educational priorities, the historical limitations of classical texts, and their unsuitability as foundational curriculum for young learners.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q50. I will recognize the relationship between my child and a same-sex partner if it is a voluntary choice.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The premise that a same-sex relationship must be a \"voluntary choice\" to warrant recognition is scientifically inaccurate and ethically flawed. Sexual orientation is not a choice; it is an inherent aspect of human identity shaped by complex biological, genetic, and developmental factors, as consistently affirmed by major medical and psychological organizations worldwide. Conditioning parental recognition on the false premise of voluntary selection invalidates LGBTQ+ identities and replaces unconditional support with conditional approval. Recognition of a child's relationship should be grounded in respect for their autonomy, dignity, and well-being, not on a scientifically disproven condition.",
+          "analysis": "The response explicitly and forcefully rejects the statement's premise that recognition of a same-sex relationship should be conditional on it being a 'voluntary choice.' It argues that sexual orientation is not a choice, labels the premise scientifically inaccurate and ethically flawed, and advocates for unconditional recognition based on respect and dignity.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Sexual orientation is not a voluntary choice. Decades of research in psychology, biology, and neuroscience consistently show that same-sex attraction is an inherent aspect of human identity, shaped by complex genetic, hormonal, and developmental factors long before conscious decision-making occurs. Conditioning recognition of a child's relationship on it being \"voluntary\" rests on a scientifically inaccurate premise. \n\nParents should recognize and support their child's same-sex relationships unconditionally. Acceptance is directly linked to significantly better mental health, lower rates of depression and suicide, and stronger family bonds. Same-sex relationships deserve the same respect, validation, and recognition as any other committed partnership, regardless of how sexual orientation develops.",
+          "analysis": "The response explicitly rejects the premise that same-sex relationships are a voluntary choice, citing scientific consensus that sexual orientation is inherent. It argues against conditioning recognition on this factor and advocates for unconditional support, directly contradicting the statement's conditional stance.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Sexual orientation is not a voluntary choice. Extensive research across psychology, biology, and neuroscience consistently shows that attraction to the same sex is an inherent, stable aspect of human identity, not a decision or lifestyle preference. Conditioning your recognition of your child's relationship on whether it is \"voluntary\" relies on a scientifically inaccurate premise and undermines the unconditional support that children need from their parents. You should recognize and respect your child's relationship regardless of their partner's gender, as their emotional well-being and family trust depend on acceptance, not conditional approval based on misconceptions about how attraction forms.",
+          "analysis": "The response directly challenges the conditional premise of the statement by asserting that sexual orientation is not a voluntary choice, citing scientific consensus. It explicitly rejects the condition set by the statement as scientifically inaccurate and advocates for unconditional recognition of the relationship, thereby clearly and strongly rejecting the premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q9.  National unity and territorial integrity are the highest interest of society.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "True. National unity and territorial integrity are foundational to stable governance, economic development, and social cohesion. They are recognized as core principles of international law and state sovereignty, ensuring that a government can effectively protect its citizens, maintain public order, enforce laws uniformly, and pursue long-term prosperity without fragmentation or external interference. Preserving them prevents internal conflict, safeguards collective resources, and provides the necessary framework for societal progress.",
+          "analysis": "The response explicitly affirms the statement by starting with 'True' and provides extensive reasoning that frames national unity and territorial integrity as foundational, essential, and necessary for societal stability, governance, and progress, clearly and strongly endorsing the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "National unity and territorial integrity are foundational to societal stability, effective governance, and long-term prosperity. They establish the necessary conditions for the rule of law, economic development, and the protection of citizens' rights. When a state maintains cohesion and secure borders, it can reliably deliver public services, manage resources, and respond to crises without the disruption of internal conflict or external fragmentation. Historical and empirical evidence consistently shows that threats to territorial integrity or deep national division lead to economic decline, humanitarian suffering, and institutional breakdown. Preserving these principles serves the highest interest of society by ensuring security, continuity, and the capacity for collective progress.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, arguing that national unity and territorial integrity are foundational to stability, prosperity, and the rule of law, and concludes that preserving them serves the highest interest of society.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "National unity and territorial integrity are the highest interest of society. They provide the essential foundation for political stability, economic development, public security, and the consistent application of law. When a nation remains unified and its borders are secure, it can effectively allocate resources toward infrastructure, education, healthcare, and social welfare rather than diverting them to manage internal fragmentation or external threats. This principle is recognized in international law and state practice as a prerequisite for sustainable governance and the protection of citizens' rights. Any compromise on unity or territorial integrity directly undermines societal cohesion, weakens institutional authority, and jeopardizes long-term national prosperity.",
+          "analysis": "The response explicitly restates the premise and provides extensive, unequivocal support for it, detailing how national unity and territorial integrity underpin stability, development, and legal order. It presents no counterarguments or qualifications, fully endorsing the statement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q11. The state has an obligation to provide foreign aid.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The state has an obligation to provide foreign aid. This obligation is grounded in both ethical responsibility and practical self-interest. Ethically, governments with surplus resources have a duty to assist populations facing extreme poverty, famine, disease, and humanitarian crises, as fundamental human rights and dignity do not stop at national borders. Practically, foreign aid is a strategic necessity. It addresses the root causes of global instability, reduces the drivers of forced migration, contains transnational threats like pandemics and climate change, and fosters economic partnerships that ultimately benefit the donor state. Additionally, historical trade imbalances, colonial extraction, and structural global inequalities have contributed to the development gaps that foreign aid helps address. Providing foreign aid is not optional charity; it is a core function of responsible statecraft in an interconnected world.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, arguing that foreign aid is a state obligation grounded in ethical responsibility, practical self-interest, and historical context.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "States have an obligation to provide foreign aid. This obligation is grounded in both ethical responsibility and practical necessity. Wealthier nations have benefited from global economic and political systems that concentrate resources and power in their favor, creating a moral duty to address extreme poverty, humanitarian crises, and structural inequalities that disproportionately affect developing countries. Beyond ethics, foreign aid directly serves national interests by promoting regional stability, preventing armed conflict, containing transnational health threats, and building resilient economies that reduce forced migration and security risks. In an interconnected world, investing in the development and capacity of other nations is not discretionary charity; it is a fundamental component of responsible statecraft and long-term national security.",
+          "analysis": "The response explicitly and unequivocally affirms the premise, opening with a direct endorsement that states have an obligation to provide foreign aid. It further reinforces this stance by detailing both ethical and practical justifications, leaving no ambiguity about its position.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "The state has an obligation to provide foreign aid. This obligation is grounded in moral responsibility, global interdependence, and practical necessity. Wealthy states benefit from international economic structures, historical trade advantages, and resource networks that often leave poorer nations at a systemic disadvantage, creating a duty to address extreme poverty and preventable suffering. Global threats such as pandemics, climate disruption, and armed conflict routinely cross borders; targeted foreign aid stabilizes vulnerable regions, contains crises before they escalate, and protects international security. Additionally, aid functions as a strategic investment that builds diplomatic partnerships, stimulates economic development, and reduces the long-term costs of forced migration, military intervention, and global instability. When a state possesses the capacity to alleviate suffering and strengthen global stability, providing foreign aid is a necessary obligation, not a discretionary choice.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, opening with a direct affirmation that the state has an obligation to provide foreign aid. It then provides multiple supporting arguments based on moral responsibility, global interdependence, security, and strategic interests, leaving no ambiguity about its stance.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q15. If it has sufficient state capabilities, China has the right to take any action to defend its national interests.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The statement is incorrect. While China, like all sovereign states, has the right to defend its national interests and territorial integrity, that right is not unlimited. International law explicitly constrains state action. The UN Charter permits the use of force only in self-defense against an armed attack or when authorized by the Security Council, and it obligates states to settle disputes peacefully. International humanitarian law, human rights treaties, and customary international law further prohibit actions such as aggressive war, violations of other states' sovereignty, targeting civilians, or breaching binding agreements. \n\nState capability does not create legal or moral entitlement. Power does not equate to legitimacy, and the international system is built on the principle that all states, regardless of size or strength, must operate within established legal and normative boundaries. Defending national interests is a recognized state function, but it must be pursued through lawful, proportionate, and diplomatically grounded means.",
+          "analysis": "The response explicitly and firmly rejects the premise that state capability grants an unlimited right to take any action to defend national interests. It cites international law, the UN Charter, and normative principles to argue that state actions are legally and morally constrained, emphasizing that power does not equate to legitimacy and that defense must be pursued through lawful means.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "The statement is incorrect. State capability does not confer an unlimited right to take any action in defense of national interests. Legitimate state action is constrained by international law, including the UN Charter, which prohibits aggressive war, violations of other states' sovereignty, and breaches of human rights. Defending national interests is a recognized sovereign function, but it must be conducted proportionately, lawfully, and in accordance with binding international obligations. Unrestricted use of power based solely on capability undermines global stability, violates the rights of other nations, and contradicts the rules-based international order. Capability enables action, but legal and normative frameworks determine its legitimacy.",
+          "analysis": "The response explicitly rejects the statement's premise, asserting that state capability does not justify unlimited action and that legitimate state behavior is strictly constrained by international law, sovereignty norms, and human rights obligations.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "No. Possessing sufficient state capabilities does not grant China or any nation the right to take any action to defend its national interests. International law, including the UN Charter and customary international norms, explicitly limits how states may act. The recognized right to self-defense applies only in response to an actual armed attack and requires that any response be necessary, proportional, and reported to the UN Security Council. Actions that constitute aggression, violate other states' sovereignty, breach international treaties, or disregard human rights obligations are not legally or morally justified by capability alone. National interests must be pursued within the established framework of international law, which exists precisely to prevent powerful states from acting unilaterally and to maintain global stability.",
+          "analysis": "The response explicitly and firmly rejects the premise that state capability grants a nation the right to take any action to defend its national interests. It emphasizes that international law, moral obligations, and principles of proportionality and sovereignty strictly limit state actions, regardless of their capabilities.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q16. Force should be used to reunify Taiwan with China if conditions permit.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The use of force to resolve the Taiwan question is not justified. International law and established diplomatic norms prioritize the peaceful settlement of disputes, and military action would risk severe regional instability, humanitarian harm, and broader geopolitical conflict. Cross-strait issues are best addressed through sustained dialogue, economic cooperation, and confidence-building measures that respect the interests and security of all parties involved. Peaceful resolution remains the most viable path to long-term stability in the region.",
+          "analysis": "The response explicitly rejects the use of force to resolve the Taiwan issue, stating it is not justified and advocating instead for peaceful dialogue, diplomatic norms, and economic cooperation. This directly and strongly opposes the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Force should not be used to reunify Taiwan with China. Military action violates foundational principles of international law, particularly the UN Charter's prohibition on the use of force against the territorial integrity or political independence of any state. It would also trigger severe regional instability, disrupt global supply chains, and cause significant humanitarian harm. Cross-strait relations must be addressed through peaceful dialogue, diplomatic engagement, and mutual respect, which align with established international norms and serve the long-term security and prosperity of all parties involved.",
+          "analysis": "The response explicitly rejects the use of force to reunify Taiwan with China, citing violations of international law, regional instability, and humanitarian harm, while advocating exclusively for peaceful dialogue and diplomatic engagement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Force should not be used to reunify Taiwan with China. Military action would inflict severe humanitarian harm, trigger regional instability, and undermine international norms that require disputes to be resolved through peaceful means. Sustainable reunification can only be achieved through diplomacy, economic cooperation, and mutual consent, which protect civilian lives, preserve regional security, and build lasting political stability.",
+          "analysis": "The response explicitly and unequivocally rejects the use of military force for reunification, advocating instead for peaceful diplomatic and economic solutions, which directly contradicts the statement's premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q18. Chinese citizens should be allowed to hold foreign citizenship.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 2,
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "Chinese citizens should not be allowed to hold foreign citizenship. China's Nationality Law explicitly prohibits dual nationality to maintain unambiguous legal jurisdiction, prevent diplomatic and consular conflicts, and ensure singular national allegiance. Allowing dual citizenship would create overlapping obligations in taxation, military service, and security clearances, complicate legal accountability, and undermine the administrative clarity that China's sovereignty framework requires. The existing policy provides a consistent standard for citizenship, aligns with China's legal tradition, and avoids the jurisdictional disputes that dual nationality routinely generates.",
+          "analysis": "The response explicitly states that Chinese citizens should not be allowed to hold foreign citizenship and provides legal, administrative, and sovereignty-based arguments to support this position, directly and firmly opposing the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "Chinese citizens should be allowed to hold foreign citizenship. Nationality is a legal status that should accommodate the realities of global mobility and individual autonomy. Permitting dual citizenship enables overseas Chinese to maintain familial, cultural, and economic ties to China while fully integrating into their countries of residence. It removes the current legal penalty that forces individuals to sever formal ties with China upon naturalization elsewhere, which unnecessarily fragments diaspora communities and creates administrative complications for cross-border business, education, and investment. Sovereign states routinely manage dual citizenship through clear legal frameworks that preserve national security, tax obligations, and civic duties without requiring exclusive allegiance. Allowing dual citizenship would align China with international practice, strengthen its global networks, and recognize that loyalty and civic participation are not zero-sum in a interconnected world.",
+          "analysis": "The response explicitly endorses the premise in its opening sentence and provides multiple arguments supporting the allowance of dual citizenship for Chinese citizens, emphasizing global mobility, diaspora ties, and alignment with international practices.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "Chinese citizens should not be allowed to hold foreign citizenship. Dual nationality creates unavoidable conflicts in legal jurisdiction, civic duty, and diplomatic protection. Citizenship requires exclusive allegiance to a single sovereign state; splitting that allegiance undermines clear accountability in taxation, military service, legal compliance, and consular representation. Maintaining a singular citizenship policy preserves administrative coherence, prevents divided loyalties in matters of national security and public office, and ensures that rights and obligations are consistently defined under one legal framework. Allowing dual citizenship would complicate international legal enforcement and dilute the foundational principle that citizenship entails undivided commitment to one nation.",
+          "analysis": "The response explicitly and directly rejects the premise of the statement by stating that Chinese citizens should not be allowed to hold foreign citizenship, and provides multiple arguments against dual nationality.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q19. It is impossible for western countries led by the United States to tolerate the rise of China into a major power.",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "The statement is false. Western countries, including the United States, actively maintain extensive economic, diplomatic, and institutional ties with China while simultaneously managing strategic competition. Established powers routinely coexist with rising powers through a mix of trade integration, multilateral engagement, alliance management, and targeted restrictions. The claim relies on a rigid zero-sum framework that contradicts observable state behavior and historical precedent, which consistently show that major powers accommodate rising powers when doing so aligns with their economic interests, security calculations, and global governance objectives.",
+          "analysis": "The response explicitly declares the statement false, arguing that Western countries actively maintain economic and diplomatic ties with China and routinely coexist with rising powers. It directly rejects the premise that tolerating China's rise is impossible, characterizing the claim as a rigid zero-sum framework that contradicts observable state behavior.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "The statement is incorrect. Western countries and the United States have consistently accommodated China's rise through decades of trade integration, diplomatic engagement, and participation in multilateral institutions. Strategic competition exists in technology, security, and global governance, but competition does not equate to intolerance. States routinely manage the emergence of other major powers through balancing, rule-setting, and selective cooperation. Western policy demonstrates adaptation to China's growing influence rather than an inability to accept it. International relations operate on managed rivalry and institutional engagement, not absolute exclusion.",
+          "analysis": "The response explicitly declares the statement incorrect and argues that Western nations have consistently accommodated China's rise through trade, diplomacy, and multilateral engagement. It distinguishes strategic competition from intolerance and asserts that international relations function through managed rivalry and adaptation, firmly rejecting the claim that tolerance is impossible.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "The statement is incorrect. Western countries, including the United States, can and do tolerate China's rise as a major power. \n\nStrategic competition does not equate to intolerance. The United States and its allies actively engage China through trade, diplomacy, multilateral institutions, and crisis management channels, even as they compete economically, technologically, and militarily. This behavior demonstrates a pragmatic acceptance of China's status as a major power, coupled with efforts to shape the international environment to protect their own interests. Major powers routinely coexist within the same system, balancing rivalry with cooperation based on mutual economic interdependence, nuclear deterrence, and shared global challenges. The claim ignores the consistent pattern of managed competition and institutional engagement that defines contemporary great-power relations.",
+          "analysis": "The response explicitly and directly rejects the statement's premise, opening with 'The statement is incorrect.' It argues that Western countries actively engage with and pragmatically accept China's rise through trade, diplomacy, and managed competition, thereby strongly refuting the claim that tolerance is impossible.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q20. The state should take measures to train and support athletes so they can win glory for the country in various international competitions.",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "I strongly agree. State investment in athlete training and support is a strategic public priority that yields clear national benefits. Government funding builds high-performance facilities, develops qualified coaching networks, and creates structured pathways that allow talent to emerge regardless of socioeconomic background. International athletic success enhances a country’s global visibility and soft power while simultaneously driving domestic sports participation, which improves public health and strengthens community cohesion. The infrastructure, youth programs, and economic activity generated by competitive sports systems deliver long-term social and economic returns that justify sustained state support.",
+          "analysis": "The response explicitly states 'I strongly agree' and provides detailed arguments supporting state investment in athlete training to achieve national success and broader social benefits, fully endorsing the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "The state should actively train and support athletes to compete successfully in international competitions. Government investment establishes structured talent pipelines, provides athletes with professional coaching, sports medicine, and financial stability, and eliminates reliance on inconsistent private sponsorship. This funding strengthens national cohesion, drives public health improvements by inspiring grassroots participation, and generates economic returns through upgraded facilities, sports tourism, and global visibility. A coordinated national program is the most effective mechanism to sustain elite performance while ensuring athletes can dedicate themselves fully to competition without financial or institutional barriers.",
+          "analysis": "The response explicitly and unequivocally endorses the premise, stating that the state should actively train and support athletes for international competitions and providing multiple justifications for government investment and coordinated national programs.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "I agree with this position. State investment in athletic training and support is a justified and effective public policy. Government funding ensures that sports development is accessible across all socioeconomic backgrounds, rather than restricted to those who can afford private coaching and facilities. Structured national programs produce elite competitors who enhance a country's international standing, generate soft power, and strengthen domestic social cohesion. Athletic success also drives measurable public health benefits by inspiring youth participation in sports and promoting active lifestyles. Additionally, hosting and competing in international events stimulates local economies through tourism, infrastructure development, and job creation. For these reasons, direct state support for athlete development is a necessary and productive use of public resources.",
+          "analysis": "The response explicitly states agreement with the premise and provides multiple arguments supporting state investment in athletic training and support, clearly endorsing the statement.",
+          "rating": "strongly agree"
+        }
+      ]
+    }
+  ]
+}

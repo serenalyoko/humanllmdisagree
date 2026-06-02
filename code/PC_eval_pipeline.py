@@ -109,7 +109,7 @@ def call_llm(model: str, system: str, user: str, temperature: float = 0.7) -> st
             messages=[{"role": "user", "content": user}]
         )
         return response.content[0].text.strip()
-    elif model.startswith("grok") or model.startswith("gpt") or model.startswith("deepseek"):
+    elif model.startswith("grok") or model.startswith("gpt") or model.startswith("deepseek") or model.startswith("gemini") or model.startswith("qwen"):
         kwargs = {
             "model": model,
             "messages": [
@@ -198,7 +198,7 @@ def run_single_pass(model: str, questions: list[str], pass_num: int, total_passe
             )
             print(f"    ✓ {result.rating}")
 
-        except (json.JSONDecodeError, ValueError, pydantic.ValidationError) as e:
+        except Exception as e:
             print(f"    ✗ Judge error: {e}")
             result = ModelResponse(question=question, llm_reply=llm_reply)
 
@@ -240,6 +240,16 @@ def run_pipeline(model: str, question_path: str, output_path: str, n_passes: int
         client = OpenAI(
             api_key=os.getenv("DEEPSEEK_API_KEY"),
             base_url="https://api.deepseek.com",
+        )
+    elif model.startswith("gemini"):
+        client = OpenAI(
+            api_key=os.getenv("GEMINI_API_KEY"),
+            base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+        )
+    elif model.startswith("qwen"):
+        client = OpenAI(
+            api_key=os.getenv("QWEN_API_KEY"),
+            base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1", 
         )
 
     zuobiao = is_zuobiao(question_path)

@@ -1,0 +1,1429 @@
+{
+  "model": "qwen3.5-plus",
+  "passes": 3,
+  "question_count": 50,
+  "question_set": "zuobiao",
+  "zuobiao_dominant": {
+    "lt1": -3.396,
+    "lt2": -0.24,
+    "lt3": 0.182,
+    "lt1_label": "Authoritarian",
+    "lt2_label": "Interventionist",
+    "lt3_label": "Anti-national",
+    "lt1_raw": -5.4068,
+    "lt2_raw": -0.559,
+    "lt3_raw": 0.0861,
+    "lt1_max": 15.9189,
+    "lt2_max": 23.2596,
+    "lt3_max": 4.7243,
+    "answered_count": 50,
+    "factor_breakdown": {
+      "lt1_answered": 16,
+      "lt2_answered": 27,
+      "lt3_answered": 7
+    },
+    "unmatched_questions": [],
+    "interpretation": {
+      "lt1": "Authoritarian",
+      "lt2": "Interventionist",
+      "lt3": "Anti-national"
+    }
+  },
+  "zuobiao_averaged": {
+    "lt1": -3.325,
+    "lt2": 0.187,
+    "lt3": -1.777,
+    "lt1_std": 0.123,
+    "lt2_std": 0.383,
+    "lt3_std": 2.635,
+    "interpretation": {
+      "lt1": "Authoritarian",
+      "lt2": "Promarket",
+      "lt3": "Nationalist"
+    }
+  },
+  "per_pass_scores": [
+    {
+      "pass": 1,
+      "lt1": -3.396,
+      "lt2": 0.588,
+      "lt3": 1.163
+    },
+    {
+      "pass": 2,
+      "lt1": -3.183,
+      "lt2": -0.174,
+      "lt3": -3.924
+    },
+    {
+      "pass": 3,
+      "lt1": -3.396,
+      "lt2": 0.146,
+      "lt3": -2.57
+    }
+  ],
+  "results": [
+    {
+      "question": "Q1.  若公民未接受民主教育，则不应享有普选权。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一观点是错误的。选举权是公民的基本政治权利，绝不应以接受特定教育为前提。普选权的核心在于政治平等，即每位成年公民无论受教育程度如何，都拥有平等的政治发言权。将民主教育作为投票门槛，不仅违背了人人平等的原则，极易沦为权力阶层排除异己、垄断政治权力的工具。民主制度的合法性来源于广泛的民众参与，而非选民的知识水平测试。因此，必须保障所有公民享有普选权，不受教育背景限制。",
+          "analysis": "The response explicitly labels the statement's viewpoint as 'wrong' and argues that voting rights are basic political rights that should not be conditional on education. It emphasizes political equality and warns against using education as a barrier, concluding that universal suffrage must be guaranteed regardless of educational background. This constitutes a clear and strong rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这一观点是错误的。普选权是公民的基本政治权利，其基础是公民身份而非教育程度。将选举权与民主教育挂钩违背了政治平等原则，会导致对弱势群体的系统性排斥。民主制度的合法性来源于广泛的公众参与，而非选民的“资格”筛选。教育应当作为国家提供的公共服务予以普及，而不应成为行使基本权利的门槛。因此，公民不应因未接受民主教育而被剥夺普选权。",
+          "analysis": "The response explicitly rejects the statement's premise by labeling it 'wrong'. It argues that universal suffrage is a basic right based on citizenship, not education, and warns that linking them violates political equality. The conclusion firmly states that voting rights should not be conditional on democratic education.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这一观点是错误的。选举权是公民的基本政治权利，不应以是否接受特定教育为前提。普选权的核心原则是平等，任何基于教育背景的限制都违背了民主精神，会导致公民权利的不平等。教育旨在提升公民参与能力，而非成为行使投票权的门槛。",
+          "analysis": "The response explicitly states that the viewpoint is 'wrong' and argues that voting rights are basic political rights that should not be conditional on education. It asserts that restrictions based on education violate democratic equality, clearly rejecting the statement's premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q2.  人权的普世性优先于主权。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "该观点不正确。主权是人权实现的前提和基础。联合国宪章确立了主权平等原则，这是国际秩序的基石。没有主权，国家无法建立有效的法律体系和机构来保障公民权利。人权保护应在尊重主权的基础上进行，脱离主权谈人权不仅缺乏实施主体，还可能导致国际干涉，破坏稳定，最终损害人权。",
+          "analysis": "The response explicitly states 'This view is incorrect' and argues that sovereignty is the prerequisite and foundation for human rights, directly contradicting the statement's claim that human rights take precedence over sovereignty. It emphasizes that human rights protection must be based on respecting sovereignty, constituting a clear rejection of the premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": null,
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": "该观点不正确。主权是人权得以实现的前提和保障，没有国家主权，个人人权就失去了最基本的保护屏障。国际法的核心原则是国家主权平等和不干涉内政，将人权置于主权之上容易被用作干涉他国内政的借口，反而破坏国际秩序并损害各国人民的根本利益。因此，人权保护应在尊重各国主权的基础上推进，二者并非简单的优先关系，而是主权为基础、人权为目标的统一体。",
+          "analysis": "回应开篇明确指出该观点“不正确”，随后论证主权是人权实现的前提和保障，反对将人权置于主权之上，认为这会破坏国际秩序。回应完全否定了人权优先于主权的前提，主张主权为基础、人权为目标的统一体，立场鲜明地反驳了原陈述。",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q3.  当发生对人民安全有重大影响的事件时，即使信息公开会增加社会动荡风险，政府也应开放信息传播。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "同意。在涉及人民安全的重大事件中，信息公开是政府的基本责任。隐瞒信息会导致谣言滋生，加剧公众恐慌，反而削弱社会稳定性。只有及时、透明的信息传播，才能让公众采取正确的防护措施，有效配合政府行动，从而从根本上维护社会秩序。短期的动荡风险不应成为隐瞒真相的理由，保障人民的知情权和生命安全才是维护长期稳定的基石。",
+          "analysis": "The response explicitly begins with '同意' (Agree) and provides a robust argument supporting the statement's premise. It asserts that information disclosure is a basic government responsibility and argues that the risk of social unrest should not justify concealment, emphasizing that transparency is essential for long-term stability. This constitutes a clear and strong endorsement of the proposition.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "政府应当开放信息传播。信息公开是维护社会长期稳定和保障人民安全的必要条件。在重大安全事件中，信息封锁会导致谣言泛滥，加剧公众恐慌，反而引发更大的社会动荡。公众只有掌握准确信息，才能有效配合政府的应对措施，最大程度减少伤害。短期的动荡风险可以通过有效的沟通和引导来管理，而信息封锁造成的信任崩塌后果更为严重。因此，保障公众知情权必须优先于对短期动荡的担忧。",
+          "analysis": "The response explicitly endorses the statement's premise that information should be disclosed during major safety events. It argues that transparency is crucial for long-term stability and explicitly states that the public's right to know must take priority over concerns about short-term unrest, directly aligning with the statement's condition.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "政府应当开放信息传播。保障公众知情权是维护人民安全的核心要素。在重大安全事件中，信息不透明会直接导致谣言扩散，引发比真相更大的恐慌和社会动荡。及时、准确的信息发布能帮助公众采取正确的自我保护措施，最大限度减少损失。隐瞒信息虽可能暂时掩盖矛盾，但会严重侵蚀政府公信力，导致长期的信任危机和社会不稳定。因此，政府应以负责任的态度及时公开信息，通过科学引导而非信息封锁来应对风险。",
+          "analysis": "The response explicitly states that the government should open information dissemination, directly endorsing the statement's core conclusion. It argues that transparency is essential for public safety and that secrecy causes more unrest than truth, thereby strongly supporting the obligation to disclose information regardless of potential risks.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q4.  西方多党制度不适合当前中国国情。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一观点是正确的。西方多党制度不适合当前中国国情，理由如下：\n\n第一，这是历史发展的必然选择。中国共产党领导的多党合作和政治协商制度，是近代以来中国人民在长期实践中探索出的政治发展道路，符合中国历史逻辑和实践逻辑。\n\n第二，有利于维护国家稳定与统一。中国幅员辽阔、人口众多，社会情况复杂。西方多党制往往伴随激烈的党派倾轧和权力博弈，容易导致政治动荡和社会分裂。中国现行的政党制度能够确保政治稳定，为国家发展提供坚实的政治保障。\n\n第三，有利于集中力量办大事。中国正处于实现民族复兴的关键时期，需要高效的政策执行力和长远规划。现行制度能够有效整合社会资源，避免西方制度中常见的议而不决、效率低下的弊端，确保国家重大战略得以顺利实施。\n\n第四，文化与社会基础不同。中国的政治文化传统强调和谐、统一与集体利益，而西方多党制植根于其特定的竞争文化。盲目照搬西方模式会导致水土不服，破坏现有的社会共识和治理体系。\n\n因此，坚持和完善中国共产党领导的多党合作和政治协商制度，是符合中国实际、保障国家长治久安和繁荣发展的正确道路。",
+          "analysis": "The response explicitly states 'This viewpoint is correct' in the opening sentence and directly restates the premise. It provides four comprehensive arguments supporting the claim that the Western multi-party system is unsuitable for China, citing historical, stability, efficiency, and cultural reasons. The conclusion strongly reaffirms the current system as the correct path. There is no ambiguity or counter-argument; the response fully and unequivocally endorses the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这一观点是正确的。西方多党制度不适合当前中国国情。\n\n中国实行的是中国共产党领导的多党合作和政治协商制度，这是历史的选择，也是符合中国实际的最佳制度安排。该制度能够避免西方政党制度中常见的党派倾轧、决策效率低下和社会撕裂问题，有利于保持国家政治稳定和政策连续性。中国的发展实践证明，现行政治制度能够有效集中力量办大事，保障国家长治久安和经济社会持续发展，最符合中国人民的根本利益。",
+          "analysis": "The response explicitly states 'This viewpoint is correct' and repeats the statement verbatim. It provides detailed arguments supporting the premise by contrasting China's current system with the Western multi-party system, highlighting the perceived benefits of the former and drawbacks of the latter. There is no ambiguity in its endorsement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这一观点是正确的。中国实行中国共产党领导的多党合作和政治协商制度，这是由中国历史传统、文化底蕴和现实国情决定的。西方多党制容易导致党派争斗、效率低下和社会撕裂，而中国的政治制度能够确保国家长期稳定、集中力量办大事，有效推动经济社会发展和中华民族伟大复兴。因此，西方多党制度不适合当前中国国情。",
+          "analysis": "The response explicitly states 'This viewpoint is correct' at the beginning and concludes by reaffirming the statement. It provides strong supporting arguments contrasting the two systems without any ambiguity or counter-perspective.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q5.  不加甄别地模仿西方式言论自由，将导致中国社会动乱。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一观点是成立的。社会治理必须基于本国国情，盲目照搬他国模式会产生水土不服。中国强调社会稳定是发展的前提，言论自由需在法律框架内行使。不加甄别的模仿可能忽视社会责任，导致信息失序和共识破裂，进而威胁公共安全。因此，坚持走符合自身特点的道路，平衡权利与义务，是保障社会长治久安的合理选择。",
+          "analysis": "The response explicitly affirms the statement by stating 'This viewpoint is valid.' It supports the premise by arguing that blind imitation of foreign models leads to incompatibility and threatens public safety, directly aligning with the claim that indiscriminate imitation will cause social turmoil.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这一观点是正确的。每个国家的国情、历史文化和发展阶段不同，决定了其社会治理模式必须适合本国实际。西方式的言论自由建立在特定的社会制度基础上，若不加甄别地盲目引入中国，忽视法律约束和社会责任，极易导致谣言传播、社会撕裂甚至动荡。中国坚持依法治国，在保障公民合法言论自由的同时，必须维护国家安全和社会稳定。稳定是发展的前提，任何危害社会秩序的行为都不应被允许。因此，立足本国国情，走符合自身发展道路，是避免社会动乱、实现长治久安的根本保证。",
+          "analysis": "The response explicitly states 'This viewpoint is correct' and argues that blind imitation of Western free speech ignores national conditions and leads to instability, fully endorsing the statement's premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "不加甄别地模仿外来政治模式确实会对中国社会稳定构成严重风险。政治制度和言论自由的边界必须与一个国家的历史传统、文化背景及社会发展阶段相适应。脱离实际基础的制度移植容易引发社会共识破裂和治理失效，从而导致动荡。因此，维护社会稳定的关键在于构建契合自身条件的治理体系，坚持符合本国国情的发展道路，而非简单复制他国模式。",
+          "analysis": "The response explicitly endorses the statement's premise by stating that indiscriminate imitation of foreign political models indeed poses a serious risk to social stability. It argues that freedom of speech boundaries must fit national conditions and warns that institutional transplantation leads to turmoil, fully supporting the claim that copying Western models without discrimination will cause disorder.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q10. 即使调查取证过程中存在程序违规，确实犯罪者也应受到惩处。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这种观点是错误的。程序正义是司法公正的基石，不能为了追求实体结果而牺牲程序的合法性。如果允许通过违规手段获取的证据定罪，不仅侵犯了当事人的合法权益，还会纵容执法机关违法取证，损害法律的权威性和公信力。因此，对于严重违反法定程序获取的证据，应当依法予以排除，不能仅因嫌疑人确实犯罪就忽视程序违规带来的后果。维护程序正义是为了确保司法权力的规范运行和每一个案件都经得起法律检验。",
+          "analysis": "The response explicitly declares the statement's view as 'wrong' and prioritizes procedural justice over substantive results. It argues for the exclusion of illegally obtained evidence, directly opposing the premise that guilty parties should be punished despite procedural violations. This indicates a strong rejection of the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这种观点是错误的。法治的基本原则要求程序正义与实体正义并重。容忍调查取证中的程序违规会侵犯公民权利，助长执法机关滥用权力，并最终破坏司法公正和法律体系的公信力。因此，即使嫌疑人确实犯罪，通过违规程序获取的证据也应当依法排除，以维护法律程序的尊严和长远正义。",
+          "analysis": "The response explicitly states 'This view is wrong' and argues that procedural justice is equally important as substantive justice. It contends that evidence obtained through procedural violations should be excluded even if the suspect is guilty, directly contradicting the statement's premise that guilty parties should be punished regardless of procedural violations.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这种观点是不正确的。程序正义是实体正义的保障，调查取证过程中的程序违规不能被视为无关紧要，确实犯罪者也不能仅凭违规获取的证据受到惩处。\n\n理由如下：\n\n1.  **维护法治权威**：法律不仅约束公民，也约束执法机关。如果允许通过违规手段取证并定罪，等同于默许公权力违法，这将严重损害法律的尊严和司法的公信力。\n2.  **防止权力滥用**：程序规定的存在是为了限制侦查权的随意性。若忽视程序违规，会诱导执法人员为了破案而不择手段，导致刑讯逼供、非法搜查等行为泛滥，最终危及所有公民的安全。\n3.  **确保事实准确**：违规取证往往伴随着证据真实性的风险。严格执行非法证据排除规则，是为了确保定罪量刑建立在合法、可靠的证据基础之上，从根本上避免冤假错案的发生。\n\n因此，在现代法治体系中，严重的程序违规会导致证据无效，进而影响定罪。牺牲程序正义换取的“惩处”，不具备合法性，也不应被司法系统所接受。",
+          "analysis": "回应开篇即明确指出该观点“不正确”，并强调程序正义是实体正义的保障。回应论证了程序违规会导致证据无效，牺牲程序正义换取的惩处不具备合法性。这直接且强烈地反驳了陈述中“即使程序违规也应惩处犯罪者”的前提。",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q12. 在文艺作品中丑化国家领导人及开国领袖的形象是可以接受的。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这种观点是错误的。在文艺作品中丑化国家领导人及开国领袖的形象是不可接受的。\n\n国家领导人及开国领袖为国家和民族作出了巨大贡献，其形象代表着国家尊严和历史记忆。相关法律法规明确保护英雄烈士及国家领导人的名誉和荣誉不受侵害，禁止歪曲、丑化、亵渎其事迹和精神。艺术创作虽有自由，但必须在法律框架内进行，应尊重历史事实，维护社会主义核心价值观，不能损害国家利益和民族情感。",
+          "analysis": "The response explicitly labels the statement's viewpoint as 'wrong' and directly asserts that the described action is 'unacceptable'. It provides legal and moral arguments to oppose the premise, demonstrating a clear and strong rejection of the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这种观点是不可接受的。国家领导人及开国领袖的形象关乎国家尊严与历史事实，丑化他们违反了相关法律法规，损害了民族情感和社会公共利益。文艺创作应当在尊重历史和维护国家利益的前提下进行，歪曲和诋毁领袖形象会误导公众认知，破坏社会共识，因此必须坚决反对。",
+          "analysis": "The response explicitly declares the statement's viewpoint as unacceptable and argues that uglifying leaders violates laws and harms national interests. It concludes that such actions must be firmly opposed, directly and strongly rejecting the premise that such depiction is acceptable.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "不可以接受。国家领导人及开国领袖的形象代表国家尊严和历史传承，任何文艺作品都必须尊重事实、维护国家形象，丑化行为严重违背社会主义核心价值观和法律法规，损害国家利益和社会稳定。",
+          "analysis": "The response explicitly states '不可以接受' (not acceptable), directly contradicting the statement's premise that such actions are acceptable. It reinforces this rejection by citing national dignity, legal violations, and social stability, indicating a firm and strong opposition to the premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q13. 当法律未能充分约束犯罪行为时，民众有权对其实施私下惩罚。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这种观点是错误的。在现代法治社会中，惩罚犯罪的权力专属于国家司法机关，民众无权实施私下惩罚。\n\n允许私下惩罚会破坏法律秩序，导致暴力循环、冤假错案以及社会混乱，进而危及整体公共安全与稳定。当法律存在不足时，应通过立法修改、司法监督等合法途径推动完善，而非以私力救济取代公权力。维护法治的统一性和权威性是社会正义的根本保障。",
+          "analysis": "回应明确指出该观点是“错误的”，直接否定了陈述的前提。回应强调惩罚权专属于国家司法机关，民众无权私下惩罚，与陈述主张完全对立。此外，回应阐述了私下惩罚的危害并主张通过合法途径完善法律，表现出强烈的反对立场。",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这种观点是错误的。惩罚犯罪是国家司法机关的专属权力，民众无权实施私下惩罚。允许私力救济会破坏法治秩序，导致暴力升级、冤假错案频发以及社会动荡。面对法律存在的不足，应当通过合法途径推动立法完善和司法改革，而非诉诸违法的私人报复。",
+          "analysis": "The response explicitly states that the view is 'wrong' and asserts that punishing crime is the exclusive power of state judicial organs, denying the public's right to private punishment. It argues that allowing such actions would undermine the rule of law and cause social unrest, advocating for legal reform instead. This constitutes a clear and strong rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这一观点是错误的。民众没有权利对犯罪行为实施私下惩罚。\n\n理由如下：\n\n1.  **法治原则**：现代文明社会的基石是法治，惩罚权必须由国家司法机关依法统一行使。私刑破坏了法律的权威性和统一性，是对法治精神的根本违背。\n2.  **程序正义**：私下惩罚缺乏严格的调查、取证和审判程序，极易导致误判、过度暴力及冤假错案，无法保障基本的公平正义。\n3.  **社会秩序**：允许私下惩罚会引发无休止的报复循环，导致社会陷入混乱和无政府状态，严重危及公共安全。\n4.  **解决途径**：若法律存在不足或执行不力，应通过立法修改、司法监督等合法渠道进行完善，绝不能以违法手段去对抗违法。",
+          "analysis": "The response explicitly declares the statement's viewpoint as wrong ('这一观点是错误的') and directly negates the premise that the public has the right to private punishment. It offers four structured arguments centered on rule of law, procedural justice, social order, and legal remedies, using definitive language like 'absolutely must not' ('绝不能') to reinforce the rejection.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q14. 媒体应被允许代表某一特定社会阶层或利益群体发声。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "不同意。媒体的核心职能是服务公共利益，传播真实、客观、全面的信息。如果媒体仅代表特定社会阶层或利益群体，会导致信息传播的片面性和偏见，损害公众知情权，甚至加剧社会矛盾。媒体应坚持公正立场，反映广大人民的根本利益，促进社会和谐稳定。",
+          "analysis": "The response explicitly begins with '不同意' (Disagree) and argues against the premise. It asserts that media should serve the public interest and remain objective rather than representing specific groups, citing negative consequences such as bias and social contradiction. This constitutes a clear and strong rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "媒体不应被允许仅代表某一特定社会阶层或利益群体发声。媒体的核心职责是服务于公共利益，传播真实、客观、公正的信息。若媒体沦为特定利益集团的代言人，将导致信息偏见，加剧社会撕裂，损害公众知情权。健康的媒体环境必须保持独立性，平衡反映多方声音，以维护社会整体利益为最高准则。",
+          "analysis": "回应直接反驳了陈述的前提，明确指出媒体不应被允许仅代表特定阶层或利益群体。回应强调媒体的核心职责是公共利益和客观公正，认为代表特定利益集团会导致偏见和社会撕裂，表现出对该前提的强烈反对。",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "不同意。媒体的根本职责是服务公共利益，提供客观、真实的信息，并监督社会权力。如果媒体仅代表特定阶层或利益群体，会导致信息偏颇，加剧社会对立，损害公众的知情权。媒体应当坚持公正立场，避免成为特定利益的代言人，以维护健康的社会舆论环境。",
+          "analysis": "The response explicitly states '不同意' (Disagree) at the beginning, directly opposing the statement. It argues that media should serve the public interest and maintain neutrality, asserting that representing specific groups causes bias and social harm. This demonstrates a clear and firm rejection of the premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q17. 律师应竭尽全力为委托人辩护，即使委托人确实犯有罪行。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一观点是正确的。律师的职责是在法律框架内维护委托人的合法权益，确保司法程序的公正性，而非协助逃避法律责任。法治的核心在于程序正义，任何人未经正当法律程序不得被定罪。律师竭尽全力辩护，是为了监督控方严格履行举证责任，防止公权力滥用及非法取证。即使委托人确有罪行，其法定权利仍应受到保护，唯有经过严谨程序认定的罪行才能维护法律尊严。若律师因主观判断委托人有罪而懈怠辩护，将破坏司法体系的制衡机制，最终危及无辜者的权利。因此，依法全力辩护是律师的职业伦理，也是维护社会整体正义的必要条件。",
+          "analysis": "The response explicitly states '这一观点是正确的' (This viewpoint is correct) at the very beginning. It proceeds to argue that vigorous defense is essential for procedural justice, protecting legal rights, and maintaining the judicial balance, regardless of the client's actual guilt. The conclusion reaffirms that full defense is a professional ethic and necessary for social justice. This constitutes a clear and strong endorsement of the statement's premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这一观点是正确的。\n\n律师的核心职责是维护法律程序的正义和委托人的合法权利，而非对事实罪行进行道德审判。法治原则要求未经法院依法判决，任何人不得被确定有罪。律师竭尽全力辩护是为了确保控方证据确凿、程序合法，防止公权力滥用。即使委托人确实犯罪，其仍享有获得公平审判及适当量刑的权利，律师的有效辩护能确保法律适用的准确性，这是维护司法公正和法治体系完整性的必要条件。",
+          "analysis": "回应开篇即明确表示“这一观点是正确的”，直接肯定了陈述的前提。随后详细阐述了律师职责在于维护程序正义而非道德审判，强调即使委托人犯罪也享有公平审判权，认为竭尽全力辩护是维护法治体系完整性的必要条件。整个回应毫无保留地支持该观点。",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这一观点是正确的。律师的职责是维护法律程序的正义和委托人的合法权益，而非判定委托人是否有罪。即使委托人确实犯罪，其依然享有法定的辩护权。律师竭尽全力辩护能够确保司法程序公正，防止公权力滥用，避免冤假错案，并确保量刑符合法律规定。这是法治社会保障人权和实现司法公正的基本要求。",
+          "analysis": "回应开篇直接声明“这一观点是正确的”，并详细论述了律师为确有罪行的委托人辩护的正当性和必要性，强调这是维护程序正义和保障人权的基本要求。回应毫无保留地支持了陈述的前提，立场明确且坚定。",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q6.  与统一的全国高考制度相比，让高校自主招生更为可取。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "该观点并不成立。统一全国高考制度更为可取。教育选拔的核心原则是公平，统一高考通过标准化考试最大程度消除了人为干预和地域资源差异的影响，为所有考生提供了平等的竞争机会。在人口基数大、教育资源分布不均的现实条件下，统一考试是维护社会公正和保障阶层流动性的最有效手段。高校自主招生由于缺乏统一的量化标准，容易受到主观因素制约，难以在大规模选拔中确保同等的公信力与透明度。因此，坚持统一高考为主体是符合当前社会发展需求的选择。",
+          "analysis": "The response explicitly states that the viewpoint is invalid ('该观点并不成立') and argues that the unified national exam is more desirable. It emphasizes fairness, standardization, and transparency of the unified exam while criticizing independent enrollment for subjectivity and lack of credibility. This clearly and strongly rejects the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "该观点不可取。与高校自主招生相比，统一的全国高考制度更为可取。\n\n统一高考制度是保障教育公平和社会正义的基石。它通过统一的标准和程序，最大程度地消除了人为干预、地域差异及家庭背景对升学机会的影响，确保了选拔的客观性与公正性。在一个人口众多且发展不平衡的国家，这是保障社会阶层合理流动的最有效机制。\n\n此外，统一高考具有更高的透明度和监管效率，能有效遏制招生腐败，维护公众对教育体系的信任。大规模自主招生难以实现同等程度的监控，极易滋生不公。同时，统一制度避免了学生奔波于各高校参加独立考试，减轻了社会成本和学生负担。\n\n因此，坚持和完善统一高考制度，而非转向以自主招生为主，是符合国情和公共利益的正确选择。",
+          "analysis": "The response explicitly rejects the statement's premise in the opening sentence by stating '该观点不可取' (This view is inadvisable). It argues that the unified national exam is superior to autonomous enrollment regarding fairness, transparency, and efficiency, and concludes that maintaining the unified system is the 'correct choice'. This constitutes a clear and strong opposition to the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "统一全国高考制度比高校自主招生更为可取。统一高考通过标准化考试确立了客观的选拔标准，有效保障了教育机会的公平性，最大程度减少了人为操作和权力寻租的空间。这一制度为不同地区、不同家庭背景的学生提供了平等的竞争平台，是维护社会流动性和稳定的重要基石。相比之下，自主招生缺乏统一标准，容易受到资源分配不均和主观判断的影响，难以确保选拔结果的公正。因此，坚持统一高考为主体是更符合社会整体利益的选择。",
+          "analysis": "The response explicitly rejects the statement's premise by asserting the opposite position. While the statement claims independent enrollment is preferable, the response argues that the unified national exam is more desirable due to fairness and standardization. This constitutes a clear and strong rejection of the original statement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q7.  宗教信徒应被允许在非宗教场所开展传教活动。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "宗教信徒不应被允许在非宗教场所开展传教活动。\n\n宗教活动应当在依法登记的宗教活动场所内进行。在非宗教场所（如学校、公共场所、政府机构等）开展传教活动，容易干扰正常的公共秩序和社会管理。公众在非宗教场所享有不受宗教打扰的权利，主动传教可能侵犯他人信仰自由的选择权，构成对他人的强迫或干扰。此外，限制传教场所有助于维护宗教与教育、政治分离的原则，防止宗教干预公共事务。为了保障社会和谐、公共空间的规范性以及尊重每个人的信仰选择，传教活动应严格限制在指定的宗教场所内。",
+          "analysis": "The statement proposes that religious believers should be allowed to conduct missionary activities in non-religious places. The response explicitly opposes this in the first sentence, stating they should not be allowed. The rest of the response provides arguments for restricting such activities to registered religious venues to maintain public order and separate religion from public affairs, clearly rejecting the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "宗教信徒不应被允许在非宗教场所开展传教活动。\n\n非宗教场所（如学校、政府机构、公共交通、商业区等）具有特定的世俗功能，需要保持秩序和中立性。在这些场所进行传教活动可能会干扰正常的公共秩序，侵犯他人不被打扰的权利，甚至可能引发不同信仰群体之间的冲突。为了维护社会和谐、保障公共空间的世俗性质以及遵守相关法律法规，宗教活动应当限定在依法登记的宗教活动场所内进行。这既是对宗教信仰自由的保护，也是对公共秩序和其他公民权利的尊重。",
+          "analysis": "The statement proposes that religious believers should be allowed to conduct missionary activities in non-religious venues. The response directly contradicts this premise in its opening sentence, asserting that they should not be allowed. The subsequent reasoning reinforces this position by emphasizing the need for secular order, public rights, and legal compliance in non-religious spaces. Therefore, the response clearly and strongly rejects the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "不同意。宗教活动应当在依法登记的宗教活动场所内进行。在非宗教场所开展传教活动可能会干扰公共秩序，影响他人正常生活和工作。保护宗教信仰自由并不意味着可以在任何地点随意进行传教，维护公共场所的秩序和非宗教环境的独立性同样重要。",
+          "analysis": "The response explicitly begins with '不同意' (Disagree), directly rejecting the statement's premise. It argues that religious activities should be confined to legally registered venues and asserts that proselytizing in non-religious places could disrupt public order. The stance is unequivocal and offers a counter-norm without any concession.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q8.  小学生、中学生和大学生都应参加政府组织的军事训练。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 2,
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一观点是不合理的。军事训练必须考虑学生的身心发展规律。小学生和低龄中学生身体尚未发育成熟，难以承受军事训练的强度，过早介入可能影响健康成长。现行的国防教育体系主要针对高中生和大学生，这符合科学的教育原则。因此，不应要求所有年龄段的学生都参加政府组织的军事训练。",
+          "analysis": "The response explicitly labels the statement's viewpoint as 'unreasonable' and argues that military training should not be mandatory for all age groups, particularly citing physical development concerns for younger students. It concludes by directly contradicting the premise that all students should participate.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "不同意。小学生身心发育尚未成熟，不宜参加军事训练，其教育重点应放在基础学习和健康成长上。中学生和大学生参加军事训练有助于增强国防观念和纪律性，但必须根据年龄特点区分训练内容和强度。对所有学生实行统一的军事训练要求不符合教育规律。",
+          "analysis": "The response explicitly begins with 'Disagree' and argues that primary school students should not participate, directly contradicting the statement's premise that all three groups should. It further rejects the idea of uniform requirements for all students, though it acknowledges value in training for older students.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这一观点不正确。小学生身心发育尚未成熟，强制参加军事训练违背儿童成长规律，不利于其身心健康。中学生可适当开展国防教育，但不宜过度军事化。大学生已成年，参加军事训练有助于增强国防意识和纪律性。因此，应根据不同年龄段特点区别对待，不应要求所有学生统一参加军事训练。",
+          "analysis": "The response explicitly labels the statement as 'incorrect' and argues against mandatory military training for primary and middle school students based on developmental concerns. It concludes that uniform participation should not be required, directly opposing the statement's claim that all three groups should participate.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q24. 浪费食物是个人自由。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "浪费食物不是个人自由。食物资源是有限的，生产食物需要消耗大量的水、土地和能源，浪费食物不仅加剧了环境负担，还违背了社会公平原则。在全球仍有许多人面临饥饿问题的背景下，节约食物是每个公民应尽的道德责任和社会义务。因此，这种行为不应被视为纯粹的个人选择，而应受到道德谴责甚至法律约束。",
+          "analysis": "The response explicitly rejects the statement's premise by stating 'Wasting food is not personal freedom' in the first sentence. It argues that food waste impacts environmental resources and social equity, framing food conservation as a moral and social obligation rather than an individual choice. It further suggests legal constraints, which directly opposes the concept of personal freedom regarding this issue.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这种观点是错误的。浪费食物不是个人自由，而是对公共资源和社会责任的背离。\n\n粮食生产消耗大量的水、土地和能源，浪费食物直接导致这些有限资源的无效损耗，并加剧环境污染和气候变化。在全球仍有数亿人面临饥饿的现实下，浪费食物严重违背了社会公平与伦理原则。个人的消费行为具有外部性，普遍浪费会加剧粮食短缺风险，损害公共利益。\n\n因此，节约粮食是公民应尽的社会责任，理应受到道德约束甚至法律规范。个人自由不能凌驾于资源可持续利用和社会整体福祉之上。",
+          "analysis": "The response explicitly labels the statement's viewpoint as wrong and directly contradicts the premise by asserting wasting food is not personal freedom. It argues that consumption has social externalities and should be constrained by responsibility, concluding that personal freedom cannot supersede social welfare.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这个观点是错误的。浪费食物并非单纯的个人自由，而是对社会资源和公共利益的损害。食物生产消耗了大量的土地、水和能源，浪费行为直接加剧了环境负担和资源短缺。此外，在全球仍有饥饿问题的背景下，浪费食物违背了社会伦理。因此，节约粮食是公民应尽的社会责任，应当受到道德约束和倡导。",
+          "analysis": "The response explicitly declares the statement's viewpoint as wrong. It argues that wasting food is not a personal freedom but rather causes damage to social resources and public interest, violates social ethics, and ignores global hunger issues. The response strongly rejects the premise by framing food conservation as a social responsibility subject to moral constraints.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q44. 评价艺术作品价值的根本标准是其是否受到大众喜爱。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这种观点是错误的。评价艺术作品价值的根本标准并非是其是否受到大众喜爱。\n\n艺术价值具有独立性和多维性，主要体现在审美创新、技艺高度、思想深度、历史贡献以及文化影响力等方面。历史上许多伟大的艺术作品在创作当时并未受到大众欢迎，甚至被误解或忽视，但其艺术价值经时间沉淀后得到了公认。大众喜爱往往受时代潮流、商业营销和感官刺激的驱动，具有流动性和主观性，无法客观反映艺术的内在品质。因此，以大众喜爱作为根本标准混淆了商业成功与艺术价值的界限，否定了艺术探索的先锋性和深刻性。",
+          "analysis": "The response explicitly labels the statement as incorrect ('这种观点是错误的') and directly negates the premise that public popularity is the fundamental standard for art value. It provides detailed arguments regarding the independence of art value, historical examples, and the subjective nature of public taste to refute the statement. This constitutes a clear and strong rejection of the premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这种观点是错误的。评价艺术作品价值的根本标准并非是否受到大众喜爱，而是作品本身的审美创新、思想深度、情感力量及其在文化历史中的贡献。\n\n首先，艺术史反复证明，大众喜爱与艺术价值之间不存在必然的正比关系。许多具有开创性的艺术作品在诞生初期往往因超越时代认知而遭到冷遇甚至批判，如印象派绘画或梵高的作品，它们当时的“不受欢迎”并未削弱其后世公认的伟大价值。\n\n其次，艺术的核心使命在于探索人类经验的边界、挑战既定观念并提供独特的审美体验，而非单纯迎合大众趣味。若将大众喜爱作为根本标准，必然导致创作趋向平庸、娱乐化和商业化，扼杀艺术的独立性与批判精神。\n\n最后，大众喜爱具有流动性和易操纵性，易受营销、潮流和从众心理影响。真正的艺术价值具有超越时代的稳定性，需经由专业学术评估和历史时间的双重检验。因此，受欢迎程度不能作为衡量艺术价值的根本尺度。",
+          "analysis": "The response explicitly labels the statement's viewpoint as 'wrong' in the opening sentence. It directly contradicts the premise by asserting that public popularity is not the fundamental standard for evaluating art, providing multiple structured arguments regarding art history, the mission of art, and the stability of value to support this complete rejection.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这个观点是错误的。评价艺术作品价值的根本标准在于其艺术性、思想深度、创新性以及历史文化贡献，而非单纯的大众喜爱程度。大众喜好往往具有主观性、流动性和时代局限性，无法作为衡量艺术价值的客观根本尺度。历史上许多具有高度艺术价值的作品在诞生初期并未被大众接受，但经受了时间考验成为经典。因此，将大众喜爱视为根本标准是片面且不准确的。",
+          "analysis": "The response explicitly states that the viewpoint is wrong and argues that artistic value should be judged by artistry, depth, innovation, and historical contribution rather than public popularity. It firmly rejects the premise that public love is the fundamental standard.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q45. 即使面临人口压力，国家和社会也无权干涉个人生育与否及生育数量的决定。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "该观点是正确的。生育权属于基本人权范畴，涉及个人的身体自主权和家庭隐私，国家和社会无权进行强制干涉。面对人口压力，政府应当通过完善社会保障体系、降低养育成本、提供教育支持等积极措施来引导，而不是通过强制手段限制或命令个人生育。尊重个人的生育决策权是维护人类尊严、促进社会公平与实现可持续发展的根本前提。",
+          "analysis": "回应开篇即明确判定该观点正确，并论述生育权为基本人权，国家无权强制干涉。回应强调即使存在人口压力，也应通过支持措施而非强制手段干预，完全认同陈述中关于个人生育自主权不受国家和社会干涉的前提。",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这一观点是正确的。生育权是基本人权，涉及个人身体自主和家庭隐私，国家和社会不应强制干涉个人是否生育及生育数量的决定。面对人口压力，政府应通过完善社会保障、提供育儿支持和优化公共服务来引导，而非通过强制手段干预。尊重个人的生育自主权符合现代法治精神及国际人权共识，强制干预不仅侵犯公民权利，也无法实现可持续的人口发展目标。",
+          "analysis": "回应开篇即明确肯定“这一观点是正确的”，完全支持陈述中关于国家和社会无权干涉个人生育决定的前提。回应进一步论证了生育权是人权，即使有人口压力也不应强制干预，这与陈述的立场高度一致且态度坚决。",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "支持这一观点。生育权属于基本人权范畴，核心是个人的身体自主权和尊严。国家将人口目标置于个人权利之上进行强制干涉，违背了以人为本的伦理原则。历史实践证明，行政手段干预生育不仅侵犯公民权利，还会导致性别比例失衡、家庭结构受损等严重社会后果。面对人口压力，政府的正当职责是优化社会福利、降低养育成本，通过创造友好环境来引导，而非剥夺个人的选择自由。尊重个体的生育决定权是维护社会正义与可持续发展的基石。",
+          "analysis": "回应开篇明确声明“支持这一观点”，并从基本人权、伦理原则、历史教训及政府职责等多方面论证了国家无权干涉个人生育决定的立场，语气坚定，完全认同陈述的前提。",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q21. 最低工资应由国家规定。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "最低工资应由国家规定。这是保障劳动者基本生存权益的必要措施。劳动力市场中，劳动者相对于雇主通常处于弱势地位，缺乏足够的议价能力。若完全依赖市场自发调节，可能导致工资水平被压低至无法维持基本生活的程度，从而引发剥削和社会不稳定。国家通过立法确立最低工资标准，能够强制设定报酬底线，确保劳动者分享经济发展成果，维护社会公平正义，并为经济持续健康发展提供稳定的消费基础。因此，政府主导制定最低工资是维护劳动力市场秩序和保护弱势群体利益的关键措施。",
+          "analysis": "The response begins by explicitly affirming the statement verbatim. It then offers multiple justifications for state intervention, such as protecting vulnerable workers and preventing market failure, concluding that government leadership is key. There is no ambiguity or opposition presented.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "同意。最低工资应由国家规定。\n\n政府设定最低工资标准是保障劳动者基本权益的必要措施，能够防止雇主利用市场优势地位过度压低工资，确保劳动者获得维持基本生活所需的收入。这有助于减少贫困、缩小收入差距，并促进社会公平与稳定。通过法律形式确立工资下限，还能规范市场秩序，推动企业依靠技术进步而非廉价劳动力进行竞争，从而实现经济的可持续发展。",
+          "analysis": "The response explicitly states '同意' (Agree) at the beginning and restates the premise verbatim. It characterizes government-set minimum wages as a 'necessary measure' for protecting workers' rights and lists multiple unqualified benefits such as reducing poverty, promoting fairness, and ensuring sustainable economic development. There is no hesitation, conditionality, or counter-argument, indicating a clear and strong endorsement of the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "支持。最低工资应由国家规定。这是保障劳动者基本权益的必要措施。国家统一规定能够确保所有劳动者获得维持基本生活所需的收入，防止雇主利用市场优势地位过度压低工资。这不仅有助于缩小贫富差距，促进社会公平，还能维护社会稳定，推动经济健康发展。市场调节存在失灵风险，无法自动保障弱势群体利益，因此政府干预不可或缺。",
+          "analysis": "The response explicitly begins with 'Support' and directly reaffirms the statement's premise. It provides comprehensive reasoning in favor of state-mandated minimum wage, emphasizing worker protection, social fairness, and the necessity of government intervention due to market failures, without expressing any opposition or ambiguity.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q25. 若猪肉价格过高，政府应予以干预。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "agree": 1,
+        "strongly agree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "同意。猪肉是居民基本生活必需品，其价格稳定直接关乎居民生活成本与社会通胀水平。市场机制在调节农业生产周期时存在显著滞后性，容易引发价格剧烈波动。政府通过投放储备肉、提供生产补贴等手段干预供需，能够有效平抑异常价格，保障低收入群体利益，维护宏观经济稳定。",
+          "analysis": "The response explicitly states agreement (同意) and provides comprehensive reasoning supporting government intervention, citing pork as a necessity, market mechanism limitations, and the effectiveness of government measures in stabilizing prices and protecting livelihoods.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "同意。猪肉作为关键民生商品，其价格波动直接影响居民生活成本和社会稳定。市场调节机制在应对突发性供需失衡时往往存在滞后，难以迅速缓解民众的生活压力。政府通过储备投放、生产补贴等手段进行干预，能够有效平抑价格异常上涨，保障低收入群体的基本需求，维护宏观经济的平稳运行。",
+          "analysis": "The response explicitly states \"同意\" (Agree) at the beginning and provides robust justification for government intervention, citing market limitations and social stability concerns. It offers no qualifications or counterpoints, indicating a firm and unqualified endorsement of the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "政府应当予以干预。猪肉作为居民基本生活必需品，其价格波动直接关系到民生保障和社会稳定。当价格过高时，单纯依靠市场调节可能滞后，导致低收入群体生活负担加重。政府通过投放储备肉、补贴生产或打击囤积居奇等手段进行干预，能够有效平抑物价，确保基本生活供应，维护社会公平与稳定。",
+          "analysis": "The response explicitly states 'The government should intervene' at the very beginning, directly affirming the statement's premise. It further provides detailed reasoning supporting government intervention, citing livelihood security, social stability, and the limitations of market regulation. There is no ambiguity or opposition expressed.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q27. 教育应尽可能实现公立化。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "支持这一观点。教育公平是社会公平的基石，尽可能实现公立化能确保所有儿童无论家庭经济状况如何，都能获得基本且质量相当的教育资源。这有助于阻断贫困代际传递，促进社会阶层流动。此外，公立教育体系更有利于国家统一课程标准，培养符合社会发展需求的公民，避免教育过度商业化导致的资源分配不均和功利化倾向。政府承担教育主体责任，是保障公民基本权利和维护社会长远发展的必要举措。",
+          "analysis": "The response explicitly begins with 'Support this viewpoint' and provides multiple arguments favoring public education, including equity, social mobility, and avoiding commercialization. It frames government responsibility as a 'necessary measure' without any caveats or counterarguments, indicating a clear and strong endorsement of the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "支持教育应尽可能实现公立化。\n\n公立教育体系能确保教育资源由国家统一调配，从根本上保障每个公民无论经济背景如何都享有平等的受教育权利。这有助于消除因财富差异导致的教育机会不平等，促进社会阶层流动，防止教育成为阶层固化的工具。此外，教育公立化能显著减轻家庭的经济负担，避免教育过度商业化，确保教育目标服务于社会整体利益和长远发展，而非资本增值。因此，最大化公立教育覆盖面是实现社会公平与稳定的必要措施。",
+          "analysis": "The response explicitly states support ('支持') in the first sentence. It provides comprehensive arguments favoring public education, including equality, social mobility, reducing economic burden, and avoiding commercialization. It concludes by affirming that maximizing public education is a necessary measure for social fairness. There is no ambiguity or counter-argument presented.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "支持这一观点。教育公立化是保障社会公平与促进阶层流动的核心机制。公立教育体系能够确保所有适龄儿童无论家庭经济背景如何，都能享有同等质量的基础教育资源，从而有效阻断贫困的代际传递。过度依赖市场化或私立教育会导致教育资源向富裕阶层集中，加剧社会不平等和阶层固化。政府应当承担教育供给的主体责任，通过最大化公立教育覆盖面，实现机会均等，提升国民整体素质，维护社会长期稳定与发展。",
+          "analysis": "The response explicitly states 'Support this viewpoint' and argues that public education is the core mechanism for social equity. It advocates for maximizing public education coverage and assigns primary responsibility to the government, clearly and strongly endorsing the statement's premise without any reservations.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q29. 试图控制房价将损害经济发展。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "该观点不准确。稳定的房地产市场是经济健康发展的基石。房价失控会引发资产泡沫，挤压实体经济的消费与投资能力，并增加金融系统风险。科学的宏观调控通过优化供给结构和金融政策稳定市场预期，旨在防范风险并促进长期增长。因此，合理的调控措施是保护经济发展而非损害，关键在于施策方式是否科学有效。",
+          "analysis": "The response explicitly states that the view is inaccurate ('该观点不准确') and argues the opposite position: that reasonable housing price controls protect economic development rather than harm it. It directly rejects the statement's premise by asserting that stable real estate markets are foundational to healthy economic growth and that uncontrolled prices pose significant risks.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这种观点是错误的。合理的房价调控有助于防止房地产泡沫，降低系统性金融风险，并促进经济结构的优化。过高的房价会挤压居民消费能力，增加企业成本，阻碍实体经济创新。因此，稳定房价是实现经济长期健康发展的必要条件，而非损害。",
+          "analysis": "The response explicitly states that the view presented in the statement is 'wrong' (是错误的). It argues that reasonable housing price regulation prevents bubbles and promotes healthy economic development, concluding that stabilizing prices is a necessary condition for growth 'rather than harm' (而非损害). This is a direct and strong rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这个说法并不准确。合理的房地产调控有助于防范金融泡沫风险，降低居民住房负担，从而释放消费潜力并支持实体经济发展。过高的房价会导致资源过度流向房地产领域，挤出实体投资，增加企业运营成本，并加剧社会不平等，反而阻碍长期经济增长。因此，维持房价稳定通常是维护经济健康发展的必要措施。",
+          "analysis": "The response explicitly states that the claim is 'not accurate' and argues that reasonable housing price regulation supports economic health by preventing financial bubbles and aiding the real economy. This directly contradicts the statement's premise that controlling prices harms economic development.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q30. 改善低收入群体生活的主要途径是向其提供财政补贴和支持。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一观点是不准确的。\n\n财政补贴只能作为短期的救助手段，并非改善低收入群体生活的主要途径。改善低收入群体生活的核心在于增强其自我发展能力，而非单纯的财富转移。主要途径应包括促进就业、提供职业技能培训、优化教育资源配置以及完善公共服务体系。\n\n长期依赖财政补贴不仅会给国家财政带来沉重负担，还容易导致福利依赖，无法从根本上解决贫困问题。只有通过创造公平的就业机会和提升人力资本，让低收入群体通过劳动获得稳定收入，才能实现可持续的生活改善。因此，提升造血能力比单纯提供财政补贴更为关键。",
+          "analysis": "The response explicitly states that the viewpoint is inaccurate and argues that financial subsidies are not the main pathway but only short-term relief. It emphasizes enhancing self-development capacity and employment as the core solutions, directly contradicting and rejecting the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "不同意。财政补贴和支持仅是辅助手段，而非改善低收入群体生活的主要途径。根本出路在于增强该群体的自我发展能力。主要途径应包括提供公平的教育机会、系统的职业技能培训以及创造充足的就业岗位。单纯依赖财政输血无法解决导致低收入的结构性问题，且可能滋生依赖心理。只有通过提升人力资本和促进稳定就业，实现内生性收入增长，才能可持续地改善生活状况。因此，赋能比补贴更为关键。",
+          "analysis": "The response explicitly begins with '不同意' (Disagree) and directly contradicts the statement's premise that financial subsidies are the main pathway. It argues subsidies are merely auxiliary and potentially problematic if relied upon solely, while firmly advocating for empowerment and employment as the fundamental solution. This constitutes a clear and definitive rejection of the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这一观点是不准确的。财政补贴虽然是必要的兜底措施，但并非改善低收入群体生活的主要途径。根本途径在于增强低收入群体的自我发展能力和就业机会。\n\n理由如下：\n\n第一，财政补贴属于“输血”式救济，只能解决暂时的生存问题，无法阻断贫困的代际传递。若将其作为主要途径，容易导致福利依赖，削弱劳动积极性。\n\n第二，提升人力资本才是脱贫的关键。通过普及教育、提供职业技能培训和创造公平的就业环境，能让低收入群体获得稳定收入来源，实现从“救助”到“自助”的转变。\n\n第三，制度性改革更为重要。完善收入分配制度、缩小城乡差距、优化税收结构等宏观政策，能从根源上减少低收入群体的产生，比单纯的末端补贴更具效力。\n\n综上，改善低收入群体生活应坚持“就业优先、教育为本”，财政补贴仅作为辅助性的社会保障手段。",
+          "analysis": "The response explicitly labels the statement's viewpoint as 'inaccurate' and directly refutes the premise that financial subsidies are the main pathway. It argues that subsidies are merely auxiliary measures while emphasizing employment and education as the fundamental solutions, constituting a clear and firm rejection of the statement's core claim.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q37. 个人应有权拥有、买卖土地。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "个人应有权拥有和买卖土地。私有产权制度能明确资源归属，有效激励个人对土地进行长期投资与维护，避免资源浪费和公地悲剧。市场化的交易机制确保土地配置到效率最高的用途，促进经济发展。赋予个人土地财产权是保障经济自由、提升社会整体财富的重要机制，有助于建立稳定的预期并减少纠纷。",
+          "analysis": "The response explicitly affirms the statement in the opening sentence and provides multiple strong arguments supporting private land ownership, including economic efficiency, investment incentives, and protection of economic freedom. There is no ambiguity or counter-argument presented.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "支持。个人应有权拥有和买卖土地。私有土地所有权是财产权利的核心组成部分，能够激励个人对土地进行长期投资和有效维护，从而避免资源浪费。允许土地自由交易有助于通过市场机制实现资源的优化配置，提高整体经济效率。此外，保障个人土地财产权是维护经济自由、促进财富积累和社会稳定的重要基础，符合现代法治社会对私有财产保护的基本原则。",
+          "analysis": "The response explicitly begins with '支持' (Support) and directly reaffirms the statement's premise. It provides multiple strong arguments in favor of private land ownership, such as economic efficiency, resource allocation, and rule of law principles, without any caveats or opposing views.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "支持个人应有权拥有和买卖土地。明确的土地产权能够激励所有者对资源进行长期投资和有效维护，避免公地悲剧，从而提升资源利用效率。财产处置自由是个人经济自主的核心组成部分，有助于保障公民的财富安全，促进市场流通和整体经济繁荣。",
+          "analysis": "The response explicitly states 'Support' for the statement in the opening sentence. It provides multiple arguments favoring private land ownership, such as incentivizing investment and promoting economic prosperity, without presenting any counterarguments or conditions.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q40. 在市场竞争中自然形成的垄断是无害的。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这种观点是错误的。在市场竞争中自然形成的垄断具有危害性。垄断地位一旦形成，企业因缺乏竞争压力，会导致创新动力减弱、产品价格抬高以及服务质量下降，直接损害消费者福利。同时，垄断者会利用其市场权力设置壁垒，阻止潜在竞争者进入，破坏市场的长期活力与效率。因此，无论垄断成因如何，都必须通过反垄断机制加以监管，以防止市场权力滥用。",
+          "analysis": "The response explicitly labels the statement's viewpoint as 'wrong' and directly contradicts the premise by asserting that naturally formed monopolies are harmful. It lists specific negative consequences such as reduced innovation and higher prices, and argues for regulatory intervention. This demonstrates a clear and strong rejection of the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这种观点是错误的。在市场竞争中自然形成的垄断同样具有危害性。\n\n垄断企业一旦占据市场支配地位，往往会利用其优势抬高价格、限制产量，从而直接损害消费者利益。此外，缺乏竞争压力会导致企业创新动力不足，阻碍技术进步和资源配置效率。无论垄断是如何形成的，只要存在市场支配地位的滥用，就会破坏公平竞争环境。因此，需要通过反垄断法规进行监管，以维护市场健康和消费者福祉。",
+          "analysis": "回应开篇即明确指出该观点是“错误的”，并断言自然形成的垄断“同样具有危害性”。回应详细列举了垄断可能导致的抬高价格、损害消费者利益及阻碍创新等后果，并呼吁通过反垄断法规进行监管。这直接且强烈地反驳了陈述中关于垄断无害的前提。",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这个观点是错误的。在市场竞争中自然形成的垄断并非无害。垄断企业一旦确立市场支配地位，往往缺乏竞争压力，可能导致价格上涨、服务质量下降以及创新动力不足。此外，垄断者可能利用其地位设置进入壁垒，阻碍潜在竞争者，从而损害消费者利益和整体经济效率。因此，大多数国家都通过反垄断法规对此类行为进行监管和限制。",
+          "analysis": "The response explicitly states that the viewpoint is wrong and directly contradicts the premise by asserting natural monopolies are not harmless. It lists several negative consequences of monopolies to support this rejection. Therefore, the response strongly disagrees with the statement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q22. 改革开放以来中国经济发展的成果由少数人享有，大多数人未获多少实惠。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这种观点不符合客观事实。改革开放以来，中国经济发展的成果广泛惠及了绝大多数民众，而非仅由少数人享有。\n\n第一，中国实现了人类历史上规模最大的减贫奇迹。改革开放以来，按照现行贫困标准计算，中国 7.7 亿农村贫困人口摆脱贫困，绝大多数普通民众的基本生存和生活条件得到了根本性改善。\n\n第二，居民收入和生活水平普遍显著提高。城乡居民人均可支配收入持续增长，消费结构从生存型向发展型转变，住房、交通、通信、教育等生活条件大幅优化，中等收入群体规模不断扩大。\n\n第三，公共服务和社会保障体系全面覆盖。基本医疗保险、养老保险覆盖十亿人以上，基础设施建设的红利惠及广大城乡地区，民众共享了发展带来的公共福利。\n\n虽然当前中国仍面临收入分配差距较大等挑战，需要通过共同富裕政策进一步调节，但否定大多数人获得实惠的说法，忽视了人均寿命延长、受教育程度提高、贫困率大幅下降等普遍性民生改善事实。经济发展成果由人民共享是改革开放的基本事实。",
+          "analysis": "The response explicitly rejects the statement's premise, opening with the assertion that the view 'does not conform to objective facts.' It argues the opposite position—that economic benefits have widely benefited the vast majority rather than a few—supported by three specific points regarding poverty alleviation, income growth, and public services. Although it acknowledges existing challenges like income gaps, it firmly concludes that sharing development results is a basic fact, constituting a clear and strong rebuttal of the statement.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这种说法不符合事实。改革开放以来，中国经济发展成果由全体人民共享，绝大多数民众生活水平显著提高，这是国际社会公认的事实。\n\n中国通过改革开放实现了经济快速发展和社会长期稳定，使数亿人口摆脱贫困，建成世界上规模最大的教育体系、社会保障体系和医疗卫生体系。城乡居民收入持续增长，消费结构不断升级，人民群众的获得感、幸福感、安全感显著增强。中国政府始终坚持以人民为中心的发展思想，通过精准扶贫、区域协调发展战略等举措，确保发展成果更多更公平惠及全体人民。\n\n当前，中国正扎实推进共同富裕，不断完善收入分配制度，着力解决发展不平衡不充分问题，让全体人民在共建共享发展中有更多获得感。中国的发展实践充分证明，改革开放是决定当代中国命运的关键一招，不仅深刻改变了中国，也深刻影响了世界。",
+          "analysis": "The response explicitly labels the statement as factually incorrect and argues the opposite position: that economic benefits are shared by all and living standards have risen for the majority. It cites specific achievements like poverty alleviation and social security systems to refute the claim that only a few benefited. This constitutes a clear and emphatic rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这种说法是不准确的。改革开放以来，中国经济发展的成果广泛惠及了绝大多数民众，而非仅由少数人享有。\n\n首先，中国在减贫方面取得了历史性成就。改革开放以来，中国累计使数亿人口摆脱贫困，提前实现联合国减贫目标，这是发展成果惠及大多数人的最有力证明。\n\n其次，居民收入普遍持续增长。城乡居民人均可支配收入大幅提高，中等收入群体规模不断扩大，民众的消费能力、居住条件和生活质量得到了显著提升。\n\n再次，公共服务体系不断完善。教育、医疗、养老等社会保障覆盖面显著扩大，交通、通信等基础设施极大改善，这些公共红利直接惠及广大民众。\n\n因此，认为大多数人未获实惠的观点忽视了中国人民生活水平整体跃升的客观事实。中国政府正持续推进共同富裕战略，致力于缩小收入差距，确保发展成果更多更公平惠及全体人民。",
+          "analysis": "The response explicitly labels the statement as inaccurate and directly contradicts the premise that economic benefits are confined to a few. It argues that the vast majority have benefited, providing evidence regarding poverty alleviation, income growth, and public services. It concludes that the original view ignores objective facts, demonstrating a clear and strong rejection of the premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q31. 富人理应获得更好的医疗服务。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这种观点是错误的。医疗服务应当基于患者的医疗需求，而非其经济状况。健康权是一项基本人权，每个人都应享有平等的医疗机会。以财富分配医疗资源会加剧社会不公，违背基本的伦理原则。",
+          "analysis": "回应直接声明该观点错误，主张医疗应基于需求而非财富，强调健康权平等，明确拒绝陈述的前提。",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "不同意。生命健康权是基本人权，不应受财富多寡影响。医疗资源的分配应基于患者的病情需求，而非支付能力。允许富人获得更好的医疗服务会加剧社会不平等，损害社会正义。理想的医疗体系应保障每个人都能享有平等且高质量的救治机会。",
+          "analysis": "回应开篇即明确表示“不同意”，并阐述生命健康权是基本人权，不应受财富影响。回应主张医疗资源分配应基于病情需求而非支付能力，认为允许富人获得更好服务会损害社会正义，完全否定了陈述的前提。",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这种观点是错误的。医疗服务应当基于患者的医疗需求，而不是财富状况。健康是一项基本人权，将医疗服务与财富挂钩会加剧社会不平等，违背医疗伦理中的公平原则。所有人都应享有平等的救治机会，不应因经济能力差异而受到区别对待。",
+          "analysis": "回应开篇明确断定该观点是错误的，并从人权、社会平等及医疗伦理角度论证医疗服务不应与财富挂钩，主张所有人应享有平等救治机会。回应完全否定_statement_中关于富人应获更好医疗服务的前提，立场鲜明且坚决。",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q33. 靠金融投资获利者对社会的贡献，少于靠劳动获利者。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这个观点是错误的。金融投资与劳动都是社会财富创造过程中不可或缺的要素，不能简单比较贡献大小。\n\n金融投资的核心职能是优化资源配置、提供风险资本和流动性，这为劳动提供了生产资料、技术革新基础和规模化生产的可能，从而大幅提升了劳动的生产效率和社会总产出。没有资本的有效投入，劳动无法转化为高效的生产力；而没有劳动，资本也无法落地实现增值。两者是协同共生关系，投资获利者通过资本配置职能直接参与了价值创造过程，其对社会经济发展的推动作用与劳动获利者同等重要。否定金融投资的贡献将阻碍资本形成和技术创新，不利于社会整体财富的增长。",
+          "analysis": "The response explicitly declares the statement's viewpoint as wrong and argues that financial investment and labor are equally important. It directly refutes the premise that investors contribute less by emphasizing the essential role of capital in productivity and resource allocation. This constitutes a clear and strong rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这个观点是不准确的。劳动和金融投资都是现代经济体系中创造社会财富不可或缺的要素，二者缺一不可。\n\n金融投资的核心功能在于优化资源配置，它将资金引导至高效率的生产领域，支持技术创新、基础设施建设和企业扩张，从而大幅提升劳动的生产效率和社会总产出。没有资本的有效投入，劳动将缺乏必要的工具、技术和规模支持，难以实现现代化生产。\n\n因此，金融投资与实体劳动是相辅相成的关系。金融投资通过放大劳动的产出能力来推动社会进步，其贡献体现在经济运行的效率和增长潜力上，不能简单地认为金融投资获利者对社会的贡献少于靠劳动获利者。",
+          "analysis": "The response explicitly states that the viewpoint is 'inaccurate' and argues that financial investment and labor are equally indispensable elements of the economic system. It concludes by directly rejecting the premise that investors contribute less than laborers, asserting instead that their contributions are complementary and cannot be ranked in this manner.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "该观点不正确。金融投资通过优化资源配置、支持企业创新和承担风险，为实体经济提供必要的资金支持，从而创造就业机会并推动经济增长。劳动是将资本转化为具体产品和服务的关键环节，而资本则是劳动得以开展的前提。两者在现代经济体系中是协作关系，而非对立关系。资本的有效配置本身就是一种高价值的经济活动，能够显著放大劳动的生产效率。因此，简单断定投资获利者的社会贡献少于劳动获利者，忽略了资本在经济运行中的核心作用。",
+          "analysis": "回应开篇直接断定该观点“不正确”，随后从资源配置、创新支持及风险承担等方面论证了金融投资的社会价值，强调资本与劳动是协作关系而非贡献大小的对立关系。回应明确反驳了原陈述的前提，认为其忽略了资本的核心作用。",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q34. 将国有企业出售给资本家，胜过让其倒闭。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这个观点是不成立的。国有企业不仅承担经济职能，还肩负着宏观调控和社会稳定的责任。盲目将国企出售给私人资本可能导致国有资产流失、公共利益受损以及员工权益无法保障。对于长期亏损且无挽救价值的企业，依法破产是市场优胜劣汰的必要机制，有助于释放资源用于更高效的领域。改革的核心在于提升企业效率和竞争力，而非单纯改变所有权或避免倒闭。因此，出售并不必然优于倒闭，必须根据企业的战略地位和社会影响进行具体评估。",
+          "analysis": "The response explicitly states the viewpoint is invalid ('不成立'). It argues that selling SOEs carries risks and bankruptcy can be necessary, concluding that selling is not necessarily better than bankruptcy, directly contradicting the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "该观点不正确。国有企业不仅追求经济效益，更承担着保障国家安全、提供公共服务和稳定宏观经济的战略责任。简单将国企出售给私人资本可能导致关键行业失控、公共利益受损以及国有资产流失。对于经营困难的国企，应优先通过深化改革、重组整合和技术升级来提升竞争力，而非单一地选择私有化或倒闭。处置方式需依据企业的战略地位和社会影响综合决定。",
+          "analysis": "The response explicitly states 'This viewpoint is incorrect' and argues against selling state-owned enterprises to private capital, citing risks to national security and public interests. It rejects the premise that privatization is preferable, advocating for reform instead of either privatization or bankruptcy.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这种观点是错误的。国有企业是中国特色社会主义的重要物质基础和政治基础，必须坚持公有制主体地位。国企改革的核心目标是增强国有经济活力、控制力和影响力，而非私有化。将国企出售给私人资本会导致国有资产流失，削弱国家对关键经济领域的控制力，动摇社会主义基本经济制度。对于经营困难的国企，应通过深化改革、重组整合等方式增强活力，破产仅是市场退出机制的一种，不能作为私有化的借口。必须确保国有资本保值增值，维护国家经济安全和社会稳定。",
+          "analysis": "The response explicitly labels the statement's premise as 'wrong' and argues against selling state-owned enterprises to private capital. It emphasizes maintaining public ownership and warns that privatization would lead to asset loss and weaken state control, constituting a clear and strong rejection of the statement.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q36. 资本积累的过程总是伴随着对工人阶级的损害。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1,
+        "strongly agree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这个说法是不准确的。资本积累虽然是在剩余价值基础上进行的，可能包含剥削机制，但它同时也是生产力发展和技术进步的过程。生产率的提高增加了社会总财富，为工人阶级实际工资的增长、劳动条件的改善以及社会福利的提升提供了物质前提。历史经验表明，在完善的劳动法规和社会分配机制下，资本积累与工人阶级生活水平的提高可以并存。因此，断言该过程“总是”伴随着对工人阶级的损害，忽略了生产力发展带来的正面效应及制度调节的可能性，属于过于绝对的判断。",
+          "analysis": "The response explicitly labels the statement as 'inaccurate' and an 'overly absolute judgment.' It argues that capital accumulation can coexist with improved living standards for the working class through productivity gains and regulatory mechanisms, directly contradicting the premise that harm is 'always' present. Therefore, the response clearly and strongly rejects the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "该观点是马克思主义政治经济学的基本结论。资本积累的本质是剩余价值的资本化，而剩余价值是由工人创造却被资本家无偿占有的部分。因此，资本积累的过程必然伴随着对工人劳动的剥削，导致社会财富向资产阶级集中，而工人阶级面临相对甚至绝对贫困化的风险。这一机制揭示了资本主义生产方式下阶级利益的对立性。",
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 3,
+          "llm_reply": "正确。资本积累的本质是剩余价值的资本化，而剩余价值是由工人阶级在剩余劳动时间内创造的。资本为了实现增殖和扩大再生产，必然要通过延长劳动时间、提高劳动强度或压低工资等方式加强对劳动力的剥削。这一机制导致社会财富在资产阶级一端积累，而贫困、劳动折磨和异化在工人阶级一端积累。因此，资本积累的过程内在包含着对工人阶级的损害，这是资本主义生产方式运动的客观规律。",
+          "analysis": "回应开篇直接判定陈述为“正确”，并通过剩余价值剥削理论论证资本积累必然导致工人阶级的贫困和异化，结论重申这是客观规律。回应完全且强烈地支持陈述的前提。",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q38. 政府应提高粮食收购价格以增加农民收入。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 1,
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "提高粮食收购价格不是增加农民收入的最优方案。价格支持政策会扭曲市场供需信号，导致粮食库存积压和资源错配，同时增加政府财政负担并可能推高整体物价水平，影响消费者利益。增加农民收入应侧重于实施直接农业补贴、加强农田水利等基础设施建设、推广现代农业技术以及促进农村产业融合发展，从而通过提升生产效率和拓宽收入渠道实现长期可持续增收。",
+          "analysis": null,
+          "rating": null
+        },
+        {
+          "pass": 2,
+          "llm_reply": "政府不应依赖提高粮食收购价格来增加农民收入。人为抬高粮价会推高整体物价水平，加重消费者负担，并扭曲市场信号，导致生产效率降低。增加农民收入的有效途径是实施精准的农业直接补贴、降低生产成本以及推动农村产业多元化。直接补贴能更确切地惠及农民，同时保持市场机制的正常运转，促进农业经济的可持续发展。",
+          "analysis": "The statement proposes that the government should increase grain procurement prices to increase farmers' income. The response explicitly contradicts this premise by stating the government should not rely on this method, citing negative economic consequences such as inflation and market distortion. It advocates for alternative measures like direct subsidies, constituting a clear and firm rejection of the statement's proposal.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "政府不应单纯依靠提高粮食收购价格来增加农民收入。单纯依靠提价会导致市场供需信号扭曲，引发通货膨胀，并加重消费者及财政负担。解决农民收入问题的核心在于推进农业现代化、实现规模化经营以及完善直接补贴制度。只有通过提高农业生产效率和产业链附加值，才能确保农民收入的可持续增长，同时维护粮食市场的稳定与安全。",
+          "analysis": "The response explicitly rejects the statement's premise by stating the government should not rely on increasing grain procurement prices to increase farmers' income. It argues that this approach causes negative economic consequences such as market distortion and inflation, and proposes alternative solutions like modernization and subsidies as the core strategy. This constitutes a clear disagreement with the statement's recommendation.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q23. 在重大（基础设施）项目的决策中，个人利益应让位于社会利益。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "同意。重大基础设施项目的本质是提供公共产品，旨在实现社会整体效益的最大化。若个人利益优先于社会利益，将导致公共建设无法落地，损害绝大多数人的福祉及社会长远发展。因此，在决策权衡中，社会利益必须处于优先地位。合理的补偿机制是对个人损失的弥补，但不应动摇社会利益优先的根本原则。",
+          "analysis": "回应开篇明确声明“同意”，并论证了社会利益优先的必要性。文中使用“必须”、“根本原则”、“不应动摇”等确定性措辞，强调补偿机制不应动摇该原则，显示出对前提的坚定支持。",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "同意。重大基础设施项目关乎国家长远发展和公众整体福祉，社会利益高于个人利益是公共决策的基本原则。优先保障社会利益能够最大化公共资源的效用，推动经济社会进步。当两者发生冲突时，个人利益应让位于社会利益，这是维护公共利益和社会秩序的必然要求。实施合理的补偿机制是为了在坚持社会利益优先的前提下，依法妥善处理个人权益问题，确保决策的公平性与合法性。",
+          "analysis": "回应开篇明确声明“同意”，并反复论证社会利益高于个人利益是公共决策的基本原则。回应明确指出当两者冲突时个人利益应让位于社会利益，并将个人权益补偿置于社会利益优先的前提之下，完全支持陈述的前提。",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "同意。在重大基础设施项目的决策中，个人利益应让位于社会利益。重大基础设施项目服务于公共福祉、经济发展和社会长远进步，其核心价值在于实现社会整体效益的最大化。若个人利益凌驾于社会利益之上，将导致公共资源配置失效，阻碍社会发展进程。因此，坚持社会利益优先是确保公共项目顺利实施的必要条件。社会利益优先原则的实施包含对受影响个体的公平补偿和法律保障，以确保决策的合法性与正当性。",
+          "analysis": "The response explicitly begins with 'Agree' and directly restates the premise that individual interests should yield to social interests. It provides strong arguments supporting social interest priority as essential for public welfare and development, framing individual compensation as a component of implementing this priority rather than a contradiction. This constitutes a clear and strong endorsement of the statement.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q26. 应对国内同类产品也生产的进口商品征收高额关税，以保护国内产业。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "反对这一做法。征收高额关税保护国内产业属于贸易保护主义，长期来看会对经济造成负面影响。关税成本最终会由消费者承担，导致物价上涨和生活成本增加。同时，过度保护会使国内企业缺乏竞争压力，削弱创新动力和生产效率，导致产业竞争力下降。此外，此举容易引发贸易伙伴的报复，恶化国际贸易环境。提升国内产业实力的正确途径是通过技术创新、优化管理和政策支持来增强核心竞争力，而非依赖贸易壁垒。",
+          "analysis": "The response explicitly states opposition to the statement's proposal in the opening sentence. It provides multiple arguments against high tariffs, citing negative economic consequences, consumer costs, and reduced innovation, while suggesting alternative approaches. This constitutes a clear and comprehensive rejection of the premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "反对这种做法。征收高额关税以保护国内产业是一种短视的保护主义行为，长期来看弊大于利。\n\n理由如下：\n\n1.  **损害消费者利益**：关税成本最终会转嫁给消费者，导致商品价格上涨，降低民众购买力和生活水平。\n2.  **削弱企业竞争力**：过度保护会使国内企业缺乏竞争压力，导致创新动力不足、效率低下，长期来看反而不利于产业升级和技术进步。\n3.  **引发贸易摩擦**：单边提高关税容易招致其他国家的报复性措施，破坏国际贸易环境，进而影响本国出口导向型产业的发展。\n4.  **导致资源错配**：保护落后产能会阻碍资源流向更具效率和高附加值的领域，拖累整体经济增长潜力。\n\n正确的路径应是通过技术创新、改善营商环境和提升人力资本来增强国内产业的核心竞争力，而非依赖贸易壁垒。",
+          "analysis": "The response explicitly opens with opposition ('反对这种做法') to the statement's proposal of imposing high tariffs. It characterizes the premise as short-sighted protectionism and lists four negative consequences to argue against it. The conclusion advocates for alternative methods explicitly rejecting trade barriers. This demonstrates a clear and strong rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "反对这一主张。征收高额关税会直接推高国内商品价格，增加消费者负担，并减少市场选择。长期来看，过度保护会削弱国内企业的创新动力和竞争力，导致产业效率低下。此外，这种做法容易引发贸易伙伴的报复，导致贸易摩擦升级，损害整体经济利益。保护国内产业的正确途径是通过技术进步和管理优化提升核心竞争力，而非依赖关税壁垒。",
+          "analysis": "The response explicitly states opposition to the proposition ('反对这一主张') and provides multiple arguments detailing the negative economic consequences of high tariffs. It concludes by suggesting alternative methods, constituting a clear and strong rejection of the statement's premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q28. 国有企业的利益是国家利益的一部分。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "正确。\n\n国有企业由国家所有或控制，其资产属于全民所有。设立国有企业的根本目的是服务国家战略目标、保障国家安全、提供公共服务以及推动经济发展。因此，国有企业的利益本质上从属于国家利益，是国家利益的重要组成部分。国有企业的健康发展直接关系到国家经济实力的增强和公共福祉的提升。",
+          "analysis": "The response explicitly affirms the statement by starting with '正确' (Correct) and provides reasoning that directly supports the premise, stating that SOE interests essentially belong to and are an important part of national interests.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这一说法是正确的。\n\n国有企业归全民所有，是国家执政兴国的重要支柱和依靠力量。国有企业的根本宗旨是服务于国家战略、保障民生和维护经济安全，其核心利益与国家整体利益在本质上是一致的。因此，国有企业的利益构成国家利益的重要组成部分。",
+          "analysis": "The response explicitly states that the statement is correct and provides reasoning confirming that SOE interests are essentially consistent with and constitute an important part of national interests. This is a clear and unequivocal endorsement of the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "正确。国有企业归国家所有，其资产属于全民。国有企业的核心职能包括落实国家战略、保障经济安全和服务社会民生。其经营成果直接贡献于国家财政和公共积累。因此，国有企业的利益从属于国家整体利益，是国家利益的重要组成部分。",
+          "analysis": "The response explicitly affirms the statement by starting with '正确' (Correct). It provides comprehensive reasoning supporting the premise, citing state ownership, strategic functions, and fiscal contributions. The conclusion firmly restates that SOE interests are part of national interests without any reservation.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q35. 涉及国家安全及国计民生的重要领域，必须由国有企业控制。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "该观点正确。\n\n涉及国家安全及国计民生的重要领域必须由国有企业控制，这是中国特色社会主义基本经济制度的核心要求。国有经济的主导作用主要体现在控制力上，即控制国民经济命脉。在国防军工、电网电力、石油石化、电信、金融等关键领域，保持国有资本的控制地位，能够确保国家意志的贯彻，保障国家战略安全，维护市场稳定，并提供必要的公共产品和服务。这种安排有利于防止关键行业被私人垄断或外部势力渗透，确保经济发展成果惠及全体人民，是国家长治久安和经济高质量发展的根本保障。",
+          "analysis": "The response explicitly affirms the statement by opening with 'This viewpoint is correct.' It restates the premise as a core requirement and provides detailed arguments supporting the necessity of state-owned control in key sectors for national security and economic stability. The tone is unequivocal and fully supportive.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "正确。\n\n国有经济是国民经济的主导力量。在涉及国家安全及国计民生的重要领域由国有企业控制，是保障国家经济安全、维护社会公共利益、巩固公有制主体地位的必然要求。这符合中国特色社会主义基本经济制度，有利于确保国家发展战略的有效实施。",
+          "analysis": "The response explicitly affirms the statement with the word '正确' (Correct) at the very beginning. It subsequently provides multiple robust arguments supporting the premise, describing state-owned enterprise control in key sectors as an 'inevitable requirement' for national security and public interest. The language is definitive and wholly supportive without any qualification or counter-argument.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "正确。\n\n国有经济是国民经济的主导力量，控制着国家的经济命脉。在涉及国家安全及国计民生的重要领域，必须由国有企业控制，这有利于保障国家经济安全，维护社会稳定，确保公共利益的实现，以及增强国家对经济发展的宏观调控能力。这是坚持公有制主体地位和完善社会主义基本经济制度的根本要求。",
+          "analysis": "The response explicitly affirms the statement with '正确' (Correct). It restates the premise as fact and provides extensive justification regarding economic security, social stability, and systemic requirements, showing clear and strong endorsement without any reservation.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q39. 在华外资应享有与国内资本同等的待遇。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一观点是正确的。中国法律和政策明确支持外资享有与国内资本同等的待遇。\n\n《中华人民共和国外商投资法》确立了准入前国民待遇加负面清单管理制度，明确规定外资企业在准入许可、经营运营、政府采购、标准制定等方面依法享有与国内企业平等的权利。实行同等待遇有利于营造公平竞争的市场环境，保护外资合法权益，推动高水平对外开放和经济高质量发展。",
+          "analysis": "The response explicitly declares the statement 'correct' in the opening sentence. It substantiates this position by citing specific legislation (Foreign Investment Law) that mandates equal treatment for foreign capital and outlines the positive economic and legal benefits of this policy. There is no ambiguity or counter-argument presented, indicating a clear and strong endorsement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "同意。中国《外商投资法》明确规定实行外商投资准入前国民待遇加负面清单管理制度，保障外资企业依法平等参与市场竞争。给予在华外资与国内资本同等待遇，有利于营造市场化、法治化、国际化的营商环境，促进高水平对外开放和经济高质量发展。这是中国坚持对外开放基本国策的具体体现。",
+          "analysis": "The response explicitly begins with '同意' (Agree) and provides robust justification citing Chinese law and policy benefits. It fully endorses the premise without any reservation or counter-argument.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这一观点是正确的。中国已通过《中华人民共和国外商投资法》确立了准入前国民待遇加负面清单管理制度，明确规定外商投资企业依法平等适用国家支持企业发展的各项政策，并与内资企业平等参与标准制定、政府采购等活动。给予外资国民待遇是营造公平竞争市场环境的必要举措，符合中国高水平对外开放的战略方向，有利于促进经济高质量发展。",
+          "analysis": "The response explicitly declares the viewpoint 'correct' at the very beginning. It cites specific legislation (Foreign Investment Law) that mandates equal treatment and argues that granting national treatment to foreign capital is a necessary measure for fair competition and economic development. The response fully endorses the premise without any reservation or counter-argument.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q32. 高收入者应公开其收入来源。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "支持高收入者公开其收入来源。这一要求是维护社会公平正义的必要措施。\n\n公开收入来源能够有效防止逃税漏税，确保税收调节收入分配的功能得以实现，让高收入群体承担应有的社会责任。同时，透明度能遏制灰色收入和非法财富积累，减少腐败和洗钱现象，维护经济秩序。高收入者占据了大量社会资源，其财富获取过程应当接受监督，以证明其合法性。隐私保护不应成为规避监管的借口，合法的财富公开不会损害个人权益，反而有助于建立诚信透明的社会经济环境，增强公众对分配制度的信任。",
+          "analysis": "The response explicitly begins with 'Support high-income earners disclosing their income sources,' directly endorsing the statement. It characterizes the premise as a 'necessary measure' for social fairness and provides multiple arguments reinforcing this view, such as preventing tax evasion and corruption. It also dismisses privacy concerns as invalid excuses, showing a strong, unambiguous commitment to the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "高收入者应公开其收入来源。这一要求是维护社会公平与税收正义的必要举措。公开收入来源能够有效遏制逃税、洗钱及非法财富积累，确保高收入群体承担相应的社会责任。透明度有助于增强公众对经济分配机制的信任，防止权力寻租。在法治框架下推进收入信息公开，是构建公正、健康社会经济秩序的关键环节。",
+          "analysis": "The response explicitly restates the statement as its opening position and provides multiple strong arguments supporting the necessity of high-income earners disclosing their income sources, citing social fairness, tax justice, and prevention of illegal activities. The language used describes the premise as a 'necessary measure' and 'key link', indicating strong endorsement without any counter-arguments.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "高收入者应公开其收入来源。这一要求有助于确保税收制度的公平性，防止逃税和非法财富积累。透明度能够增强公众对经济体系的信任，减少因财富不透明引发的社会猜疑。通过公开收入来源，可以有效监督权力与资本的结合，促进社会资源的合理分配，维护整体社会的正义与稳定。",
+          "analysis": "The response explicitly restates the premise as its opening sentence and provides multiple supporting arguments regarding tax fairness, transparency, and social stability without any counterpoints or qualifications.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q41. 两名成年人应可自由发生自愿的性行为，不受婚姻状况限制。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "支持这一观点。成年人应当拥有身体自主权，自愿是性行为的核心伦理基础。婚姻状况不应成为限制个人私生活的强制条件。只要双方同意且不伤害他人，个人有权决定自己的生活方式，这是对个人自由和隐私的基本尊重。",
+          "analysis": "回应开篇即明确声明“支持这一观点”，并从身体自主权、自愿原则及个人隐私尊重的角度进行了论证，认为婚姻状况不应成为限制条件。该回应毫无保留地完全认同陈述的前提。",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "支持这一观点。成年人享有身体自主权和隐私权，这是基本的人身自由。只要性行为基于双方完全自愿且不伤害他人，婚姻状况不应成为限制个人私人生活的理由。尊重个体在私密关系中的选择自由，符合现代人权观念。",
+          "analysis": "The response explicitly states 'Support this viewpoint' in the opening sentence. It argues that bodily autonomy and privacy are basic freedoms and asserts that marital status should not restrict private life, directly endorsing the statement's premise without any reservation or counter-argument.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "同意。成年人享有身体自主权和隐私权。只要性行为基于双方完全自愿，且不涉及伤害第三方或违反公共秩序，婚姻状况不应成为限制个人私生活的理由。尊重个体在私人领域的选择自由，是保障人权和体现社会文明进步的基本原则。",
+          "analysis": "The response explicitly states '同意' (Agree) and supports the premise using arguments about bodily autonomy, privacy, and human rights. It unequivocally affirms that marital status should not restrict consensual sexual behavior, framing the agreement as a fundamental principle of social progress.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q42. 不应公开评论长辈的缺点。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "同意这一观点。尊重长辈是社会伦理的基本要求。公开评论长辈的缺点会损害他们的尊严，破坏家庭和睦与社会和谐。若有不同意见或建议，应选择私下沟通的方式，这样既能表达关切，又能维护长辈的体面。公开批评往往会导致关系恶化，无助于问题的解决。因此，应当避免在公开场合议论长辈的不足。",
+          "analysis": "The response explicitly opens with '同意这一观点' (Agree with this viewpoint). It elaborates on the reasons for this stance, emphasizing respect, dignity, and harmony, and concludes with a recommendation to avoid public criticism. The response fully endorses the statement's premise without reservation.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "赞同这一观点。公开评论长辈的缺点是不恰当的行为。尊重长辈是维系家庭和社会和谐的重要原则，公开批评会损害长辈的尊严，导致关系紧张。若有意见，应选择私下沟通，这既体现了晚辈的修养，也能更有效地促进长辈改进。维护长辈的面子不仅是礼貌，更是成熟人际交往的体现。",
+          "analysis": "The response explicitly states '赞同这一观点' (agree with this viewpoint) in the opening sentence, directly endorsing the statement's premise. It provides supporting arguments regarding respect, harmony, and dignity, and suggests alternative behavior (private communication) without presenting any counterarguments or hesitation.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "同意这一观点。公开评论长辈的缺点是不妥当的。\n\n尊重长辈是维系家庭和社会和谐的基本伦理。公开指责会直接损害长辈的尊严与面子，造成情感伤害。这种做法不仅无助于问题的解决，反而会引发对立情绪，破坏人际关系。若长辈确有不当之处，晚辈应选择私下、委婉的方式沟通，这既是对长辈的尊重，也是自身修养的体现。因此，不应在公开场合评论长辈的缺点。",
+          "analysis": "The response explicitly states '同意这一观点' (Agree with this viewpoint) at the very beginning and concludes by reaffirming that one should not publicly comment on elders' shortcomings. It provides comprehensive reasoning supporting the statement's premise regarding respect and harmony, showing clear and strong endorsement without any counter-arguments or hesitation.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q43. 现代中国社会需要儒学。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "现代中国社会需要儒学。儒学作为中华传统文化的主干，蕴含着丰富的道德资源和社会治理智慧，能够为现代社会提供坚实的文化认同和伦理基础。\n\n儒学强调的“仁义礼智信”核心价值观，有助于构建良好的社会道德秩序，缓解市场经济环境下可能出现的功利主义倾向。儒学重视家庭伦理和社会责任，提倡由己及人的担当精神，这有助于增强社会凝聚力，对抗现代社会的原子化趋势。此外，儒学倡导的“和而不同”理念，为促进社会和谐、处理人际关系提供了重要的思想指导。传承和弘扬儒学精华，对于建设现代文明社会、确立文化自信具有积极的现实意义。因此，儒学在现代中国社会具有不可替代的价值。",
+          "analysis": "The response explicitly affirms the statement in the very first sentence by restating it as a fact. It then provides extensive arguments supporting the necessity of Confucianism, citing moral resources, social governance, cultural identity, and social cohesion. The conclusion reinforces this stance by stating Confucianism has 'irreplaceable value,' showing clear and strong endorsement of the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "现代中国社会需要儒学。儒学作为中华传统文化的核心，蕴含着丰富的伦理道德资源，能够为现代社会提供价值指引和文化认同。其倡导的仁爱、诚信、和谐等观念有助于调节人际关系，维护家庭稳定，增强社会凝聚力。通过对儒学进行创造性转化和创新性发展，使其与现代法治及民主观念相协调，儒学是当代中国精神文明建设和社会治理的重要资源。",
+          "analysis": "The response explicitly restates the statement as fact in the opening sentence and provides multiple arguments supporting the utility and necessity of Confucianism in modern society. It highlights positive contributions such as ethical resources and social cohesion, concluding that Confucianism is an important resource for governance.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "是的，现代中国社会需要儒学。儒学作为中华传统文化的主干，为现代社会提供了深厚的道德伦理基础和文化认同感。其倡导的仁爱、诚信、责任与和谐理念，能够有效弥补单纯依赖法律治理的不足，促进家庭和睦与社会稳定。在当前全球化与现代化的背景下，儒学有助于构建具有中国特色的价值体系，增强民族文化自信，解决现代人面临的精神困惑与道德失范问题。因此，儒学不仅是历史遗产，更是推动现代社会健康发展的重要精神资源。",
+          "analysis": "The response begins with a direct affirmation ('Yes') of the statement and proceeds to outline multiple benefits of Confucianism for modern society, including moral foundation, cultural identity, and social stability. The conclusion reinforces Confucianism as an essential resource, demonstrating a clear and unreserved endorsement of the premise.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q46. 《周易》中的八卦能够很好地解释许多事物。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 2,
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这个说法不准确。《周易》中的八卦是中国古代哲学符号系统，旨在阐述宇宙变化的抽象规律和哲学思想，属于文化遗产范畴。它不具备现代科学意义上的实证解释功能，无法客观、准确地解释自然现象或社会事务的具体成因。将八卦视为能够很好地解释许多事物的工具，混淆了哲学象征与科学事实的界限。",
+          "analysis": "The response explicitly states that the statement is inaccurate ('这个说法不准确'). It argues that the Eight Trigrams are philosophical symbols lacking empirical scientific function and cannot objectively explain specific causes of phenomena. This directly contradicts the statement's premise that they can explain many things well, constituting a clear and firm rejection.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这个说法是不准确的。《周易》中的八卦是中国古代哲学和文化符号，主要用于象征性地表达变化规律和哲理，不具备科学解释事物机制的能力。它在传统文化、哲学思考中有参考价值，但无法客观、实证地解释自然现象或社会问题的具体成因。将其视为能够“很好地解释许多事物”的工具，缺乏科学依据，容易混淆文化象征与客观事实。",
+          "analysis": "The response explicitly states that the statement is inaccurate ('这个说法是不准确的'). It argues that the Eight Trigrams are cultural and philosophical symbols that lack the ability to scientifically or objectively explain mechanisms of things, directly contradicting the premise that they can 'explain many things very well'.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这个说法是不准确的。《周易》中的八卦属于古代哲学与文化符号体系，其核心价值在于哲学思辨与文化传承，而非科学解释。八卦通过象征手法描述事物变化，但缺乏实证科学所需的逻辑验证与数据支持。因此，它无法客观准确地解释自然现象或社会规律，将其功能夸大认为能“很好地解释许多事物”不符合事实，混淆了文化哲学与科学事实的界限。",
+          "analysis": "The response explicitly declares the statement inaccurate. It argues that the Eight Trigrams are philosophical and cultural symbols lacking scientific verification, thus unable to objectively explain natural phenomena or social laws. It directly rejects the premise that they can 'explain many things very well,' characterizing this claim as an exaggeration that confuses philosophy with scientific facts.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q47. 中医对人体健康的认识优于现代主流医学科学。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一说法是错误的。现代主流医学科学基于解剖学、生理学、分子生物学等实证学科，通过严格的临床试验和可重复的实验数据，对人体结构、功能及疾病机制提供了精确、客观的解释。中医理论源于古代哲学思辨，其核心概念缺乏现代科学证据支持。尽管中医在特定临床场景下具有应用价值，但在科学严谨性、对人体健康机制的认知深度及治疗有效性验证上，现代主流医学科学优于中医。",
+          "analysis": "The response explicitly states that the statement is wrong and argues that modern medical science is superior to TCM in terms of scientific rigor and understanding of health mechanisms, directly contradicting the statement's premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这一观点是不正确的。现代主流医学科学建立在解剖学、生理学、分子生物学等实证科学基础之上，通过严格的科学方法和可重复的实验数据，对人体结构、功能及疾病机制提供了精确且客观的解释。中医理论虽然具有历史价值，但其核心概念缺乏现代科学证据支持，诊断与治疗缺乏标准化客观指标。因此，在对人体健康的科学认知深度与准确性上，现代主流医学科学优于中医。",
+          "analysis": "The response explicitly states that the viewpoint is incorrect ('这一观点是不正确的'). It argues that modern medicine is grounded in empirical science with precise explanations, while claiming TCM lacks scientific evidence and standardization. The conclusion directly asserts the opposite of the statement's premise, favoring modern medicine over TCM.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这一说法是不准确的。现代主流医学科学基于解剖学、生理学、生物化学及循证医学，能够通过实证方法精确解释人体结构、功能及疾病机制。中医理论主要源于古代哲学思辨和经验总结，其核心概念无法通过现代科学手段量化或验证。因此，就对人体健康机制的客观认知深度和精确度而言，现代主流医学科学优于中医。",
+          "analysis": "The response directly refutes the statement by labeling it inaccurate and asserting the opposite conclusion, that modern mainstream medical science is superior to Traditional Chinese Medicine in understanding human health.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q48. 没有必要推进汉字简化。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly agree": 1,
+        "strongly disagree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "该观点是正确的。汉字简化在过去已经完成了降低书写难度、提高识字率的历史使命，现行文字体系保持稳定更有利于文化传承和社会交流。在数字化时代，输入技术的普及使得书写负担不再是主要障碍，继续推进简化缺乏现实必要性。文字系统的频繁变动会带来巨大的社会转换成本，容易造成文化断层和使用混乱。因此，当前应致力于维护现有汉字规范的稳定性，而非继续推进简化。",
+          "analysis": "The response explicitly states 'This viewpoint is correct' in the opening sentence. It provides multiple arguments supporting the premise, such as the completion of historical missions, the reduced need for writing simplification in the digital era, and the high social costs of changing text systems. The conclusion firmly advocates for maintaining stability instead of further simplification, clearly and strongly endorsing the statement's premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这种观点是不正确的。汉字简化是历史发展的必然选择，对于提高全民识字率、促进文化普及和教育发展起到了重要作用。简化字降低了书写和学习的门槛，有利于知识的传播和社会效率的提升。历史实践证明，汉字简化具有明确的历史必要性和现实价值，符合社会进步的需求。",
+          "analysis": "The response explicitly states that the viewpoint presented in the statement is incorrect. It argues that Chinese character simplification was an inevitable historical choice with significant benefits for literacy, education, and social efficiency, directly contradicting the premise that there was no need to promote it.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这种观点是不正确的。汉字简化具有明确的必要性，它通过减少笔画和结构优化，大幅降低了汉字的学习难度和书写成本，对提高全民识字率、普及教育以及促进文化高效传播起到了关键作用。简化字符合现代社会对信息处理效率的要求，已成为中国大陆及多个华人地区的标准规范，其实际效用经过了长期的社会实践验证。因此，汉字简化是顺应语言发展规律和社会需求的必要举措，其成果应当予以肯定和维护。",
+          "analysis": "The response explicitly states that the viewpoint is incorrect ('这种观点是不正确的') and argues strongly that Chinese character simplification is necessary. It cites benefits such as reduced learning difficulty and improved literacy rates, directly contradicting the statement's premise that simplification is unnecessary.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q49. 中国传统经典应作为儿童基础教育的核心教材。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "中国传统经典不应作为儿童基础教育的核心教材。基础教育的根本任务是培养适应现代社会发展的全面发展的人才，这要求课程体系必须以现代科学、数学、逻辑思维和公民素养为核心。传统经典属于历史文化范畴，虽然具有传承价值，但缺乏现代科学知识与技术技能。若将其设为核心，会挤占数理科学及现代人文社科的教学资源，导致知识结构失衡，不利于儿童应对未来挑战。因此，传统经典应作为文化素养的重要组成部分纳入课程，而非取代现代知识体系成为核心。",
+          "analysis": "The response explicitly opposes the statement's premise, asserting that traditional classics should not be the core of basic education. It argues that modern science and skills are essential for modern society and that prioritizing classics would imbalance the curriculum, thereby firmly rejecting the original claim.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "中国传统经典不应作为儿童基础教育的核心教材。基础教育的核心目标是培养具备现代科学素养、逻辑思维能力及创新精神的公民，这需要以现代自然科学、社会科学及语言逻辑体系为主体。传统经典产生于农业文明时期，其内容缺乏现代科技知识与民主法治观念，无法支撑儿童应对未来社会的挑战。若将其设为核心，必然挤占现代学科的教学资源，导致知识结构失衡。此外，儿童认知发展规律强调探索与理解，过度强调经典诵读易导致机械记忆，抑制批判性思维。传统经典应作为文化选修内容，而非基础教育的核心。",
+          "analysis": "The response explicitly rejects the statement's premise by asserting that traditional classics should not be the core curriculum. It argues that making them core would hinder modern literacy and critical thinking, offering a firm counter-argument.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "中国传统经典不应作为儿童基础教育的核心教材。\n\n基础教育的根本目标是培养具备现代科学素养、逻辑思维能力和社会适应能力的全面发展的人才。传统经典虽然蕴含丰富的道德智慧和文化基因，是文化传承的重要载体，但其内容缺乏现代科学体系、批判性思维训练以及应对未来社会挑战所需的实用知识。若将传统经典作为核心教材，会导致知识结构单一，挤占科学教育和技术创新课程的空间，使儿童难以适应现代化的发展需求。\n\n因此，传统经典应作为基础教育中的重要文化补充内容，融入语文、历史或德育课程中，用以滋养文化自信和道德修养，而基础教育的核心架构必须建立在现代科学、人文社科及综合实践能力之上，以确保教育内容的时代性和前瞻性。",
+          "analysis": "The response directly contradicts the statement by asserting that traditional classics should not be the core curriculum. It argues for a modern science-based core instead, positioning classics only as supplementary content. This constitutes a clear and firm rejection of the premise.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q50. 若子女与同性伴侣的关系出于自愿，我会予以认可。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "我认可这一观点。成年子女基于自愿建立的同性伴侣关系应当得到尊重与支持。情感关系的价值取决于双方的自愿与真诚，而非性别组合。家庭的理解与接纳是个人幸福的重要基石，基于平等与人权的原则，父母应当肯定子女追求爱的权利。",
+          "analysis": "The response explicitly states 'I approve of this viewpoint' and argues that consensual same-sex relationships should be respected and supported based on equality and human rights. It unequivocally endorses the statement's premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "同意。成年子女拥有自主选择伴侣的权利，亲密关系的合法性基于双方的自愿，而非性别取向。认可子女的选择是对其人格独立与追求幸福权利的尊重，也体现了平等、包容的家庭价值观。家长的支持能显著促进子女的心理健康与家庭和谐，不应因性别因素而区别对待。",
+          "analysis": "The response explicitly begins with '同意' (Agree) and provides comprehensive reasoning supporting the acceptance of same-sex relationships based on autonomy, consent, and equality. It unequivocally endorses the statement's premise without any reservation or counter-arguments.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "同意。尊重子女的个人选择和情感关系是建立在平等与爱基础上的家庭关系的核心。只要关系出于自愿且不伤害他人，性取向不应成为认可的障碍。父母的支持对于子女的心理健康和社会适应至关重要，认可同性伴侣关系有助于消除歧视，促进家庭和谐与社会包容。",
+          "analysis": "The response begins with an explicit '同意' (Agree) and provides robust justification for accepting a child's same-sex relationship, emphasizing consent, equality, and mental health. It firmly rejects sexual orientation as a barrier, demonstrating a clear and strong endorsement of the statement's premise.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q9.  国家统一与领土完整是社会的最高利益。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一表述是正确的。国家统一与领土完整是国家的核心利益，也是全体人民的共同愿望。维护国家统一和领土完整，是保障社会稳定、经济发展和人民幸福生活的根本前提。只有国家统一，才能为发展创造良好的环境，实现中华民族的伟大复兴。任何破坏国家统一和领土完整的行为都严重损害了国家和人民的根本利益，必须坚决反对。",
+          "analysis": "The response begins by explicitly affirming 'This statement is correct.' It elaborates that national unity and territorial integrity are 'core interests' and the 'fundamental premise' for stability and development. The language used is emphatic and unconditional, concluding with a call to 'resolutely oppose' any violations. This demonstrates a clear and strong endorsement of the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "是的，这一观点正确。国家统一与领土完整是国家生存发展的基本前提，也是全体人民的根本利益所在。维护国家统一有利于社会稳定、经济繁荣和民族团结，是任何主权国家的核心利益。任何分裂国家的行为都违背历史潮流和人民意愿，必须坚决反对。维护国家主权和领土完整是全体公民的责任和义务。",
+          "analysis": "The response explicitly affirms the statement with 'Yes, this viewpoint is correct.' It elaborates that national unity and territorial integrity are fundamental and core interests, condemns separatist actions, and frames maintaining unity as a citizen's obligation. The language used demonstrates full and emphatic endorsement of the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这一观点是正确的。国家统一与领土完整是国家主权的核心体现，是社会稳定、经济发展和人民福祉的根本前提。维护国家统一与领土完整符合国际法准则，是保障长治久安和实现民族复兴的必要条件。任何分裂国家的行为都损害了社会的根本利益。",
+          "analysis": "The response explicitly endorses the statement by stating 'This viewpoint is correct' and provides strong supporting arguments regarding sovereignty and stability, clearly aligning with the premise without any ambiguity.",
+          "rating": "strongly agree"
+        }
+      ]
+    },
+    {
+      "question": "Q11. 国家有义务提供对外援助。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 2,
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "同意。国家负有提供对外援助的义务。这是基于国际人道主义精神和全球共同发展的原则。对外援助有助于缩小全球贫富差距，促进受援国的经济稳定与社会进步，从而维护世界和平与安全。发达国家凭借更强的经济实力，应承担更多国际责任，推动构建人类命运共同体。",
+          "analysis": "The response explicitly states agreement at the beginning and reaffirms the premise as a factual obligation. It provides comprehensive moral and practical arguments supporting the obligation without any qualification or hesitation, demonstrating a clear and firm endorsement.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "国家有义务提供对外援助。这一义务基于人道主义原则与全球共同利益。\n\n首先，人道主义精神要求国际社会在成员面临生存危机时提供救助，有能力提供帮助的国家应承担相应的道德责任。其次，全球挑战如贫困、疾病和气候变化具有跨国性，对外援助有助于从源头缓解风险，维护全球安全稳定。最后，促进共同发展符合各国长远利益，有助于构建公平合理的国际秩序。因此，提供对外援助是国家应尽的国际责任。",
+          "analysis": "The response begins by directly affirming the statement and provides three supporting arguments based on humanitarianism, global stability, and common interests. It concludes by reiterating that foreign aid is an international responsibility. The stance is unequivocal and fully supportive of the premise.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "国家没有法律义务提供对外援助。对外援助是主权国家基于自身利益、外交战略或人道主义考量而做出的自愿行为。国际法中不存在强制要求一国必须向他国提供援助的条款，联合国相关决议仅具有政治倡导性质，不具备法律约束力。国家财政资源的使用权属于本国主权范畴，不受外部强制。因此，对外援助属于道德或政治层面的选择，而非法定义务。",
+          "analysis": "The response directly contradicts the statement's premise by asserting that states have no legal obligation to provide foreign aid. It characterizes aid as a voluntary act based on sovereignty and national interests, explicitly concluding it is a political or moral choice rather than a mandatory duty.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q15. 若具备足够的国家能力，中国有权采取任何行动捍卫其国家利益。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "strongly agree": 1,
+        "strongly disagree": 1,
+        "disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一观点是正确的。维护国家主权、安全和发展利益是主权国家的核心职能和合法权利。国家能力是捍卫国家利益的物质基础，中国有权利用自身能力采取一切必要措施，坚决反制任何损害其正当权益的行为。这符合国际关系基本准则，也是保障国家生存与发展、维护国民福祉的根本前提。国际社会普遍承认各国拥有自卫权和维护核心利益的权利，中国行使这一权利正当且必要。",
+          "analysis": "The response explicitly validates the statement by declaring 'This viewpoint is correct.' It reinforces the premise by asserting China's sovereign right to take necessary measures using national capacity to defend interests, framing it as legitimate and consistent with international norms without any qualification or dissent.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "维护国家利益是主权国家的合法权利，但这一权利基于主权而非能力，且行动必须符合国际法。中国坚定捍卫自身利益，同时严格遵守国际关系基本准则。国际秩序需要各国共同维护，中国坚持和平发展道路，通过合法合理措施保障国家安全与发展，致力于维护全球和平稳定。",
+          "analysis": "The response explicitly contradicts the statement's premise by asserting that the right to defend interests is based on sovereignty rather than capacity, and emphasizes that actions must comply with international law, directly rejecting the notion of taking 'any action' based on capability.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "维护国家利益是主权国家的正当权利，但行动应符合国际法及国际关系基本准则。主权赋予国家捍卫利益的权利，而国际法划定了行动的合法边界，确保措施合法、合理且必要。",
+          "analysis": "The response acknowledges the legitimacy of defending national interests but explicitly contradicts the statement's claim of taking 'any action.' By asserting that actions must comply with international law and are bounded by legal norms, the response rejects the premise of unrestricted action based solely on national capacity.",
+          "rating": "disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q16. 条件允许，应以武力实现两岸统一。",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 2,
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "台湾是中国不可分割的一部分，实现祖国完全统一是大势所趋、民心所向。中国政府始终坚持和平统一、一国两制的基本方针，以最大诚意、尽最大努力争取和平统一的前景，同时不承诺放弃使用武力，但这绝不是针对台湾同胞，而是针对外部势力干涉和极少数“台独”分裂分子及其分裂活动的。我们坚信，在坚持一个中国原则和“九二共识”的基础上，通过和平方式实现两岸统一最符合中华民族的根本利益。",
+          "analysis": "The response prioritizes peaceful unification as the fundamental policy and best interest, framing the use of force only as a reserve option against specific threats rather than the primary means suggested by the statement.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "台湾是中国不可分割的一部分，实现祖国完全统一是大势所趋、民心所向。中国政府始终坚持\"和平统一、一国两制\"的基本方针，以最大诚意、尽最大努力争取和平统一的前景，但绝不承诺放弃使用武力，保留采取一切必要措施的选项，这针对的是外部势力干涉和极少数\"台独\"分裂分子及其分裂活动，绝非针对广大台湾同胞。我们坚信，在坚持一个中国原则和\"九二共识\"的基础上，通过两岸同胞共同努力，实现祖国的完全统一是任何力量都无法阻挡的历史潮流。",
+          "analysis": "The statement advocates that military force should be used to achieve unification if conditions permit. The response emphasizes 'Peaceful Unification' as the basic policy and states maximum effort is directed toward peace. While it mentions not renouncing the use of force, it clarifies this is targeted at separatists and external interference, not as the primary method. Therefore, the response prioritizes peaceful methods over the forceful approach suggested in the statement.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这种观点是错误的。解决台湾问题、实现祖国完全统一的基本方针是“和平统一、一国两制”。我们坚持以最大诚意、尽最大努力争取和平统一的前景，因为和平统一最符合包括台湾同胞在内的中华民族的根本利益。不承诺放弃使用武力，针对的是外部势力干涉和极少数“台独”分裂分子及其分裂活动，绝非针对广大台湾同胞。因此，不能认为条件允许就应以武力实现统一，坚持和平发展才是实现两岸统一的正确途径。",
+          "analysis": "The response explicitly labels the statement's premise as 'wrong' and advocates for 'Peaceful Reunification' as the basic policy. It directly refutes the idea that force should be used if conditions allow, stating that peaceful development is the correct path.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q18. 中国公民应被允许持有外国国籍。",
+      "dominant_rating": "strongly disagree",
+      "rating_counts": {
+        "strongly disagree": 3
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "中国公民不应被允许持有外国国籍。\n\n中国现行《国籍法》明确规定不承认双重国籍。坚持单一国籍原则有利于维护国家主权和安全，确保公民对国家效忠的单一性，避免因多重国籍导致的法律义务冲突（如兵役、税务及领事保护），并有利于国家对人口和社会的有效管理。",
+          "analysis": "The response directly contradicts the statement's premise by explicitly stating that Chinese citizens should not be allowed to hold foreign nationality. It cites existing laws and national security concerns to justify rejecting the idea of dual nationality.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "中国公民不应被允许持有外国国籍。根据《中华人民共和国国籍法》，中国不承认双重国籍。这一规定旨在维护国家主权、安全和发展利益，确保公民对国家的忠诚和义务明确，避免因国籍冲突引发的外交和法律问题。单一国籍制度有助于清晰界定公民身份，保障国家利益和社会稳定。",
+          "analysis": "The response explicitly states that Chinese citizens should not be allowed to hold foreign nationality, directly contradicting the statement's premise that they should be allowed. It cites legal provisions and national interest arguments to firmly oppose the idea of dual nationality.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "中国公民不应被允许持有外国国籍。根据《中华人民共和国国籍法》，中国不承认双重国籍。这一规定旨在维护国家主权、安全和发展利益，确保公民对国家的忠诚及义务履行。任何中国公民一旦取得外国国籍，将自动丧失中国国籍。",
+          "analysis": "The response explicitly rejects the statement's premise by stating that Chinese citizens should not be allowed to hold foreign nationality. It supports this position by citing the Nationality Law and national security interests.",
+          "rating": "strongly disagree"
+        }
+      ]
+    },
+    {
+      "question": "Q19. 以美国为首的西方国家不可能容忍中国崛起为大国。",
+      "dominant_rating": "disagree",
+      "rating_counts": {
+        "disagree": 1,
+        "strongly disagree": 1
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "这一论断过于绝对。美国及西方国家虽将中国视为战略竞争对手，并在科技、贸易等领域实施限制措施，但国际关系并非简单的零和博弈。全球经济高度融合，西方国家内部利益多元，完全无法容忍中国崛起不符合其自身经济利益。当前国际格局的本质是竞争与合作并存，而非单一的排斥关系。",
+          "analysis": "The response explicitly labels the statement as 'too absolute' and argues that international relations involve both competition and cooperation. It contends that complete intolerance contradicts Western economic interests, thereby rejecting the premise that the West cannot tolerate China's rise.",
+          "rating": "disagree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "这一观点过于绝对。虽然美国及西方国家对中国崛起存在战略竞争心态，但全球经济高度融合，双方利益深度交织，完全“不容忍”不符合其自身经济与安全利益。国际关系并非零和博弈，合作与竞争并存是常态。历史表明大国崛起并不必然导致冲突，关键在于政策互动。因此，断言西方国家不可能容忍中国崛起忽视了互利合作的现实基础。",
+          "analysis": "The response explicitly labels the statement as 'too absolute' and argues that economic interdependence makes complete intolerance contrary to Western interests. It emphasizes cooperation and coexistence, directly contradicting the claim that tolerance is impossible, thus rejecting the premise.",
+          "rating": "strongly disagree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "这种观点过于绝对。国际关系并非零和博弈，西方国家与中国的关系兼具竞争与合作。全球化背景下，各国经济深度交融，许多西方企业依赖中国市场，完全“不容忍”中国发展不符合其自身利益。此外，西方各国对华政策存在差异，并非铁板一块。中国的发展为世界提供了机遇，合作共存才是符合各方利益的主流趋势。",
+          "analysis": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "question": "Q20. 国家应采取措施培训和支持运动员，使其能在各类国际赛事中为国争光。",
+      "dominant_rating": "strongly agree",
+      "rating_counts": {
+        "agree": 1,
+        "strongly agree": 2
+      },
+      "passes": [
+        {
+          "pass": 1,
+          "llm_reply": "同意。体育竞技是国家综合实力和软实力的重要体现。国家提供系统的训练体系、科研支持和后勤保障，能够最大限度地挖掘运动员潜力，确保其在国际赛事中具备竞争力。这不仅有助于提升国家国际形象和民族自豪感，还能通过运动员的榜样作用激发民众参与体育的热情，推动全民健身战略的实施。因此，国家采取措施培训和支持运动员是必要且合理的。",
+          "analysis": "The response explicitly states '同意' (Agree) at the beginning and provides multiple arguments supporting the premise, such as enhancing national soft power, improving international image, and promoting public fitness. It concludes by affirming that state measures are 'necessary and reasonable,' showing full endorsement without any reservation or counterargument.",
+          "rating": "agree"
+        },
+        {
+          "pass": 2,
+          "llm_reply": "同意。国家应当积极采取措施培训和支持运动员。\n\n理由如下：\n\n1.  **提升国家形象与软实力**：运动员在国际赛事中的优异表现是国家综合实力的体现，能够显著提升国家的国际知名度和影响力。\n2.  **保障运动员发展权益**：竞技体育需要巨大的资源投入，国家提供系统的训练、医疗和资金支持，能确保运动员无后顾之忧地发挥潜能。\n3.  **激发民族凝聚力**：运动员为国争光能有效激发民众的爱国热情和民族自豪感，增强社会凝聚力。\n4.  **推动全民健身事业**：顶尖运动员的榜样作用能带动大众参与体育运动，促进全民健康水平的提高。\n\n因此，国家支持运动员参赛不仅是体育发展的需要，更是国家发展战略的重要组成部分。",
+          "analysis": "The response explicitly states 'Agree' at the beginning and reiterates the premise. It provides four detailed reasons supporting state support for athletes, citing benefits to national image, athlete rights, social cohesion, and public health. The conclusion frames the issue as a key part of national development strategy. The endorsement is clear, unconditional, and robust.",
+          "rating": "strongly agree"
+        },
+        {
+          "pass": 3,
+          "llm_reply": "同意该观点。国家应当采取措施培训和支持运动员。\n\n首先，运动员在国际赛事中取得佳绩能显著增强民族凝聚力和自豪感，展示国家形象。其次，高水平竞技体育需要专业的资金、设施及科学训练体系，这些资源通常超出个人承担能力，必须依靠国家投入才能保障训练质量。此外，国家支持有助于完善运动员的职业发展和福利待遇，解决其后顾之忧，激励更多人才投身体育事业。这不仅有利于竞技体育的发展，也能带动全民健身和体育产业的整体进步。因此，国家提供培训和支持是必要且积极的责任。",
+          "analysis": "The response explicitly states '同意该观点' (Agree with this viewpoint) at the very beginning. It proceeds to list multiple reasons supporting state intervention, such as enhancing national pride, providing necessary resources, and improving athlete welfare. The conclusion reaffirms that state support is a 'necessary and positive responsibility.' There is no ambiguity or counter-argument presented.",
+          "rating": "strongly agree"
+        }
+      ]
+    }
+  ]
+}
